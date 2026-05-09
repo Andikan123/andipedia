@@ -11,7 +11,9 @@ const homeCourses = [
   { name: "Biostatistics", slug: "biostatistics", topics: 8 },
   { name: "Pediatrics", slug: "pediatrics", topics: 12 },
   { name: "Obstetrics", slug: "obstetrics", topics: 12 },
-  { name: "Geriatrics", slug: "geriatrics", topics: 12 }
+  { name: "Geriatrics", slug: "geriatrics", topics: 12 },
+  { name: "Mental-Health", slug: "mentalHealth", topics: 12 },
+  { name: "Research", slug: "research", topics: 12 }
 ];
 
 export default homeCourses;

@@ -3,25 +3,109 @@ const courseData = {
 "public-health": {
 title: "Public Health",
 image: "/images/public-health.jpg",
-sections: [
-{
-id: "overview",
-title: "Overview",
-content: "Public health focuses on protecting and improving the health of populations...",
-
-media: [
-{ type: "video", src: "https://www.youtube.com/embed/xxxxx" }
-]
-},
-{
-id: "epidemiology",
-title: "Epidemiology",
-content: "Study of disease distribution and determinants...",
-
-media: [
-{ type: "video", src: "https://www.youtube.com/embed/yyyyy" }
-]
-}
+sections:  [
+  {
+    id: "overview",
+    title: "Overview of Public Health",
+    content: "Introduction to public health, its goals, and importance in improving population health...",
+    media: [{ type: "video", src: "https://www.youtube.com/embed/xxxxx" }]
+  },
+  {
+    id: "epidemiology",
+    title: "Epidemiology",
+    content: "Study of disease distribution, patterns, and determinants in populations...",
+    media: [{ type: "video", src: "https://www.youtube.com/embed/yyyyy" }]
+  },
+  {
+    id: "disease-prevention",
+    title: "Disease Prevention and Control",
+    content: "Levels of prevention: primary, secondary, and tertiary prevention strategies...",
+    media: []
+  },
+  {
+    id: "health-promotion",
+    title: "Health Promotion",
+    content: "Strategies that enable people to increase control over their health...",
+    media: []
+  },
+  {
+    id: "environmental-health",
+    title: "Environmental Health",
+    content: "How environmental factors like water, air, sanitation affect health...",
+    media: []
+  },
+  {
+    id: "community-health",
+    title: "Community Health Nursing",
+    content: "Nursing practice focused on improving health at community level...",
+    media: []
+  },
+  {
+    id: "primary-health-care",
+    title: "Primary Health Care (PHC)",
+    content: "Essential healthcare accessible to individuals and communities...",
+    media: []
+  },
+  {
+    id: "maternal-child-health",
+    title: "Maternal and Child Health",
+    content: "Care strategies for mothers, infants, and children to reduce mortality...",
+    media: []
+  },
+  {
+    id: "immunization",
+    title: "Immunization and Vaccination",
+    content: "Role of vaccines in preventing communicable diseases...",
+    media: []
+  },
+  {
+    id: "communicable-diseases",
+    title: "Communicable Diseases",
+    content: "Transmission, prevention, and control of infectious diseases...",
+    media: []
+  },
+  {
+    id: "non-communicable-diseases",
+    title: "Non-Communicable Diseases",
+    content: "Chronic diseases like diabetes, hypertension, cancer and their prevention...",
+    media: []
+  },
+  {
+    id: "nutrition-public-health",
+    title: "Nutrition in Public Health",
+    content: "Role of nutrition in preventing disease and promoting wellbeing...",
+    media: []
+  },
+  {
+    id: "sanitation-hygiene",
+    title: "Sanitation and Hygiene",
+    content: "Importance of clean water, hygiene practices, and waste management...",
+    media: []
+  },
+  {
+    id: "health-education",
+    title: "Health Education",
+    content: "Teaching individuals and communities to improve health behaviors...",
+    media: []
+  },
+  {
+    id: "biostatistics",
+    title: "Biostatistics in Public Health",
+    content: "Use of statistics to analyze and interpret health data...",
+    media: []
+  },
+  {
+    id: "health-policy",
+    title: "Health Policy and Health Systems",
+    content: "Structure of healthcare systems and policy making in public health...",
+    media: []
+  },
+  {
+    id: "outbreak-investigation",
+    title: "Outbreak Investigation",
+    content: "Steps involved in identifying and controlling disease outbreaks...",
+    media: []
+  }
 ]
 },
 "biostatistics": {
@@ -9457,7 +9541,1936 @@ sections: [
     }
 
   ]
-}
+},
+mentalHealth: {
+title: "Mental Health",
+image: "/images/psychiatry.jpg",
+sections: [
+    {
+      id: "history-of-psychiatry",
+      title: "History of Psychiatry and Psychiatric Nursing",
+      content: `<h3>HISTORY OF PSYCHIATRY AND PSYCHIATRIC NURSING</h3>
+
+<p>
+To understand the changing outlook and future role of psychiatric nursing, it is important to study the history of psychiatry and how it has evolved over time. Mental illness has existed throughout human history, and individuals affected have been treated in many different ways including fear, neglect, ridicule, pity, and even torture.
+</p>
+
+<h3>EARLY UNDERSTANDING OF MENTAL ILLNESS</h3>
+
+<p>
+In ancient times, mental illness was often attributed to supernatural causes such as evil spirits. During the 15th century, Hippocrates described mental illness as a form of nervous disease. Aristotle and Galen believed it to be a disorder of the brain.
+</p>
+
+<p>
+The Greeks introduced early therapeutic approaches such as open-air treatment, sun exposure, water therapy, walking, and music for mentally ill individuals.
+</p>
+
+<p>
+During the Middle Ages, mentally ill persons were rejected by society and believed to be possessed by demons. This led to harsh treatment including torture, starvation, imprisonment, chaining, and execution.
+</p>
+
+<h3>EARLY INSTITUTIONAL CARE</h3>
+
+<p>
+The Bethlehem Royal Hospital in England became one of the first mental hospitals. During this period, care was largely custodial rather than therapeutic.
+</p>
+
+<h3>AGE OF REFORM AND HUMANITARIAN CARE</h3>
+
+<p>
+The 18th century marked a turning point in psychiatric care. Philippe Pinel, a French physician, introduced humane treatment by removing chains from patients and classifying mental illness based on behavior and history.
+</p>
+
+<p>
+Benjamin Rush, known as the father of American Psychiatry, advocated for humane treatment and contributed significantly to early psychiatric literature in America.
+</p>
+
+<h3>EMERGENCE OF PSYCHIATRIC NURSING</h3>
+
+<p>
+Although nursing has existed since ancient times, psychiatric nursing developed mainly in the late 19th and early 20th centuries (1770–1880). Florence Nightingale played a key role by recognizing that nursing care affects patients psychologically and socially, not just physically.
+</p>
+
+<p>
+The first psychiatric nursing school was established at McLean Hospital in 1882, Massachusetts.
+</p>
+
+<p>
+In 1915, Linda Richards became the first graduate nurse in the United States, marking the beginning of formal psychiatric nursing practice.
+</p>
+
+<h3>DEVELOPMENT IN THE 20TH CENTURY</h3>
+
+<p>
+By 1939, about half of nursing schools offered psychiatric nursing courses. During World War II, staff shortages led to rapid expansion of nursing education.
+</p>
+
+<p>
+In the 1940s, psychiatric nursing became more integrated into general nursing practice, though roles were still mostly custodial.
+</p>
+
+<h3>THEORETICAL AND PROFESSIONAL DEVELOPMENT</h3>
+
+<p>
+The 1950s and 1960s marked a period of major development in psychiatric nursing theory and education.
+</p>
+
+<ul>
+<li><strong>1952:</strong> Hildegard Peplau published "Interpersonal Relations in Nursing", the first psychiatric nursing theory.</li>
+<li><strong>1956:</strong> Introduction of psychiatric clinical nurse specialist (master’s level training).</li>
+<li><strong>1960:</strong> First nursing doctorate program established at Boston University.</li>
+<li><strong>1961:</strong> Ida Jean Orlando introduced the "Dynamic Nurse-Patient Relationship".</li>
+</ul>
+
+<h3>COMMUNITY MENTAL HEALTH MOVEMENT</h3>
+
+<p>
+In 1963, Community Mental Health Centers were introduced to provide outpatient services, emergency care, and rehabilitation in community settings.
+</p>
+
+<h3>PROFESSIONAL STANDARDS AND MODERN ERA</h3>
+
+<p>
+In 1967, the American Nurses Association published the Standards of Practice for Psychiatric Nursing.
+</p>
+
+<p>
+Other major developments include:
+</p>
+
+<ul>
+<li>Sigmund Freud (1856–1939): Psychoanalytic theory</li>
+<li>Eugen Bleuler: Identification of schizophrenia</li>
+<li>1930s: Introduction of insulin shock therapy and electroconvulsive therapy (ECT)</li>
+<li>1980: Mental Health Systems Act supporting mental health reforms</li>
+</ul>
+
+<h3>SUMMARY</h3>
+
+<p>
+Psychiatric nursing has evolved from custodial care to a professional, theory-based, and community-oriented discipline focused on holistic mental health care.
+</p>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "definition-roles-standards",
+      title: "Definition, Roles and Practice Standards of Psychiatric Nursing",
+      content: `<h3>DEFINITION OF PSYCHIATRIC NURSING</h3>
+
+<p>
+Psychiatric nursing is an interpersonal process that enhances the mental health of individuals, families, and society. It helps professional nurses in preventing or coping with mental illness and suffering, and when necessary, supports patients in finding meaning in their experiences.
+</p>
+
+<p>
+Psychiatric–mental health nursing refers to two interconnected aspects of care:
+</p>
+
+<ul>
+<li><strong>Psychiatric nursing:</strong> Focuses on care and rehabilitation of individuals with identifiable mental illnesses.</li>
+<li><strong>Mental health nursing:</strong> Focuses on promoting wellness and preventing mental illness.</li>
+</ul>
+
+<p>
+It integrates behavioral sciences and nursing knowledge to provide care at primary, secondary, and tertiary levels.
+</p>
+
+---
+
+<h3>PHENOMENA OF CONCERN IN PSYCHIATRIC–MENTAL HEALTH NURSING</h3>
+
+<ul>
+<li>Promotion of optimal mental and physical health and prevention of mental illness</li>
+<li>Impaired functioning due to psychological, psychiatric, or physiological distress</li>
+<li>Disturbances in thinking, perception, and communication</li>
+<li>Behaviors indicating risk to self or others</li>
+<li>Emotional stress related to illness, pain, disability, and loss</li>
+<li>Side effects or toxicity from psychopharmacological drugs</li>
+<li>Substance and alcohol abuse affecting treatment outcomes</li>
+<li>Changes in self-concept, body image, and life processes</li>
+<li>Physical symptoms associated with mental conditions</li>
+<li>Sociocultural, spiritual, and environmental influences on mental health</li>
+<li>Social issues such as poverty, violence, and substance abuse</li>
+</ul>
+
+---
+
+<h3>PEPLAU’S SUBROLES IN NURSING</h3>
+
+<p><strong>The Stranger:</strong> The nurse treats the patient with respect and without bias while building initial rapport.</p>
+
+<p><strong>The Resource Person:</strong> The nurse provides accurate information and answers to patient questions.</p>
+
+<p><strong>The Teacher:</strong> The nurse identifies learning needs and provides health education.</p>
+
+<p><strong>The Technical Expert:</strong> The nurse applies clinical skills to ensure safe and effective care.</p>
+
+<p><strong>The Leader:</strong> Encourages patient participation in care planning (democratic approach).</p>
+
+<p><strong>The Surrogate:</strong> The patient may unconsciously view the nurse as a significant figure from their past.</p>
+
+<p><strong>The Counselor:</strong> Helps patients understand and adapt to emotional and psychological challenges.</p>
+
+---
+
+<h3>BASIC PHILOSOPHY OF PSYCHIATRIC NURSING PRACTICE</h3>
+
+<ul>
+<li>Every individual is valuable and capable of self-improvement.</li>
+<li>Every individual has the ability to adapt and change.</li>
+<li>Human beings are holistic (biological, psychological, social).</li>
+<li>Meeting basic needs is essential for well-being.</li>
+<li>Nursing care is based on individual, family, and community needs.</li>
+<li>Every behavior has meaning and clinical significance.</li>
+<li>Illness can be a pathway for personal growth and coping development.</li>
+</ul>
+
+---
+
+<h3>STANDARDS OF PSYCHIATRIC NURSING PRACTICE</h3>
+
+<p>
+The American Nurses Association (ANA) established psychiatric nursing standards in 1973 to guide professional practice.
+</p>
+
+<h3>IMPORTANCE OF PROFESSIONAL STANDARDS</h3>
+
+<ul>
+<li>Provide measurable criteria for nursing practice</li>
+<li>Define required knowledge and skills</li>
+<li>Improve quality of care</li>
+<li>Promote nursing as a professional discipline</li>
+</ul>
+
+---
+
+<h3>ANA PRACTICE STANDARDS</h3>
+
+<p><strong>Standard 1: Theory Development</strong> – Practice is based on scientific knowledge and nursing theory.</p>
+
+<p><strong>Standard 2: Data Collection</strong> – Systematic collection of patient information.</p>
+
+<p><strong>Standard 3: Diagnosis</strong> – Identification of patient problems and risks.</p>
+
+<p><strong>Standard 4: Planning</strong> – Development of individualized care plans.</p>
+
+<p><strong>Standard 5: Application</strong> – Implementation of interventions including therapy, education, and rehabilitation.</p>
+
+<p><strong>Standard 6: Assessment</strong> – Continuous evaluation of patient progress and adjustment of care.</p>
+
+<p><strong>Standard 7: Peer Evaluation</strong> – Collaboration with colleagues to evaluate care quality.</p>
+
+<p><strong>Standard 8: In-Service Training</strong> – Continuous professional development and learning.</p>
+
+<p><strong>Standard 9: Interdisciplinary Cooperation</strong> – Collaboration with healthcare teams.</p>
+
+<p><strong>Standard 10: Community Health Systems</strong> – Participation in community mental health programs.</p>
+
+<p><strong>Standard 11: Research</strong> – Contribution to nursing and mental health research.</p>
+
+---
+
+<h3>BENEFITS OF PRACTICE STANDARDS</h3>
+
+<ul>
+<li>Eliminates ambiguity in nursing practice</li>
+<li>Improves consistency and quality of care</li>
+<li>Reduces service errors and inefficiencies</li>
+<li>Guides training and professional development</li>
+<li>Promotes interdisciplinary collaboration</li>
+<li>Improves patient outcomes and healthcare systems</li>
+</ul>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "mental-status-examination",
+      title: "The Mental Status Examination",
+      content: `<h3>THE MENTAL STATUS EXAMINATION (MSE)</h3>
+
+<p>
+The Mental Status Examination is a central component of psychiatric assessment used to evaluate a client’s current cognitive, emotional, and behavioral functioning through systematic observation and questioning.
+</p>
+
+<p>The MSE assesses the following domains:</p>
+
+<ul>
+<li>Appearance, behavior, and speech</li>
+<li>Level of consciousness</li>
+<li>Thought content and thought process</li>
+<li>Cognitive ability</li>
+<li>Mood and affect</li>
+<li>Insight and judgment</li>
+<li>Perception</li>
+</ul>
+
+---
+
+<h3>APPEARANCE, BEHAVIOR AND SPEECH</h3>
+
+<p>
+From the first interaction, nurses observe behavior that may indicate mental disturbance. Observations should be objective and non-judgmental.
+</p>
+
+<p><strong>Examples of abnormal behaviors:</strong></p>
+
+<ul>
+<li><strong>Automatisms:</strong> Repetitive purposeless movements such as finger drumming, foot tapping, or hair twisting (often linked to anxiety)</li>
+<li><strong>Psychomotor retardation:</strong> Slowed physical and emotional responses</li>
+<li><strong>Waxy flexibility:</strong> Maintenance of an imposed posture, even if uncomfortable</li>
+</ul>
+
+<p><strong>Speech assessment includes:</strong></p>
+
+<ul>
+<li>Rate: fast or slow speech</li>
+<li>Volume: loud or soft speech</li>
+<li>Relevance: answers appropriate or irrelevant</li>
+<li>Continuity: perseveration or inability to shift topics</li>
+<li>Special speech patterns: neologisms, rhyming, minimal responses</li>
+</ul>
+
+---
+
+<h3>LEVEL OF CONSCIOUSNESS</h3>
+
+<p>
+This refers to alertness and awareness of surroundings and interaction. Disturbances may include sedation, confusion, or hypervigilance.
+</p>
+
+---
+
+<h3>THOUGHT CONTENT AND THOUGHT PROCESS</h3>
+
+<p><strong>Thought content</strong> refers to what the client is thinking.</p>
+
+<p><strong>Delusions:</strong> Fixed false beliefs not based on reality.</p>
+
+<ul>
+<li><strong>Grandiose:</strong> Belief of great power, wealth, or identity</li>
+<li><strong>Persecutory:</strong> Belief of being watched, harmed, or plotted against</li>
+<li><strong>Somatic:</strong> False beliefs about body defects or illness</li>
+<li><strong>Nihilistic:</strong> Belief that self or world does not exist or is ending</li>
+<li><strong>Religious:</strong> False spiritual or divine beliefs</li>
+<li><strong>Referential:</strong> Belief that media or events are directed at them</li>
+</ul>
+
+<p><strong>Other thought disturbances:</strong></p>
+
+<ul>
+<li><strong>Thought broadcasting:</strong> Belief that others can hear one’s thoughts</li>
+<li><strong>Thought insertion:</strong> Belief that thoughts are placed by others</li>
+<li><strong>Thought withdrawal:</strong> Belief that thoughts are being removed</li>
+</ul>
+
+<p><strong>Thought process abnormalities:</strong></p>
+
+<ul>
+<li>Loose associations: disconnected ideas</li>
+<li>Flight of ideas: rapid shifting thoughts</li>
+<li>Thought blocking: sudden interruption of thought</li>
+<li>Tangentiality: indirect and off-topic responses</li>
+<li>Circumstantiality: excessive unnecessary detail before answering</li>
+<li>Word salad: incoherent mixture of words</li>
+</ul>
+
+---
+
+<h3>COGNITIVE ABILITY</h3>
+
+<p>This assesses orientation, memory, attention, and abstract thinking.</p>
+
+<p><strong>Orientation:</strong> Person, place, and time. Loss occurs in reverse order.</p>
+
+<p><strong>Memory:</strong></p>
+<ul>
+<li>Immediate: repeat words immediately</li>
+<li>Recent: recall after few minutes or recent events</li>
+<li>Remote: past events (e.g., childhood, personal data)</li>
+</ul>
+
+<p><strong>Attention and concentration:</strong> Tasks such as:</p>
+<ul>
+<li>Spell “WORLD” backward</li>
+<li>Serial subtraction (100 minus 7)</li>
+<li>Recite days of the week backward</li>
+</ul>
+
+<p><strong>Abstract reasoning:</strong> Interpretation of proverbs. Literal interpretation suggests concrete thinking.</p>
+
+---
+
+<h3>MOOD AND AFFECT</h3>
+
+<p><strong>Mood:</strong> Subjective emotional state (e.g., happy, sad, anxious, euphoric, angry).</p>
+
+<p><strong>Labile mood:</strong> Rapid emotional changes.</p>
+
+<p><strong>Affect:</strong> Observed emotional expression.</p>
+
+<ul>
+<li>Flat affect: no expression</li>
+<li>Blunted affect: reduced expression</li>
+<li>Restricted affect: limited range of emotion</li>
+<li>Inappropriate affect: emotion not matching situation</li>
+</ul>
+
+---
+
+<h3>INSIGHT AND JUDGMENT</h3>
+
+<p><strong>Insight:</strong> Awareness and understanding of one’s condition. Poor insight may involve denial or delusional explanations.</p>
+
+<p><strong>Judgment:</strong> Ability to make appropriate decisions based on reality.</p>
+
+<p>Example question: “What would you do if you found a stamped envelope on the ground?”</p>
+
+---
+
+<h3>PERCEPTION</h3>
+
+<p>
+Perception involves sensory interpretation of the environment.
+</p>
+
+<p><strong>Hallucinations:</strong> False sensory perceptions without external stimuli.</p>
+
+<ul>
+<li>Auditory (most common in schizophrenia)</li>
+<li>Visual</li>
+<li>Tactile</li>
+<li>Olfactory</li>
+<li>Gustatory</li>
+</ul>
+
+<p><strong>Other perceptual disturbances:</strong></p>
+
+<ul>
+<li><strong>Illusions:</strong> Misinterpretation of real stimuli</li>
+<li><strong>Depersonalization:</strong> Feeling detached from self</li>
+<li><strong>Derealization:</strong> Environment feels unreal</li>
+<li><strong>Déjà vu / Jamais vu:</strong> Familiarity or unfamiliarity distortions</li>
+<li><strong>Micropsia/Macropsia:</strong> Objects appear smaller or larger</li>
+<li><strong>Synesthesia:</strong> Sensory crossover (e.g., hearing colors)</li>
+</ul>
+
+<p><strong>Clinical importance:</strong></p>
+<ul>
+<li>Auditory hallucinations often occur in schizophrenia</li>
+<li>Visual hallucinations may suggest organic causes (drugs, delirium)</li>
+<li>Command hallucinations require urgent risk assessment</li>
+</ul>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "culture-and-psychiatry",
+      title: "Culture and Psychiatry",
+      content: `<h3>CULTURE AND PSYCHIATRY</h3>
+
+<p>
+Culture plays an important role in how mental health and mental illness are understood, expressed, and treated. Every culture develops its own way of interpreting psychological experiences.
+</p>
+
+<h3>QUALITIES OF A PERSON WITH GOOD MENTAL HEALTH</h3>
+
+<ul>
+<li>Ability to tolerate stress without excessive anxiety, sadness, or insecurity</li>
+<li>Healthy self-confidence and self-esteem</li>
+<li>Ability to take responsibility and fulfill obligations</li>
+<li>Hopeful outlook and ability to plan for the future</li>
+<li>Ability to take initiative and act independently</li>
+<li>Ability to self-reflect and accept criticism</li>
+<li>Ability to distinguish fantasy from reality</li>
+<li>Problem-solving skills</li>
+<li>Ability to form relationships based on love and respect</li>
+<li>Values and beliefs that are socially acceptable</li>
+<li>Engagement in leisure, relaxation, and personal development activities</li>
+</ul>
+
+---
+
+<h3>CULTURAL INFLUENCE IN PSYCHIATRY (CASE EXAMPLE)</h3>
+
+<p>
+In some cultures, mental health symptoms may be interpreted differently from Western psychiatric definitions. For example, sugarcane workers in Brazil described symptoms such as dizziness, numbness, emotional instability, and tremors as “nervios.”
+</p>
+
+<p>
+Local interpretations may differ from biomedical explanations. In some cases, healthcare providers may misinterpret these culturally influenced symptoms and prescribe psychiatric medication without considering social factors such as malnutrition or poverty.
+</p>
+
+<p>
+This highlights the importance of understanding mental health within cultural context.
+</p>
+
+---
+
+<h3>PSYCHODYNAMIC FOUNDATIONS OF BEHAVIOR</h3>
+
+<p><strong>Phylogenetic determinants:</strong> Universal inherited factors influencing behavior.</p>
+<p><strong>Ontogenetic determinants:</strong> Environmental, physical, and psychosocial influences.</p>
+
+<p><strong>Descriptive psychiatry:</strong> Focuses on symptoms and diagnosis (Kraepelin).</p>
+<p><strong>Dynamic psychiatry:</strong> Focuses on unconscious psychological processes (Freud).</p>
+
+---
+
+<h3>BASIC CONCEPTS OF DYNAMIC PSYCHIATRY</h3>
+
+<h4>Levels of Consciousness</h4>
+
+<p><strong>Conscious:</strong> Awareness, logic, and reality-based thinking dominate.</p>
+
+<p><strong>Preconscious:</strong> Information that can be easily recalled.</p>
+
+<p><strong>Unconscious:</strong> Hidden thoughts and memories influencing behavior; accessible through therapy such as hypnosis or free association.</p>
+
+---
+
+<h4>Structural Model of Personality</h4>
+
+<p><strong>ID:</strong> Primitive instincts; operates on pleasure principle.</p>
+<p><strong>EGO:</strong> Reality-based mediator between id, superego, and environment.</p>
+<p><strong>SUPEREGO:</strong> Moral conscience formed from social and parental standards.</p>
+
+---
+
+<h3>STRESS</h3>
+
+<p><strong>Stimulus model:</strong> Stress occurs due to external demands or stimuli.</p>
+<p><strong>Response model:</strong> Stress is the total physiological, emotional, and behavioral reaction.</p>
+
+<p><strong>Stress tolerance:</strong> Ability to cope with stress in physical, emotional, mental, and social ways.</p>
+
+<p><strong>Distress:</strong> Negative stress that causes dysfunction.</p>
+<p><strong>Eustress:</strong> Positive stress that motivates performance.</p>
+
+---
+
+<h3>DECOMPENSATION</h3>
+
+<p>
+A state in which psychological defenses fail, leading to loss of emotional and behavioral stability and use of maladaptive coping mechanisms.
+</p>
+
+---
+
+<h3>BLOCKING AND CONFLICT</h3>
+
+<p><strong>Blocking:</strong> Sudden interruption of thought or action due to psychological tension.</p>
+
+<p><strong>Conflict:</strong> Occurs when an individual faces incompatible desires or choices.</p>
+
+<ul>
+<li><strong>Approach–approach conflict:</strong> Choosing between two desirable options</li>
+<li><strong>Avoidance–avoidance conflict:</strong> Choosing between two undesirable options</li>
+<li><strong>Approach–avoidance conflict:</strong> A situation that is both attractive and unpleasant</li>
+</ul>
+
+---
+
+<h3>TRANSFERENCE AND COUNTERTRANSFERENCE</h3>
+
+<p><strong>Transference:</strong> Patients unconsciously transfer feelings from past relationships onto healthcare providers.</p>
+
+<p><strong>Countertransference:</strong> Emotional reaction of healthcare provider toward the patient influenced by personal feelings.</p>
+
+---
+
+<h3>INSIGHT</h3>
+
+<p><strong>Insight:</strong> Ability to understand and interpret one’s own behavior realistically.</p>
+
+<p><strong>Clinical insight:</strong> Awareness of having a mental illness.</p>
+
+<p><strong>Analytical insight:</strong> Understanding the underlying causes of behavior.</p>
+
+---
+
+<h3>PRIMARY AND SECONDARY GAIN</h3>
+
+<p><strong>Primary gain:</strong> Psychological relief from anxiety through symptom formation.</p>
+
+<p><strong>Secondary gain:</strong> External benefits obtained from being ill (e.g., attention, avoidance of responsibility).</p>
+
+---
+
+<h3>ALTRUISM</h3>
+
+<p>
+Altruism refers to selfless concern for others, often seen in healthcare professionals who prioritize patient wellbeing.
+</p>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "defense-mechanisms",
+      title: "Defense Mechanisms",
+      content: `<h3>DEFENSE MECHANISMS</h3>
+
+<p>
+Defense mechanisms are unconscious psychological strategies used by the ego to reduce anxiety, protect self-esteem, and manage internal or external conflict.
+</p>
+
+<h3>FUNCTIONS OF DEFENSE MECHANISMS</h3>
+
+<ul>
+<li>Provide relief from emotional turmoil and stress</li>
+<li>Reduce anxiety and psychological tension</li>
+<li>Protect self-esteem and ego integrity</li>
+<li>Help the individual cope with conflict and frustration</li>
+<li>Increase psychological resilience</li>
+</ul>
+
+<h3>POSITIVE AND NEGATIVE ASPECTS</h3>
+
+<p><strong>Positive:</strong> Helps coping, emotional stability, and adaptation.</p>
+<p><strong>Negative:</strong> Excessive use may distort reality and impair functioning.</p>
+
+---
+
+<h3>MAJOR DEFENSE MECHANISMS</h3>
+
+<h4>1. Repression</h4>
+<p>
+Unconscious blocking of unpleasant thoughts, memories, or impulses from awareness.
+</p>
+
+<h4>2. Denial</h4>
+<p>
+Refusal to accept reality that is too painful or threatening.
+</p>
+
+<h4>3. Projection</h4>
+<p>
+Attributing one’s unacceptable feelings or impulses to others.
+</p>
+
+<h4>4. Introjection</h4>
+<p>
+Internalizing the beliefs or characteristics of others as part of the self.
+</p>
+
+<h4>5. Splitting</h4>
+<p>
+Viewing people or situations as all good or all bad. Common in borderline and psychotic disorders.
+</p>
+
+<h4>6. Dissociation</h4>
+<p>
+Separation of thoughts, memories, or emotions from consciousness to reduce anxiety.
+</p>
+
+<h4>7. Displacement</h4>
+<p>
+Redirecting emotions from a threatening target to a safer one.
+</p>
+
+<h4>8. Rationalization</h4>
+<p>
+Creating logical but false explanations to justify behavior or reduce guilt.
+</p>
+
+<h4>9. Reaction Formation</h4>
+<p>
+Expressing the opposite of true feelings or impulses.
+</p>
+
+<h4>10. Intellectualization</h4>
+<p>
+Using logic and facts to avoid emotional involvement in distressing situations.
+</p>
+
+<h4>11. Isolation of Affect</h4>
+<p>
+Separating emotional feelings from thoughts or memories.
+</p>
+
+<h4>12. Conversion</h4>
+<p>
+Psychological conflict is transformed into physical symptoms (e.g., paralysis, blindness).
+</p>
+
+<h4>13. Undoing</h4>
+<p>
+Attempting to “cancel out” a thought or action with another behavior. Common in OCD.
+</p>
+
+<h4>14. Fixation</h4>
+<p>
+Development becomes stuck at a particular stage due to unresolved conflicts.
+</p>
+
+<h4>15. Regression</h4>
+<p>
+Return to earlier developmental behavior under stress.
+</p>
+
+<h4>16. Fantasy Formation</h4>
+<p>
+Escaping reality through imagination to fulfill unmet desires.
+</p>
+
+<h4>17. Identification</h4>
+<p>
+Adopting traits, beliefs, or behaviors of another person unconsciously.
+</p>
+
+<h4>18. Sublimation</h4>
+<p>
+Channeling unacceptable impulses into socially acceptable and productive activities (most mature defense).
+</p>
+
+<h4>19. Concretization</h4>
+<p>
+Making abstract thoughts more concrete and fixed, often seen in psychosis.
+</p>
+
+---
+
+<h3>CLINICAL IMPORTANCE</h3>
+
+<p>
+Defense mechanisms are normal psychological processes, but excessive or maladaptive use may indicate underlying mental illness.
+</p>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "classification-mental-illness",
+      title: "Classification of Mental Illnesses",
+      content: `<h3>CLASSIFICATION OF MENTAL ILLNESSES</h3>
+
+<p>
+Psychiatry has evolved from subjective interpretation to a structured discipline based on standardized diagnostic systems and classification criteria.
+</p>
+
+---
+
+<h3>CLASSIFICATION SYSTEMS IN PSYCHIATRY</h3>
+
+<h4>DSM-5 (Diagnostic and Statistical Manual of Mental Disorders)</h4>
+
+<p>
+The DSM-5 is published by the American Psychiatric Association and is widely used for diagnosing mental disorders, especially in the United States.
+</p>
+
+<p>
+First introduced in 1952, DSM-5 was released in 2013 and provides standardized criteria for diagnosing mental illnesses.
+</p>
+
+<p><strong>Functions of DSM-5:</strong></p>
+
+<ul>
+<li>Standardized diagnosis of mental disorders</li>
+<li>Guides treatment planning</li>
+<li>Supports clinical research</li>
+<li>Used for insurance and billing purposes</li>
+</ul>
+
+<p><strong>Classification includes:</strong></p>
+
+<ul>
+<li>Mood disorders</li>
+<li>Anxiety disorders</li>
+<li>Psychotic disorders</li>
+<li>Personality disorders</li>
+<li>Neurodevelopmental disorders</li>
+</ul>
+
+<p>
+DSM-5 introduced new disorders such as hoarding disorder and disruptive mood dysregulation disorder.
+</p>
+
+---
+
+<h4>ICD-11 (International Classification of Diseases)</h4>
+
+<p>
+The ICD-11 is published by the World Health Organization (WHO) and is a global classification system for all diseases, including mental disorders.
+</p>
+
+<p>
+The latest version (ICD-11) was released in 2022 and is used worldwide for clinical diagnosis and health reporting.
+</p>
+
+<p><strong>Key features:</strong></p>
+
+<ul>
+<li>Global medical classification system</li>
+<li>Covers both physical and mental disorders</li>
+<li>Allows multiple diagnostic coding</li>
+<li>Improved classification of complex and comorbid conditions</li>
+</ul>
+
+<p>
+ICD-11 includes updated classifications for mood disorders, anxiety disorders, psychotic disorders, and trauma-related conditions.
+</p>
+
+---
+
+<h3>DIFFERENCE BETWEEN DSM-5 AND ICD-11</h3>
+
+<ul>
+<li><strong>DSM-5:</strong> Mainly used in the United States and focuses on mental disorders only</li>
+<li><strong>ICD-11:</strong> Global system covering all diseases including mental health conditions</li>
+</ul>
+
+---
+
+<h3>PSYCHOSIS VS NEUROSIS</h3>
+
+<h4>Neurosis (Psychoneurosis)</h4>
+
+<p>
+Neurosis refers to mental disorders characterized by anxiety and defense mechanisms without loss of contact with reality.
+</p>
+
+<p><strong>Features of neurosis:</strong></p>
+
+<ul>
+<li>Reality testing remains intact</li>
+<li>Patient is aware of illness (insight present)</li>
+<li>Mild to moderate functional impairment</li>
+<li>Anxiety is the central feature</li>
+</ul>
+
+<p><strong>Examples:</strong> phobias, obsessive-compulsive disorder, hysteria</p>
+
+---
+
+<h4>Psychosis</h4>
+
+<p>
+Psychosis is a severe mental disorder in which the individual loses contact with reality.
+</p>
+
+<p><strong>Features of psychosis:</strong></p>
+
+<ul>
+<li>Loss of reality testing</li>
+<li>Delusions and hallucinations present</li>
+<li>Poor or absent insight</li>
+<li>Severe impairment in social and occupational functioning</li>
+</ul>
+
+---
+
+<h3>PSYCHODYNAMIC VIEW OF NEUROSIS</h3>
+
+<p>
+In psychoanalytic theory, neurosis is primarily driven by anxiety. This anxiety may be:
+</p>
+
+<ul>
+<li>Directly expressed</li>
+<li>Repressed and converted into symptoms</li>
+<li>Displaced into phobias, obsessions, or compulsions</li>
+</ul>
+
+<p>
+For example, anxiety may be transformed into physical symptoms (conversion disorder) or ritual behaviors (OCD).
+</p>
+
+---
+
+<h3>SUMMARY</h3>
+
+<ul>
+<li>DSM-5 and ICD-11 are modern standardized classification systems for mental disorders</li>
+<li>DSM-5 is mainly used in clinical psychiatry and research in the US</li>
+<li>ICD-11 is a global medical classification system</li>
+<li>Neurosis involves anxiety with preserved reality testing</li>
+<li>Psychosis involves loss of contact with reality</li>
+</ul>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "general-symptoms-psychiatric",
+      title: "General Symptoms in Psychiatric Disease",
+      content: `<h3>GENERAL SYMPTOMS IN PSYCHIATRIC DISEASES</h3>
+
+<p>
+Modern psychiatry evaluates patients using a biopsychosocial approach, considering biological, psychological, and social factors as a unified system.
+A structured clinical assessment begins with a detailed patient history and mental state evaluation.
+</p>
+
+---
+
+<h3>I. GENERAL APPEARANCE</h3>
+
+<p>
+General appearance provides important diagnostic clues but is not sufficient alone for diagnosis.
+It includes hygiene, grooming, posture, facial expression, speech, and behavior.
+</p>
+
+<p>
+Abnormal physical features such as gigantism, acromegaly, Cushing’s syndrome, or Wilson’s disease may indicate underlying medical conditions associated with psychiatric symptoms.
+</p>
+
+---
+
+<h3>II. COGNITIVE FUNCTIONS (SENSORIUM)</h3>
+
+<ul>
+<li>Consciousness</li>
+<li>Attention</li>
+<li>Orientation</li>
+<li>Perception</li>
+<li>Memory</li>
+<li>Judgment</li>
+<li>Insight</li>
+</ul>
+
+---
+
+<h3>III. PSYCHOPHYSIOLOGY</h3>
+
+<ul>
+<li>Sleep patterns</li>
+<li>Eating habits</li>
+<li>Urination and defecation</li>
+<li>Sexual function</li>
+<li>Memory function</li>
+<li>Eye contact and emotional expression</li>
+</ul>
+
+<p>
+Eye contact may indicate emotional state:
+avoidance may suggest anxiety, hostility, or withdrawal.
+</p>
+
+---
+
+<h3>IV. SPEECH AND LANGUAGE</h3>
+
+<p>
+Speech reflects thought processes. Abnormalities may suggest psychiatric or neurological disorders.
+</p>
+
+<h4>Speech Abnormalities</h4>
+
+<ul>
+<li><b>Logorrhea:</b> Excessive and uncontrolled speech (mania)</li>
+<li><b>Word salad:</b> Incoherent speech</li>
+<li><b>Dysphonia:</b> Weak or hoarse speech</li>
+<li><b>Aphonia:</b> Loss of voice</li>
+<li><b>Mutism:</b> Complete absence of speech</li>
+</ul>
+
+---
+
+<h3>V. DISORDERS OF CONSCIOUSNESS</h3>
+
+<ul>
+<li>Clouding: reduced clarity of thought</li>
+<li>Obnubilation: dream-like confusion</li>
+<li>Somnolence: drowsiness</li>
+<li>Stupor: reduced response to stimuli</li>
+<li>Semi-coma: only response to pain</li>
+<li>Coma: no response to stimuli</li>
+</ul>
+
+---
+
+<h3>VI. DELIRIUM</h3>
+
+<p>
+Delirium is an acute confusion state characterized by disorientation, hallucinations, fear, agitation, and fluctuating consciousness.
+</p>
+
+---
+
+<h3>VII. ORIENTATION</h3>
+
+<ul>
+<li><b>Time</b></li>
+<li><b>Place</b></li>
+<li><b>Person</b></li>
+</ul>
+
+<p>
+Disorientation typically affects time first, then place, and finally person.
+Recovery occurs in reverse order.
+</p>
+
+---
+
+<h3>VIII. ATTENTION</h3>
+
+<p>
+Attention is the ability to focus and sustain mental activity.
+</p>
+
+<ul>
+<li><b>Hypervigilance:</b> excessive alertness</li>
+<li><b>Distractibility:</b> inability to sustain attention (mania)</li>
+<li><b>Selective inattention:</b> avoidance of stimuli</li>
+</ul>
+
+---
+
+<h3>IX. MEMORY</h3>
+
+<p>
+Memory is the process of encoding, storing, and retrieving information.
+</p>
+
+<ul>
+<li><b>Hypermnesia:</b> increased memory</li>
+<li><b>Hypomnesia:</b> reduced memory</li>
+<li><b>Amnesia:</b> memory loss</li>
+<li><b>Anterograde amnesia:</b> cannot form new memories</li>
+<li><b>Retrograde amnesia:</b> loss of past memories</li>
+<li><b>Fugue:</b> sudden travel with identity loss</li>
+<li><b>Confabulation:</b> false memory filling gaps</li>
+<li><b>Déjà vu:</b> false familiarity</li>
+<li><b>Jamais vu:</b> familiar things feel new</li>
+</ul>
+
+---
+
+<h3>X. PERCEPTION</h3>
+
+<ul>
+<li><b>Illusion:</b> misinterpretation of real stimulus</li>
+<li><b>Hallucination:</b> perception without stimulus</li>
+<li><b>Depersonalization:</b> feeling detached from self</li>
+<li><b>Derealization:</b> feeling environment is unreal</li>
+</ul>
+
+<p>
+Types of hallucinations: auditory, visual, olfactory, gustatory, tactile.
+</p>
+
+---
+
+<h3>XI. JUDGMENT</h3>
+
+<p>
+Judgment is the ability to evaluate situations and act appropriately.
+It is impaired in psychosis and organic brain disorders (e.g., dementia, delirium).
+</p>
+
+---
+
+<h3>XII. THOUGHT DISORDERS</h3>
+
+<h4>Form of Thought</h4>
+
+<ul>
+<li>Flight of ideas</li>
+<li>Thought blocking</li>
+<li>Tangentiality</li>
+<li>Neologism</li>
+<li>Word salad</li>
+<li>Perseveration</li>
+<li>Clang associations</li>
+</ul>
+
+<h4>Content of Thought</h4>
+
+<ul>
+<li><b>Delusions:</b> fixed false beliefs</li>
+<li><b>Obsessions:</b> intrusive thoughts</li>
+<li><b>Phobias:</b> irrational fears</li>
+</ul>
+
+<h4>Types of Delusions</h4>
+
+<ul>
+<li>Grandiose</li>
+<li>Persecutory</li>
+<li>Somatic</li>
+<li>Nihilistic</li>
+<li>Erotomanic</li>
+<li>Reference</li>
+<li>Influence/control</li>
+</ul>
+
+---
+
+<h3>XIII. SLEEP AND NUTRITION DISORDERS</h3>
+
+<ul>
+<li><b>Dyssomnia:</b> sleep initiation or maintenance problems</li>
+<li><b>Parasomnia:</b> abnormal behaviors during sleep</li>
+<li><b>Bulimia:</b> binge eating</li>
+<li><b>Stiophobia:</b> food avoidance</li>
+<li><b>Coprophagia:</b> eating inedible substances</li>
+</ul>
+
+---
+
+<h3>XIV. MOTOR AND WILL DISORDERS</h3>
+
+<ul>
+<li>Abulia: loss of will</li>
+<li>Hypobulia: reduced willpower</li>
+<li>Hyperactivity: increased movement</li>
+<li>Agitation: restless and aggressive behavior</li>
+<li>Bradykinesia: slowed movement</li>
+<li>Compulsions: repetitive acts</li>
+<li>Kleptomania: stealing impulse</li>
+<li>Pyromania: fire-setting impulse</li>
+</ul>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "nursing-approach",
+      title: "Systematic Nursing Approach in Psychiatric Nursing",
+      content: `<h3>SYSTEMATIC (PLANNED) NURSING APPROACH IN PSYCHIATRIC NURSING</h3>
+
+<p>
+A nursing care plan is a structured guide that outlines nursing actions to be provided to a patient.
+It is developed based on assessment findings and focuses on solving identified nursing problems.
+It serves as an intermediate stage of the nursing process and guides ongoing care and evaluation.
+</p>
+
+---
+
+<h3>CHARACTERISTICS OF A NURSING CARE PLAN</h3>
+
+<ul>
+<li>Focuses on actions aimed at solving or minimizing patient problems</li>
+<li>Developed through a deliberate and systematic process</li>
+<li>Future-oriented (planned interventions)</li>
+<li>Based on identifiable health and nursing problems</li>
+<li>Holistic in nature (biological, psychological, social)</li>
+</ul>
+
+---
+
+<h3>STAGES OF THE NURSING PROCESS</h3>
+
+<ol>
+<li><b>Assessment:</b> Collecting patient data and evaluating needs</li>
+<li><b>Diagnosis:</b> Identifying human response problems</li>
+<li><b>Planning:</b> Designing individualized care plans</li>
+<li><b>Implementation:</b> Carrying out nursing interventions</li>
+<li><b>Evaluation:</b> Assessing effectiveness of care provided</li>
+</ol>
+
+---
+
+<h3>PATIENT HISTORY</h3>
+
+<ul>
+<li>Name (or preferred name)</li>
+<li>Marital status</li>
+<li>Occupation</li>
+<li>Religious beliefs</li>
+<li>Living circumstances</li>
+</ul>
+
+---
+
+<h3>MENTAL STATUS EXAMINATION (SUMMARY)</h3>
+
+<ul>
+<li><b>Appearance:</b> grooming, posture, eye contact</li>
+<li><b>Mood:</b> sustained emotional state</li>
+<li><b>Affect:</b> emotional expression</li>
+<li><b>Speech:</b> rate, tone, fluency, volume</li>
+<li><b>Thought Process:</b> logical flow of thinking</li>
+<li><b>Insight & Judgment:</b> awareness and decision-making ability</li>
+</ul>
+
+---
+
+<h3>OBSERVATION GUIDE</h3>
+
+<h4>1. Physical Symptoms</h4>
+<p>Includes vital signs, weight, general appearance, and physiological functions.</p>
+
+<h4>2. Behavioral Symptoms</h4>
+<p>Includes motor activity, speech patterns, and general behavior.</p>
+
+<h4>3. Thought Content</h4>
+<p>Includes coherence, hallucinations, delusions, and thought organization.</p>
+
+---
+
+<h3>PATIENT ASSESSMENT AREAS</h3>
+
+<h4>1. Social Behavior</h4>
+<p>
+Observes interaction patterns such as friendliness, silence, talkativeness, withdrawal, or hostility in clinical settings.
+</p>
+
+<h4>2. Facial Expression & Emotional State</h4>
+<p>
+Patients may present with emotions such as restlessness, aggression, depression, joy, fear, apathy, or emotional dullness.
+These observations are essential in mental health evaluation.
+</p>
+
+<h4>3. Intra-Clinical Activities</h4>
+<p>
+Includes participation in ward activities, group therapy, responsibilities, reading, crafts, and social engagement.
+</p>
+
+<h4>4. Feelings, Thoughts & Visitor Reactions</h4>
+<p>
+Observes emotional changes after visits, including warmth, distress, withdrawal, or agitation.
+</p>
+
+<h4>5. Leave (Vacation) Status</h4>
+<p>
+Assesses patient behavior before and after leave, including emotional state and thoughts about the experience.
+</p>
+
+<h4>6. Response to Treatment</h4>
+<p>
+Evaluates compliance, resistance, or acceptance of medications and therapy.
+</p>
+
+---
+
+<h3>INTERVIEWING PATIENTS</h3>
+
+<ul>
+<li>Proper greeting and introduction</li>
+<li>Explain purpose of interview</li>
+<li>Ensure privacy and comfort</li>
+<li>Use therapeutic communication techniques:
+  <ul>
+    <li>Active listening</li>
+    <li>Reflection</li>
+    <li>Clarification</li>
+    <li>Feedback</li>
+    <li>Appropriate silence</li>
+  </ul>
+</li>
+</ul>
+
+---
+
+<h3>CONDUCTING THE CONVERSATION</h3>
+
+<ul>
+<li>Focus on patient complaints</li>
+<li>Encourage open-ended responses</li>
+<li>Summarize key points regularly</li>
+<li>Explain treatment options clearly</li>
+</ul>
+
+---
+
+<h3>CONCLUSION</h3>
+
+<p>
+A patient’s personality is shaped by family, environment, and life experiences.
+The systematic nursing care process and mental health assessment are essential for effective psychiatric care and patient recovery.
+</p>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "therapeutic-environment-communication",
+      title: "Therapeutic Environment & Communication",
+      content: `<h3>THERAPEUTIC ENVIRONMENT & THERAPEUTIC COMMUNICATION</h3>
+
+<p>
+A therapeutic environment is a structured and dynamic setting designed to promote healing,
+improve mental health, enhance self-esteem, and support the patient’s reintegration into society.
+</p>
+
+---
+
+<h3>PURPOSE OF THE THERAPEUTIC ENVIRONMENT</h3>
+
+<ul>
+<li>To manage and control the care environment</li>
+<li>To improve self-esteem, self-worth, and self-confidence</li>
+<li>To promote social reintegration and independence</li>
+<li>To enhance interpersonal relationships</li>
+</ul>
+
+---
+
+<h3>GOALS AND PRINCIPLES</h3>
+
+<ul>
+<li>Meet patients’ basic physical and psychological needs</li>
+<li>Encourage self-expression</li>
+<li>Improve communication between patient and staff</li>
+<li>Promote positive patient-to-patient relationships</li>
+<li>Enhance coping and adaptive skills</li>
+<li>Reduce maladaptive behaviors</li>
+<li>Encourage social skills development</li>
+<li>Promote active participation in unit activities</li>
+</ul>
+
+---
+
+<h3>ELEMENTS OF A THERAPEUTIC ENVIRONMENT</h3>
+
+<h4>1. Safety</h4>
+<p>Protection from physical and psychological harm.</p>
+
+<h4>2. Structured Environment</h4>
+<p>Clear routines and rules that reduce confusion and anxiety.</p>
+
+<h4>3. Norms</h4>
+<p>Guidelines that promote socially acceptable behavior.</p>
+
+<h4>4. Boundaries</h4>
+<p>Define acceptable and unacceptable behaviors within the unit.</p>
+
+<h4>5. Balance</h4>
+<p>Gradual shift from dependence to independence in patient behavior.</p>
+
+<h4>6. Flexibility</h4>
+<p>Regular review and adjustment of rules to improve care quality.</p>
+
+---
+
+<h3>THERAPEUTIC RELATIONSHIP</h3>
+
+<p>
+A therapeutic relationship is a professional, goal-oriented relationship between nurse and patient
+that promotes healing and emotional growth.
+</p>
+
+<h4>Core Components</h4>
+
+<ul>
+<li><b>Trust:</b> Built through consistency, honesty, and reliability</li>
+<li><b>Empathy:</b> Understanding the patient’s feelings without judgment</li>
+</ul>
+
+---
+
+<h3>BARRIERS TO THERAPEUTIC COMMUNICATION</h3>
+
+<ul>
+<li>Agreeing or disagreeing excessively</li>
+<li>Being defensive</li>
+<li>Changing topics abruptly</li>
+<li>Passing judgment</li>
+<li>Giving false reassurance</li>
+</ul>
+
+---
+
+<h3>SELF-AWARENESS & THERAPEUTIC USE OF SELF</h3>
+
+<p>
+Self-awareness is the understanding of one’s own beliefs, values, and emotional responses
+and how they influence interactions with patients.
+</p>
+
+<p>
+Therapeutic use of self refers to the intentional use of personal qualities, communication skills,
+and emotional awareness to build effective nurse–patient relationships.
+</p>
+
+---
+
+<h3>PHASES OF THE NURSE–PATIENT RELATIONSHIP</h3>
+
+<ol>
+<li><b>Pre-interaction Phase:</b> Preparation before meeting the patient</li>
+<li><b>Orientation Phase:</b> Introduction, trust building, and identification of problems</li>
+<li><b>Working Phase:</b> Exploration of issues and implementation of interventions</li>
+<li><b>Termination Phase:</b> Ending relationship and evaluating progress</li>
+</ol>
+
+---
+
+<h3>GOALS OF THERAPEUTIC COMMUNICATION</h3>
+
+<ul>
+<li>Establish a trusting nurse–patient relationship</li>
+<li>Identify patient concerns and needs</li>
+<li>Encourage emotional expression</li>
+<li>Support development of coping and self-care skills</li>
+</ul>
+
+---
+
+<h3>PRIVACY AND COMMUNICATION SETTINGS</h3>
+
+<p>
+Privacy enhances therapeutic communication but must be balanced with clinical safety and setting limitations.
+</p>
+
+<h4>Suitable Interaction Venues</h4>
+
+<ul>
+<li>Interview or conference rooms</li>
+<li>Quiet corners of wards or day rooms</li>
+<li>End of hallways (when appropriate)</li>
+</ul>
+
+<p>
+The patient’s room may be used only when it is safe, appropriate, and comfortable for the client.
+</p>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "communication-principles-techniques",
+      title: "Therapeutic Communication Principles and Techniques",
+      content: `<h3>THERAPEUTIC COMMUNICATION PRINCIPLES AND TECHNIQUES IN MENTAL HEALTH AND PSYCHIATRIC NURSING</h3>
+
+<p>
+Therapeutic communication refers to verbal and nonverbal communication techniques that help patients freely express their feelings, thoughts, and intentions.
+It creates an environment of trust, empathy, respect, and understanding between the nurse and the patient.
+</p>
+
+<p>
+Through therapeutic communication, patients feel valued, respected, and safe from judgment, punishment, or ridicule, which enhances openness and emotional expression.
+</p>
+
+---
+
+<h3>ACTIVE LISTENING</h3>
+
+<p>
+Active listening is a deliberate and focused process of understanding both verbal and nonverbal messages from the patient.
+It involves not just hearing words but interpreting meaning, emotions, and body language.
+</p>
+
+<p>
+It is an interactive process where the nurse provides feedback, asks clarifying questions, and demonstrates understanding of the patient’s feelings.
+</p>
+
+<h4>Examples of Active Listening</h4>
+
+<ul>
+<li>“Where did it happen? How did it feel?”</li>
+<li>“So you mean…”</li>
+<li>Noticing nonverbal cues like crying or avoiding eye contact</li>
+</ul>
+
+<p>
+Passive listening occurs when there is little or no response or engagement from the listener.
+</p>
+
+---
+
+<h3>POINTS TO CONSIDER IN ACTIVE LISTENING</h3>
+
+<ul>
+<li>Relax the patient and create a comfortable atmosphere</li>
+<li>Use appropriate body language (eye contact, posture)</li>
+<li>Remove distractions</li>
+<li>Ensure a quiet and suitable environment</li>
+<li>Encourage the patient to speak freely</li>
+<li>Be patient and avoid interrupting</li>
+<li>Allow time for the patient to express thoughts fully</li>
+</ul>
+
+---
+
+<h3>BARRIERS TO ACTIVE LISTENING</h3>
+
+<ul>
+<li>Prejudice and personal bias</li>
+<li>Language differences</li>
+<li>Environmental distractions</li>
+<li>Fatigue or tiredness</li>
+<li>Anxiety, fear, or emotional distress</li>
+<li>Pain or physical discomfort</li>
+</ul>
+
+---
+
+<h3>ASKING QUESTIONS</h3>
+
+<p>
+Effective questioning is essential for accurate assessment and diagnosis.
+However, excessive questioning may overwhelm the patient and reduce communication effectiveness.
+</p>
+
+---
+
+<h3>OPEN-ENDED VS CLOSED-ENDED QUESTIONS</h3>
+
+<h4>Open-ended Questions</h4>
+<p>Allow patients to express feelings, thoughts, and experiences freely.</p>
+<p>Example: "Can you tell me about your experience?"</p>
+
+<h4>Closed-ended Questions</h4>
+<p>Used to obtain specific information.</p>
+<p>Example: "Do you smoke?"</p>
+
+---
+
+<h3>ENCOURAGING COMMUNICATION</h3>
+
+<p>
+Encouraging communication helps patients express themselves, especially during the initial stage of the nurse–patient relationship.
+Verbal and nonverbal cues are used to promote discussion.
+</p>
+
+---
+
+<h3>REFLECTION AND EMPATHY</h3>
+
+<p>
+Reflection helps clarify the patient’s message and ensures understanding between nurse and patient.
+Empathy allows the nurse to understand and communicate the patient’s emotional experience.
+</p>
+
+---
+
+<h3>PROVIDING INFORMATION</h3>
+
+<p>
+Patients, especially newly admitted ones, need information about the hospital environment, procedures, and expectations.
+Providing information helps them adapt and reduces anxiety.
+</p>
+
+---
+
+<h3>FEEDBACK AND SUMMARIZATION</h3>
+
+<p>
+Feedback focuses on observed behavior rather than personality traits.
+It helps patients understand how their behavior is perceived.
+</p>
+
+<h4>Key Aspects of Feedback</h4>
+
+<ul>
+<li>Give feedback at appropriate time and setting</li>
+<li>Start with positive observations before negative ones</li>
+<li>Use “I” statements</li>
+<li>Focus on behavior, not personality</li>
+</ul>
+
+<p>
+Summarization helps organize and review key points discussed during communication.
+It helps the patient understand and retain important information.
+</p>
+
+---
+
+<h3>CONFRONTATION AND REFOCUSING</h3>
+
+<p>
+Confrontation helps patients recognize inconsistencies between their words and actions.
+Refocusing redirects attention to important issues during communication.
+</p>
+
+---
+
+<h3>SILENCE AS A TOOL</h3>
+
+<p>
+Silence is a therapeutic technique that allows patients to think, reflect, and express emotions.
+It is especially useful during emotional or sensitive discussions.
+</p>
+
+---
+
+<h3>THERAPEUTIC SELF-DISCLOSURE</h3>
+
+<p>
+Therapeutic self-disclosure involves the nurse sharing appropriate emotional responses to help the patient gain insight into their feelings and behavior.
+</p>
+
+---
+
+<h3>SUMMARIZING</h3>
+
+<p>
+Summarizing is used at the beginning, during, or end of communication to review important points and ensure clarity.
+It helps organize thoughts and improve understanding.
+</p>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "personality-development",
+      title: "Personality Development & Eight Stages of Human Development",
+      content: `<h3>PERSONALITY DEVELOPMENT & EIGHT STAGES OF HUMAN DEVELOPMENT</h3>
+
+<p>
+Personality development is shaped through a combination of maturation and learning processes, which occur within individualization and socialization experiences.
+These processes are influenced by biological growth, environmental factors, and life experiences across the lifespan.
+</p>
+
+---
+
+<h3>MATURATION AND INDIVIDUALIZATION–SOCIALIZATION</h3>
+
+<h4>Maturation</h4>
+<p>
+Maturation refers to the natural development of innate abilities without learning or training.
+For example, most infants begin walking at around 12–14 months without formal instruction.
+</p>
+
+<h4>Individualization–Socialization</h4>
+<p>
+Individualization–socialization is the process through which individuals develop behaviors, personality traits, and social skills through learning and experience.
+For example, children gradually develop language skills and expand vocabulary through interaction.
+</p>
+
+---
+
+<h3>DEVELOPMENTAL ASPECTS OF PERSONALITY</h3>
+
+<p>
+Personality development should be understood as a biopsychosocial process involving:
+sensory-motor development, cognitive growth, emotional development, adaptation, and defense mechanisms.
+</p>
+
+---
+
+<h3>ERIKSON’S EIGHT STAGES OF PSYCHOSOCIAL DEVELOPMENT</h3>
+
+<p>
+Erik Erikson described eight stages of human development, each characterized by a psychosocial crisis that must be resolved for healthy personality development.
+</p>
+
+<ol>
+<li><b>Trust vs. Mistrust (0–18 months):</b> Development of basic trust in caregivers and the world.</li>
+
+<li><b>Autonomy vs. Shame and Doubt (18 months–3 years):</b> Development of independence and self-control.</li>
+
+<li><b>Initiative vs. Guilt (3–5 years):</b> Child explores environment and develops initiative; excessive criticism leads to guilt.</li>
+
+<li><b>Industry vs. Inferiority (6–11 years):</b> Development of competence and achievement; failure may lead to inferiority feelings.</li>
+
+<li><b>Identity vs. Role Confusion (12–18 years):</b> Adolescents develop personal identity and sense of self.</li>
+
+<li><b>Intimacy vs. Isolation (18–40 years):</b> Formation of close relationships; failure may lead to isolation.</li>
+
+<li><b>Generativity vs. Stagnation (40–65 years):</b> Contribution to society, family, and next generation.</li>
+
+<li><b>Integrity vs. Despair (65 years–death):</b> Reflection on life leading to either satisfaction or regret.</li>
+</ol>
+
+---
+
+<h3>SUMMARY OF DEVELOPMENTAL STAGES</h3>
+
+<h4>Trust vs. Mistrust</h4>
+<p>Infants learn whether the world is safe and reliable based on caregiver consistency.</p>
+
+<h4>Autonomy vs. Shame and Doubt</h4>
+<p>Children develop independence or experience doubt depending on caregiver support.</p>
+
+<h4>Initiative vs. Guilt</h4>
+<p>Children begin to assert control over environment; excessive restriction may lead to guilt.</p>
+
+<h4>Industry vs. Inferiority</h4>
+<p>School-age children develop competence through learning and achievement.</p>
+
+<h4>Identity vs. Role Confusion</h4>
+<p>Adolescents search for personal identity and direction in life.</p>
+
+<h4>Intimacy vs. Isolation</h4>
+<p>Young adults form meaningful relationships or struggle with loneliness.</p>
+
+<h4>Generativity vs. Stagnation</h4>
+<p>Adults contribute to society and support the next generation.</p>
+
+<h4>Integrity vs. Despair</h4>
+<p>Older adults reflect on life with either satisfaction or regret.</p>
+
+---
+
+<h3>CONCLUSION</h3>
+
+<p>
+Personality development is influenced by biological growth, family environment, education, and social experiences.
+Healthy development requires successful resolution of psychosocial crises at each stage, leading to a stable and well-adjusted personality.
+</p>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "Individuals With Sexual Disorders And Nursing Approach",
+      title: "Individuals With Sexual Disorders And Nursing Approach",
+      content: `<h3>INDIVIDUALS WITH SEXUAL DISORDERS AND NURSING APPROACH</h3>
+
+<h3>SEXUALITY AND SEXUAL HEALTH</h3>
+<p>
+Sexuality refers to the way individuals experience and express themselves as sexual beings.
+It is not only biological but also emotional, intellectual, and social, contributing to personality development,
+communication, and relationships. According to WHO, sexual health is a state of physical, emotional, mental,
+and social well-being in relation to sexuality.
+</p>
+
+<p>
+Sexuality is an integral part of personality, and its expression varies from person to person.
+</p>
+
+---
+
+<h3>TERMS RELATED TO SEXUAL HEALTH</h3>
+
+<h4>Gender (Sex)</h4>
+<p>Biological characteristics such as chromosomes, hormones, reproductive organs, and reproductive functions.</p>
+
+<h4>Gender Identity</h4>
+<p>An individual’s internal sense of being male, female, or another gender and how they perceive themselves.</p>
+
+---
+
+<h3>DIFFICULTIES WITH SEXUAL ORIENTATION</h3>
+<p>
+Some individuals may experience conflict between their sexual behavior and desires due to cultural,
+religious, or personal reasons. This may lead to distress and need for counseling.
+</p>
+
+<p>
+Homosexuality is not considered a mental disorder.
+</p>
+
+---
+
+<h3>HOMOSEXUALITY AND MENTAL HEALTH</h3>
+<p>
+LGBTQ+ individuals may have higher risks of mental health challenges, often linked to stigma,
+discrimination, and lack of acceptance.
+</p>
+
+---
+
+<h3>HOMOPHOBIA</h3>
+<p>
+Homophobia is an irrational fear or negative attitude toward homosexual individuals, which can
+negatively affect healthcare quality.
+</p>
+
+---
+
+<h3>SEXUAL DISORDERS (PARAPHILIAS)</h3>
+<p>
+Paraphilias involve intense sexual urges or behaviors toward unusual objects, situations, or individuals,
+often leading to distress or impairment.
+</p>
+
+---
+
+<h4>EXHIBITIONISTIC DISORDER</h4>
+<p>Exposure of genitals to unsuspecting strangers for sexual arousal.</p>
+
+<h4>FETISHISTIC DISORDER</h4>
+<p>Sexual arousal from non-living objects or body parts (excluding genitals).</p>
+
+<h4>FROTTEURISTIC DISORDER</h4>
+<p>Sexual arousal from non-consensual touching or rubbing against others.</p>
+
+<h4>PEDOPHILIC DISORDER</h4>
+<p>Sexual attraction to prepubescent children, causing distress or harmful behavior.</p>
+
+<h4>SEXUAL MASOCHISTIC DISORDER</h4>
+<p>Arousal from being humiliated, hurt, or suffering pain.</p>
+
+<h4>SEXUAL SADISTIC DISORDER</h4>
+<p>Arousal from inflicting physical or psychological suffering on others.</p>
+
+<h4>TRANSVESTIC DISORDER</h4>
+<p>Sexual arousal from cross-dressing.</p>
+
+<h4>VOYEURISTIC DISORDER</h4>
+<p>Sexual arousal from watching unsuspecting individuals in private activities.</p>
+
+---
+
+<h3>ROLE OF THE NURSE IN PARAPHILIC DISORDERS</h3>
+<ul>
+<li>Early identification and prevention</li>
+<li>Patient education and counseling</li>
+<li>Referral to specialists</li>
+<li>Support for behavioral modification</li>
+</ul>
+
+---
+
+<h3>SEXUAL DYSFUNCTION</h3>
+<p>
+Sexual dysfunction refers to difficulties in sexual response or satisfaction.
+It may affect desire, arousal, orgasm, or cause pain during intercourse.
+</p>
+
+---
+
+<h3>TYPES OF SEXUAL DYSFUNCTION</h3>
+<ul>
+<li>Desire disorders: lack of sexual interest</li>
+<li>Arousal disorders: difficulty becoming sexually excited</li>
+<li>Orgasm disorders: delayed or absent orgasm</li>
+<li>Pain disorders: discomfort during intercourse</li>
+</ul>
+
+---
+
+<h3>COMMON SEXUAL DISORDERS</h3>
+<ul>
+<li>Erectile dysfunction</li>
+<li>Premature ejaculation</li>
+<li>Female sexual arousal disorder</li>
+<li>Orgasmic disorder</li>
+<li>Genito-pelvic pain disorder</li>
+</ul>
+
+---
+
+<h3>GENDER DYSPHORIA</h3>
+<p>
+Gender dysphoria occurs when a person’s experienced gender does not match their assigned sex at birth,
+leading to distress and discomfort.
+</p>
+
+---
+
+<h3>NURSING ROLE IN SEXUAL HEALTH</h3>
+<ul>
+<li>Health education and awareness</li>
+<li>Early detection of disorders</li>
+<li>Psychological support</li>
+<li>Referral for specialized care</li>
+</ul>
+
+---
+
+<h3>CONCLUSION</h3>
+<p>
+Sexual health is an important part of overall well-being. Nurses play a key role in promoting healthy
+sexual development, preventing disorders, and supporting individuals with sexual health challenges
+through education, care, and empathy.
+</p>`,
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "observation-report-writing",
+      title: "Writing Observation Report",
+      content: "",
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "assessment-risk-management",
+      title: "Assessment and Risk Management in Psychiatry Clinics",
+      content: "",
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "personality-disorders",
+      title: "Individuals with Personality Disorders and Nursing Approach",
+      content: "",
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "psychiatric-rehabilitation",
+      title: "Psychiatric Rehabilitation and Nursing",
+      content: "",
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "substance-use-disorders",
+      title: "Substance Use Disorders and Nursing Approach",
+      content: "",
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "psychiatric-emergencies",
+      title: "Emergencies in Psychiatry and Drugs Used",
+      content: "",
+      media: [{ type: "video", src: "" }]
+    },
+
+    {
+      id: "sleep-disorders-psychiatry",
+      title: "Sleep Process and Sleep Disorders in Psychiatry",
+      content: "",
+      media: [{ type: "video", src: "" }]
+    }
+  ]
+},
+research: {
+title: "Research",
+image: "/images/research.jpg",
+sections:[
+  {
+    id: "introduction-to-nursing-research",
+    title: "Introduction to Nursing Research",
+    content: "Nursing research is a systematic inquiry used to develop evidence that improves nursing practice, patient outcomes, and healthcare systems. It forms the foundation of evidence-based nursing practice.",
+    media: []
+  },
+  {
+    id: "importance-of-research",
+    title: "Importance of Nursing Research",
+    content: "Explores how research improves patient care, strengthens clinical decision-making, and advances the nursing profession.",
+    media: []
+  },
+  {
+    id: "types-of-research",
+    title: "Types of Nursing Research",
+    content: "Includes quantitative, qualitative, and mixed-method research approaches used in healthcare studies.",
+    media: []
+  },
+  {
+    id: "research-process",
+    title: "Steps in the Research Process",
+    content: "Covers problem identification, literature review, hypothesis formulation, data collection, analysis, and interpretation.",
+    media: []
+  },
+  {
+    id: "research-problem",
+    title: "Research Problem and Questions",
+    content: "Focuses on identifying clear, relevant, and researchable nursing problems and formulating research questions.",
+    media: []
+  },
+  {
+    id: "literature-review",
+    title: "Literature Review",
+    content: "A critical analysis of existing studies to identify gaps and support research direction.",
+    media: []
+  },
+  {
+    id: "sampling-techniques",
+    title: "Sampling Techniques",
+    content: "Covers probability and non-probability sampling methods used in selecting study participants.",
+    media: []
+  },
+  {
+    id: "data-collection-methods",
+    title: "Data Collection Methods",
+    content: "Includes questionnaires, interviews, observation, and medical record reviews.",
+    media: []
+  },
+  {
+    id: "data-analysis",
+    title: "Data Analysis in Nursing Research",
+    content: "Explains how data is organized, interpreted, and presented using statistical or thematic methods.",
+    media: []
+  },
+  {
+    id: "research-ethics",
+    title: "Research Ethics in Nursing",
+    content: "Focuses on informed consent, confidentiality, beneficence, and protection of participants.",
+    media: []
+  },
+  {
+    id: "evidence-based-practice",
+    title: "Evidence-Based Nursing Practice",
+    content: "Integration of research evidence, clinical expertise, and patient preferences into nursing care.",
+    media: []
+  },
+  {
+    id: "research-proposal",
+    title: "Writing a Research Proposal",
+    content: "Structure and components of a nursing research proposal including objectives, methodology, and justification.",
+    media: []
+  }
+]
+},
 
 };
 
