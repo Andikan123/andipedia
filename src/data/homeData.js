@@ -1,19 +1,19 @@
 const homeCourses = [
-  { name: "Public Health", slug: "public-health", topics: 24 },
-  { name: "Pharmacology", slug: "pharmacology", topics: 18 },
-  { name: "Anatomy", slug: "anatomy", topics: 30 },
-  { name: "Gynecology", slug: "gynecology", topics: 12 },
-  { name: "First Aid", slug: "first-aid", topics: 20 },
-  { name: "Pathology", slug: "pathology", topics: 15 },
-  { name: "Microbiology", slug: "microbiology", topics: 10 },
-  { name: "Nursing Ethics", slug: "nursing-ethics", topics: 8 },
-  { name: "Nutrition", slug: "nutrition", topics: 8 },
-  { name: "Biostatistics", slug: "biostatistics", topics: 8 },
-  { name: "Pediatrics", slug: "pediatrics", topics: 12 },
-  { name: "Obstetrics", slug: "obstetrics", topics: 12 },
-  { name: "Geriatrics", slug: "geriatrics", topics: 12 },
-  { name: "Mental-Health", slug: "mentalHealth", topics: 12 },
-  { name: "Research", slug: "research", topics: 12 }
+  { name: "Public Health", slug: "public-health", topics: 24,image:"/images/public-health.jpg" },
+  { name: "Pharmacology", slug: "pharmacology", topics: 18 ,image:"/images/pharmacology.jpg"},
+  { name: "Anatomy", slug: "anatomy", topics: 30 ,image:"/images/anatomy.jpg"},
+  { name: "Gynecology", slug: "gynecology", topics: 12 ,image:"/images/gynecology.jpg"},
+  { name: "First Aid", slug: "first-aid", topics: 20 ,image:'/images/first-aid.jpg'},
+  { name: "Pathology", slug: "pathology", topics: 15 ,image:'/images/pathology.jpg'},
+  { name: "Microbiology", slug: "microbiology", topics: 10 ,image:'/images/microbiology.jpg'},
+  { name: "Nursing Ethics", slug: "nursing-ethics", topics: 8 ,image:'/images/nursing-ethics.jpg'},
+  { name: "Nutrition", slug: "nutrition", topics: 8 ,image:'/images/nutrition.jpg'},
+  { name: "Biostatistics", slug: "biostatistics", topics: 8 ,image:'/images/biostatistics.jpg'},
+  { name: "Pediatrics", slug: "pediatrics", topics: 12 ,image:'/images/pediatrics.jpg'},
+  { name: "Obstetrics", slug: "obstetrics", topics: 12 ,image:'/images/gynecology.jpg'},
+  { name: "Geriatrics", slug: "geriatrics", topics: 12 ,image:'/images/geriatrics.jpg'},
+  { name: "Mental-Health", slug: "mentalHealth", topics: 12 ,image:'/images/psychiatry.jpg'},
+  { name: "Research", slug: "research", topics: 12 ,image:'/images/research.jpg'}
 ];
 
 export default homeCourses;

@@ -1,17 +1,19 @@
-
 import homeCourses from "../data/homeData";
 import CourseBubble from "../components/CourseBubble";
 import SearchBar from "../components/SearchBar";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const isMobile = window.innerWidth < 640;
 
   const radius = isMobile ? 135 : 260;
+  const navigate = useNavigate();
 
  const trendingDiseases = [
   {
     id: 1,
     name: "Malaria",
+    slug: "malaria",
     image: "/images/malaria.jpg",
 
     description:
@@ -19,22 +21,17 @@ export default function Home() {
 
     category: "Infectious Disease",
 
-    tags: [
-      "Symptoms",
-      "Prevention",
-      "Treatment"
-    ],
+    tags: ["Symptoms", "Prevention", "Treatment"],
 
     updated: "Updated Today",
-
     severity: "High",
-
     color: "red",
   },
 
   {
     id: 2,
     name: "Tuberculosis",
+    slug: "tuberculosis",
     image: "/images/tuberculosis.jpg",
 
     description:
@@ -42,22 +39,17 @@ export default function Home() {
 
     category: "Respiratory Disease",
 
-    tags: [
-      "Diagnosis",
-      "Prevention",
-      "Medication"
-    ],
+    tags: ["Diagnosis", "Prevention", "Medication"],
 
     updated: "2 hours ago",
-
     severity: "Critical",
-
     color: "orange",
   },
 
   {
     id: 3,
     name: "Hypertension",
+    slug: "hypertension",
     image: "/images/hypertension.jpg",
 
     description:
@@ -65,22 +57,17 @@ export default function Home() {
 
     category: "Cardiovascular",
 
-    tags: [
-      "Lifestyle",
-      "Monitoring",
-      "Treatment"
-    ],
+    tags: ["Lifestyle", "Monitoring", "Treatment"],
 
     updated: "Updated Today",
-
     severity: "Moderate",
-
     color: "blue",
   },
 
   {
     id: 4,
     name: "Diabetes",
+    slug: "diabetes",
     image: "/images/diabetes.jpg",
 
     description:
@@ -88,22 +75,17 @@ export default function Home() {
 
     category: "Endocrine Disorder",
 
-    tags: [
-      "Insulin",
-      "Diet",
-      "Monitoring"
-    ],
+    tags: ["Insulin", "Diet", "Monitoring"],
 
     updated: "5 hours ago",
-
     severity: "High",
-
     color: "purple",
   },
 
   {
     id: 5,
     name: "Meningitis",
+    slug: "meningitis",
     image: "/images/meningitis.jpg",
 
     description:
@@ -111,22 +93,17 @@ export default function Home() {
 
     category: "Neurological",
 
-    tags: [
-      "Emergency",
-      "Vaccination",
-      "Treatment"
-    ],
+    tags: ["Emergency", "Vaccination", "Treatment"],
 
     updated: "1 day ago",
-
     severity: "Critical",
-
     color: "pink",
   },
 
   {
     id: 6,
     name: "Asthma",
+    slug: "asthma",
     image: "/images/asthma.jpg",
 
     description:
@@ -134,19 +111,14 @@ export default function Home() {
 
     category: "Chronic Disease",
 
-    tags: [
-      "Inhalers",
-      "Triggers",
-      "Management"
-    ],
+    tags: ["Inhalers", "Triggers", "Management"],
 
     updated: "Updated Today",
-
     severity: "Moderate",
-
     color: "green",
   },
 ];
+
 
   const healthNews = [
     {
@@ -369,45 +341,426 @@ export default function Home() {
 
 </section>
         {/* HERO SECTION */}
-        <section className="relative w-full max-w-175 h-105 sm:h-162.5 mt-14">
-          {/* GLOBE */}
-          <img
-            src="/images/globe.jpg"
-            alt="globe"
-            className="
-            absolute top-1/2 left-1/2
-            w-52 h-52 sm:w-96 sm:h-96
-            object-cover rounded-full
-            shadow-2xl ring-8 ring-white
-            -translate-x-1/2 -translate-y-1/2
-            opacity-95
-            animate-[spin_40s_linear_infinite]
-            "
-          />
+        {/* MEDICAL FACULTIES SECTION */}
+<section className="relative w-full max-w-7xl mt-20 px-4">
 
-          {/* COURSE BUBBLES */}
-          {homeCourses.map((course, index) => {
-            const angle =
-              (index / homeCourses.length) * 2 * Math.PI;
+  {/* HEADER */}
+  <div className="text-center mb-16">
 
-            const x = Math.cos(angle) * radius;
-            const y = Math.sin(angle) * radius;
+    <p className="
+      uppercase
+      tracking-[0.35em]
+      text-sm
+      text-blue-600
+      font-semibold
+    ">
+      Explore Faculties
+    </p>
 
-            return (
-              <div
-                key={index}
-                className="absolute text-center scale-90 sm:scale-100 transition hover:scale-110"
-                style={{
-                  top: "50%",
-                  left: "50%",
-                  transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`,
-                }}
-              >
-                <CourseBubble course={course} />
-              </div>
-            );
-          })}
-        </section>
+    <h2 className="
+      text-4xl sm:text-6xl
+      font-bold
+      mt-5
+      leading-tight
+    ">
+      Learn Across
+      <span className="text-blue-600">
+        {" "}Healthcare Fields
+      </span>
+    </h2>
+
+    <p className="
+      text-gray-600
+      text-lg
+      leading-relaxed
+      mt-5
+      max-w-3xl
+      mx-auto
+    ">
+      Explore structured learning communities for
+      Nursing, Medicine and Dentistry with organized
+      topics, clinical subjects and educational resources.
+    </p>
+
+  </div>
+
+  {/* MAIN GRID */}
+  <div className="grid lg:grid-cols-3 gap-8">
+
+    {/* NURSING */}
+    <div className="
+      group
+      relative
+      overflow-hidden
+      rounded-4xl
+      bg-linear-to-br
+      from-blue-950
+      via-slate-900
+      to-blue-900
+      p-8
+      text-white
+      shadow-2xl
+      hover:-translate-y-2
+      transition-all duration-500
+    ">
+
+      {/* GLOW */}
+      <div className="
+        absolute
+        -top-20
+        -right-20
+        w-72 h-72
+        bg-blue-400/20
+        rounded-full
+        blur-3xl
+      "></div>
+
+      <div className="relative z-10">
+
+        <div className="
+          w-18 h-18
+          rounded-3xl
+          bg-white/10
+          border border-white/10
+          backdrop-blur-xl
+          flex items-center justify-center
+          text-4xl
+        ">
+          🩺
+        </div>
+
+        <p className="
+          mt-8
+          uppercase
+          tracking-[0.25em]
+          text-sm
+          text-blue-300
+          font-semibold
+        ">
+          Nursing
+        </p>
+
+        <h3 className="
+          text-4xl
+          font-bold
+          mt-4
+          leading-tight
+        ">
+          Nursing Sections
+        </h3>
+
+        <p className="
+          text-blue-100/80
+          mt-5
+          leading-relaxed
+        ">
+          Explore nursing education grouped into
+          sections, clinical learning areas and
+          practical healthcare disciplines.
+        </p>
+
+        {/* SECTIONS */}
+        <div className="grid grid-cols-2 gap-3 mt-8">
+
+          {[
+            "Section 1",
+            "Section 2",
+            "Section 3",
+            "Section 4",
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="
+                bg-white/10
+                border border-white/10
+                backdrop-blur-md
+                rounded-2xl
+                px-4 py-4
+                text-sm
+                font-medium
+                hover:bg-white/20
+                transition
+                cursor-pointer
+              "
+              onClick={() => navigate(`/nursing/${item.toLowerCase().replace(/\s/g, "-")}`)}
+            >
+              {item}
+            </div>
+          ))}
+
+        </div>
+
+        <button
+          className="
+            mt-10
+            w-full
+            bg-white
+            hover:bg-blue-100
+            text-slate-900
+            font-semibold
+            py-4
+            rounded-2xl
+            transition
+          "
+          onClick={() => navigate("/nursing")}
+        >
+          Explore Nursing →
+        </button>
+
+      </div>
+
+    </div>
+
+    {/* MEDICINE */}
+    <div className="
+      group
+      relative
+      overflow-hidden
+      rounded-4xl
+      bg-linear-to-br
+      from-emerald-950
+      via-green-900
+      to-emerald-900
+      p-8
+      text-white
+      shadow-2xl
+      hover:-translate-y-2
+      transition-all duration-500
+    ">
+
+      {/* GLOW */}
+      <div className="
+        absolute
+        -bottom-20
+        -left-20
+        w-72 h-72
+        bg-green-400/20
+        rounded-full
+        blur-3xl
+      "></div>
+
+      <div className="relative z-10">
+
+        <div className="
+          w-18 h-18
+          rounded-3xl
+          bg-white/10
+          border border-white/10
+          backdrop-blur-xl
+          flex items-center justify-center
+          text-4xl
+        ">
+          🧬
+        </div>
+
+        <p className="
+          mt-8
+          uppercase
+          tracking-[0.25em]
+          text-sm
+          text-green-300
+          font-semibold
+        ">
+          Medicine
+        </p>
+
+        <h3 className="
+          text-4xl
+          font-bold
+          mt-4
+          leading-tight
+        ">
+          Medical Communities
+        </h3>
+
+        <p className="
+          text-green-100/80
+          mt-5
+          leading-relaxed
+        ">
+          Join communities focused on internal medicine,
+          surgery, pathology, pharmacology and advanced
+          medical sciences.
+        </p>
+
+        {/* COMMUNITIES */}
+        <div className="space-y-3 mt-8">
+
+          {[
+            "Internal Medicine",
+            "Surgery",
+            "Pathology",
+            "Pharmacology",
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="
+                bg-white/10
+                border border-white/10
+                backdrop-blur-md
+                rounded-2xl
+                px-5 py-4
+                text-sm
+                font-medium
+                hover:bg-white/20
+                transition
+                cursor-pointer
+              "
+              onClick={() => navigate(`/medicine/${item.toLowerCase().replace(/\s/g, "-")}`)}
+            >
+              {item}
+            </div>
+          ))}
+
+        </div>
+
+        <button
+          className="
+            mt-10
+            w-full
+            bg-white
+            hover:bg-green-100
+            text-emerald-950
+            font-semibold
+            py-4
+            rounded-2xl
+            transition
+          "
+          onClick={() => navigate("/medicine")}
+        >
+          Explore Medicine →
+        </button>
+
+      </div>
+
+    </div>
+
+    {/* DENTISTRY */}
+    <div className="
+      group
+      relative
+      overflow-hidden
+      rounded-4xl
+      bg-linear-to-br
+      from-slate-900
+      via-purple-950
+      to-indigo-950
+      p-8
+      text-white
+      shadow-2xl
+      hover:-translate-y-2
+      transition-all duration-500
+    ">
+
+      {/* GLOW */}
+      <div className="
+        absolute
+        top-0
+        right-0
+        w-72 h-72
+        bg-purple-400/20
+        rounded-full
+        blur-3xl
+      "></div>
+
+      <div className="relative z-10">
+
+        <div className="
+          w-18 h-18
+          rounded-3xl
+          bg-white/10
+          border border-white/10
+          backdrop-blur-xl
+          flex items-center justify-center
+          text-4xl
+        ">
+          🦷
+        </div>
+
+        <p className="
+          mt-8
+          uppercase
+          tracking-[0.25em]
+          text-sm
+          text-purple-300
+          font-semibold
+        ">
+          Dentistry
+        </p>
+
+        <h3 className="
+          text-4xl
+          font-bold
+          mt-4
+          leading-tight
+        ">
+          Dental Sections
+        </h3>
+
+        <p className="
+          text-purple-100/80
+          mt-5
+          leading-relaxed
+        ">
+          Discover oral health sciences, dental anatomy,
+          prosthodontics and modern dentistry education.
+        </p>
+
+        {/* DENTAL AREAS */}
+        <div className="grid grid-cols-2 gap-3 mt-8">
+
+          {[
+            "Oral Anatomy",
+            "Orthodontics",
+            "Prosthodontics",
+            "Dental Surgery",
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="
+                bg-white/10
+                border border-white/10
+                backdrop-blur-md
+                rounded-2xl
+                px-4 py-4
+                text-sm
+                font-medium
+                hover:bg-white/20
+                transition
+                cursor-pointer
+              "
+              onClick={() => navigate(`/dentistry/${item.toLowerCase().replace(/\s/g, "-")}`)}
+            >
+              {item}
+            </div>
+          ))}
+
+        </div>
+
+        <button
+          className="
+            mt-10
+            w-full
+            bg-white
+            hover:bg-purple-100
+            text-purple-950
+            font-semibold
+            py-4
+            rounded-2xl
+            transition
+          "
+          onClick={() => navigate("/dentistry")}
+        >
+          Explore Dentistry →
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
         {/* STATS */}
         <section className="w-full max-w-6xl px-4 mt-20">
@@ -445,66 +798,15 @@ export default function Home() {
         </section>
 
         {/* TRENDING DISEASES */}
-        <section className="w-full max-w-7xl px-4 mt-28">
-
-  {/* HEADER */}
-  <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
-
-    <div>
-      <p className="
-        uppercase tracking-[0.3em]
-        text-sm
-        text-blue-600
-        font-semibold
-      ">
-        Explore
-      </p>
-
-      <h2 className="
-        text-4xl sm:text-5xl
-        font-bold
-        mt-3
-        leading-tight
-      ">
-        Trending Diseases
-      </h2>
-
-      <p className="
-        text-gray-600
-        mt-4
-        max-w-2xl
-        text-lg
-        leading-relaxed
-      ">
-        Discover the most searched and discussed
-        medical conditions with detailed explanations,
-        symptoms, prevention, and treatment options.
-      </p>
-    </div>
-
-    <button className="
-      self-start md:self-auto
-      bg-slate-900
-      hover:bg-slate-800
-      text-white
-      px-6 py-3
-      rounded-2xl
-      transition
-      shadow-lg
-    ">
-      Explore All
-    </button>
-
-  </div>
-
-  {/* DISEASE GRID */}
-  {/* DISEASE GRID */}
+      {/* DISEASE GRID */}
 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-  {trendingDiseases.map((disease) => (
+  {/* FIRST 6 DISEASES */}
+  {trendingDiseases.slice(0, 6).map((disease) => (
 
     <div
       key={disease.id}
+      onClick={() => navigate(`/disease/${disease.slug}`)}
       className="
         group
         relative
@@ -516,6 +818,7 @@ export default function Home() {
         hover:shadow-2xl
         transition-all duration-500
         hover:-translate-y-2
+        cursor-pointer
       "
     >
 
@@ -535,38 +838,44 @@ export default function Home() {
         />
 
         {/* OVERLAY */}
-        <div className="
-          absolute inset-0
-          bg-gradient-to-t
-          from-black/80
-          via-black/20
-          to-transparent
-        "></div>
+        <div
+          className="
+            absolute inset-0
+            bg-linear-to-t
+            from-black/80
+            via-black/20
+            to-transparent
+          "
+        ></div>
 
         {/* BADGE */}
-        <div className="
-          absolute top-5 left-5
-          bg-red-500/90
-          backdrop-blur-md
-          text-white
-          text-xs
-          font-semibold
-          px-4 py-2
-          rounded-full
-          shadow-lg
-        ">
+        <div
+          className="
+            absolute top-5 left-5
+            bg-red-500/90
+            backdrop-blur-md
+            text-white
+            text-xs
+            font-semibold
+            px-4 py-2
+            rounded-full
+            shadow-lg
+          "
+        >
           🔥 Trending
         </div>
 
         {/* TITLE */}
         <div className="absolute bottom-5 left-5 right-5">
 
-          <h3 className="
-            text-white
-            text-3xl
-            font-bold
-            leading-tight
-          ">
+          <h3
+            className="
+              text-white
+              text-3xl
+              font-bold
+              leading-tight
+            "
+          >
             {disease.name}
           </h3>
 
@@ -599,30 +908,36 @@ export default function Home() {
         </div>
 
         {/* DESCRIPTION */}
-        <p className="
-          text-gray-600
-          leading-relaxed
-          text-[15px]
-        ">
+        <p
+          className="
+            text-gray-600
+            leading-relaxed
+            text-[15px]
+          "
+        >
           {disease.description}
         </p>
 
         {/* FOOTER */}
-        <div className="
-          flex items-center justify-between
-          mt-8
-          pt-6
-          border-t border-gray-100
-        ">
+        <div
+          className="
+            flex items-center justify-between
+            mt-8
+            pt-6
+            border-t border-gray-100
+          "
+        >
 
           <div className="flex items-center gap-2">
 
-            <div className="
-              w-2 h-2
-              bg-green-500
-              rounded-full
-              animate-pulse
-            "></div>
+            <div
+              className="
+                w-2 h-2
+                bg-green-500
+                rounded-full
+                animate-pulse
+              "
+            ></div>
 
             <p className="text-sm text-gray-500">
               {disease.updated}
@@ -630,13 +945,19 @@ export default function Home() {
 
           </div>
 
-          <button className="
-            flex items-center gap-2
-            text-slate-900
-            font-semibold
-            group-hover:gap-4
-            transition-all
-          ">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate(`/disease/${disease.slug}`);
+            }}
+            className="
+              flex items-center gap-2
+              text-slate-900
+              font-semibold
+              group-hover:gap-4
+              transition-all
+            "
+          >
             Explore
             <span>→</span>
           </button>
@@ -649,10 +970,71 @@ export default function Home() {
 
   ))}
 
+  {/* MORE CARD */}
+  <div
+    onClick={() => navigate("/diseases")}
+    className="
+      group
+      cursor-pointer
+      rounded-3xl
+      border-2 border-dashed border-gray-300
+      bg-white/60
+      backdrop-blur-sm
+      flex flex-col
+      items-center
+      justify-center
+      min-h-112.5
+      hover:border-blue-500
+      hover:bg-blue-50
+      transition-all duration-500
+    "
+  >
+
+    <div className="
+      text-7xl
+      font-bold
+      text-gray-400
+      group-hover:text-blue-600
+      transition
+    ">
+      ...
+    </div>
+
+    <h3 className="
+      mt-6
+      text-2xl
+      font-bold
+      text-gray-800
+    ">
+      Explore All Diseases
+    </h3>
+
+    <p className="
+      text-gray-500
+      mt-3
+      text-center
+      max-w-xs
+      leading-relaxed
+    ">
+      Browse the complete medical encyclopedia
+      including symptoms, prevention and treatment.
+    </p>
+
+    <button className="
+      mt-8
+      bg-slate-900
+      text-white
+      px-6 py-3
+      rounded-2xl
+      hover:bg-blue-600
+      transition
+    ">
+      View All →
+    </button>
+
+  </div>
+
 </div>
-
-</section>
-
         {/* FUN FACT */}
         {/* FUN MEDICAL FACT */}
 <section className="w-full max-w-7xl px-4 mt-32">
@@ -661,7 +1043,7 @@ export default function Home() {
     relative
     overflow-hidden
     rounded-[2.5rem]
-    bg-gradient-to-br
+    bg-linear-to-br
     from-cyan-500
     via-blue-600
     to-indigo-900
@@ -880,7 +1262,7 @@ export default function Home() {
         <div className="
           relative
           overflow-hidden
-          rounded-[2rem]
+          rounded-4xl
           border border-white/10
           bg-white/10
           backdrop-blur-xl
@@ -893,7 +1275,7 @@ export default function Home() {
             alt="Stomach"
             className="
               w-full
-              h-[500px]
+              h-125
               object-cover
             "
           />
@@ -901,7 +1283,7 @@ export default function Home() {
           {/* OVERLAY */}
           <div className="
             absolute bottom-0 left-0 right-0
-            bg-gradient-to-t
+            bg-linear-to-t
             from-black/80
             via-black/20
             to-transparent
