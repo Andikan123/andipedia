@@ -55,6 +55,7 @@ export default function SearchBar() {
               focus:outline-none
               focus:border-blue-500
               shadow-sm
+              text-gray-800
             "
           />
 

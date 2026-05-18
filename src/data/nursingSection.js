@@ -1,29 +1,35 @@
 const nursingSections = {
   "section-1": [
-    "public-health",
+    "physiology",
     "pharmacology",
     "anatomy",
     "nutrition",
-    "research",
+    "histology",
+    "biochemistry",
+    "pathiology",
+    "microbiology",
   ],
 
   "section-2": [
-    "pathology",
-    "microbiology",
-    "mentalHealth",
-    "geriatrics",
+    "nursing-ethics",
+    "surgical-nursing",
+    "internal-medicine",
   ],
 
   "section-3": [
     "pediatrics",
     "obstetrics",
     "gynecology",
+     "first-aid",
+     "mentalHealth", 
+     "public-health"
   ],
 
   "section-4": [
-    "first-aid",
-    "nursing-ethics",
+   
+    "research",
     "biostatistics",
+    "geriatrics"
   ],
 };
 

@@ -9309,6 +9309,78 @@ media: [
 }
 ]
 },
+physiology: {
+title: "Physiology",
+image: "/images/nutrition.jpg",
+sections: [
+{
+id: "basic-nutrition",
+title: "Basic Nutrition",
+content: "Nutrition involves nutrients needed for health and growth...",
+
+media: [
+{ type: "image", src: "/images/food-pyramid.jpg" }
+]
+},
+{
+id: "balanced-diet",
+title: "Balanced Diet",
+content: "A balanced diet contains carbohydrates, proteins, fats, vitamins and minerals...",
+
+media: [
+{ type: "video", src: "https://www.youtube.com/embed/ppppp" }
+]
+}
+]
+},
+histology: {
+title: "Histology",
+image: "/images/nutrition.jpg",
+sections: [
+{
+id: "basic-nutrition",
+title: "Basic Nutrition",
+content: "Nutrition involves nutrients needed for health and growth...",
+
+media: [
+{ type: "image", src: "/images/food-pyramid.jpg" }
+]
+},
+{
+id: "balanced-diet",
+title: "Balanced Diet",
+content: "A balanced diet contains carbohydrates, proteins, fats, vitamins and minerals...",
+
+media: [
+{ type: "video", src: "https://www.youtube.com/embed/ppppp" }
+]
+}
+]
+},
+"internal-medicine": {
+title: "Internal Medicine",
+image: "/images/nutrition.jpg",
+sections: [
+{
+id: "basic-nutrition",
+title: "Basic Nutrition",
+content: "Nutrition involves nutrients needed for health and growth...",
+
+media: [
+{ type: "image", src: "/images/food-pyramid.jpg" }
+]
+},
+{
+id: "balanced-diet",
+title: "Balanced Diet",
+content: "A balanced diet contains carbohydrates, proteins, fats, vitamins and minerals...",
+
+media: [
+{ type: "video", src: "https://www.youtube.com/embed/ppppp" }
+]
+}
+]
+},
 geriatrics: {
 title: "Geriatrics",
 image: "/images/geriatrics.jpg",

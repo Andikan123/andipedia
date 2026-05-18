@@ -136,7 +136,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-[#f6f4ef] text-gray-900">
+    <div className="relative min-h-screen overflow-x-hidden bg-gradient-to-b from-[#031d53] via-[#0f172a] to-[#111827] text-white">
       {/* BACKGROUND GLOW */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08),transparent_35%)]"></div>
 

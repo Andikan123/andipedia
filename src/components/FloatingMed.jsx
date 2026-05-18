@@ -16,7 +16,7 @@ export default function FloatingMed() {
 
   return (
     <div
-      className="fixed text-3xl cursor-pointer transition-all duration-[2000ms] ease-in-out z-50"
+      className="fixed text-3xl cursor-pointer transition-all duration-2000 ease-in-out z-50"
       style={{
         transform: `translate(${position.x}px, ${position.y}px)`
       }}
