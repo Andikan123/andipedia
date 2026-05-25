@@ -2,6 +2,8 @@ import homeCourses from "../data/homeData";
 import CourseBubble from "../components/CourseBubble";
 import SearchBar from "../components/SearchBar";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import trendingDiseases from "../data/trendingDiseases";
 
 export default function Home() {
   const isMobile = window.innerWidth < 640;
@@ -134,9 +136,32 @@ export default function Home() {
       image: "/images/nutritionnews.jpg",
     },
   ];
+  const allDiseases = trendingDiseases;
+const [currentSlide, setCurrentSlide] = useState(0);
+const [fade, setFade] = useState(true);
+useEffect(() => {
+  const interval = setInterval(() => {
+
+    setFade(false);
+
+    setTimeout(() => {
+      setCurrentSlide((prev) =>
+        prev === allDiseases.length - 1 ? 0 : prev + 1
+      );
+
+      setFade(true);
+
+    }, 500);
+
+  }, 8000);
+
+  return () => clearInterval(interval);
+
+}, [allDiseases.length]);
+const disease = allDiseases[currentSlide];
 
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-gradient-to-b from-[#031d53] via-[#0f172a] to-[#111827] text-white">
+    <div className="relative min-h-screen overflow-x-hidden bg-linear-to-b from-[#031d53] via-[#0f172a] to-[#111827] text-white">
       {/* BACKGROUND GLOW */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08),transparent_35%)]"></div>
 
@@ -168,17 +193,32 @@ export default function Home() {
         <section className="w-full max-w-6xl mt-12 px-4">
 
   <div className="
-    relative overflow-hidden
-    rounded-4xl
-    bg-linear-to-br from-slate-900 via-blue-950 to-slate-900
-    text-white
-    shadow-2xl
-  ">
+  relative
+  overflow-hidden
+  rounded-[2.5rem]
+
+  bg-linear-to-br
+  from-[#020617]
+  via-[#07152e]
+  to-[#0f172a]
+
+  border border-white/10
+
+  shadow-[0_20px_80px_rgba(0,0,0,0.45)]
+
+  backdrop-blur-xl
+
+  text-white
+">
 
     {/* background glow */}
     <div className="absolute -top-20 -right-20 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl"></div>
 
-    <div className="grid lg:grid-cols-2 gap-10 items-center p-8 sm:p-12">
+    <div className={`
+  grid lg:grid-cols-2 gap-10 items-center p-8 sm:p-12
+  transition-all duration-500 ease-in-out
+  ${fade ? "opacity-100" : "opacity-0"}
+`}>
 
       {/* LEFT CONTENT */}
       <div className="relative z-10">
@@ -203,9 +243,9 @@ export default function Home() {
           leading-tight
           mt-6
         ">
-          Disease of the Day:
+          Disease of the Day: 
           <span className="text-cyan-300">
-            {" "}Hypertension
+            {disease.name}
           </span>
         </h2>
 
@@ -264,16 +304,11 @@ export default function Home() {
         ">
 
           <p className="text-cyan-300 font-semibold">
-            Medical Fact
+            Description
           </p>
 
           <p className="text-slate-200 mt-3 leading-relaxed">
-            Your heart beats about
-            <span className="font-bold text-white">
-              {" "}100,000 times
-            </span>
-            {" "}every day to circulate blood
-            throughout the body.
+            {disease.description}
           </p>
 
         </div>
@@ -294,24 +329,26 @@ export default function Home() {
 
         {/* image card */}
         <div className="
-          relative
-          bg-white/10
-          border border-white/10
-          backdrop-blur-xl
-          rounded-4xl
-          overflow-hidden
-          shadow-2xl
-          max-w-md
-        ">
+  relative
+  bg-white/10
+  border border-white/10
+  backdrop-blur-xl
+  rounded-4xl
+  overflow-hidden
+  shadow-2xl
+  max-w-md
+  transition-all duration-1000 ease-in-out
+">
 
           <img
-            src="/images/hypertension.jpg"
+            src={disease.image}
             alt="Hypertension"
-            className="
-              w-full
-              h-105
-              object-cover
-            "
+           className="
+  w-full
+  h-105
+  object-cover
+  transition-all duration-1000 ease-in-out
+"
           />
 
           {/* overlay */}
@@ -326,7 +363,7 @@ export default function Home() {
             </p>
 
             <h3 className="text-2xl font-bold mt-2">
-              Understanding High Blood Pressure
+              {disease.name}
             </h3>
 
           </div>
@@ -1624,265 +1661,116 @@ export default function Home() {
         {/* DAILY HEALTH TIP */}
         {/* DAILY HEALTH TIP */}
 <section className="w-full max-w-7xl px-4 mt-32">
-
   <div className="
     relative
     overflow-hidden
-    rounded-[2.5rem]
-    bg-linear-to-br
-    from-emerald-950
-    via-green-900
-    to-emerald-950
-    shadow-2xl
+    rounded-[2.8rem]
+    border border-white/10
+    bg-linear-to-br from-[#060b14] via-[#0a1220] to-[#050814]
+    shadow-[0_30px_100px_rgba(0,0,0,0.6)]
   ">
 
-    {/* BACKGROUND EFFECTS */}
-    <div className="
-      absolute
-      -top-20
-      -right-20
-      w-80 h-80
-      bg-green-400/20
-      rounded-full
-      blur-3xl
-    "></div>
-
-    <div className="
-      absolute
-      bottom-0
-      left-0
-      w-72 h-72
-      bg-emerald-300/10
-      rounded-full
-      blur-3xl
-    "></div>
+    {/* soft moving glow */}
+    <div className="absolute top-0 left-0 w-125 h-125 bg-blue-500/10 blur-[120px] animate-pulse"></div>
+    <div className="absolute bottom-0 right-0 w-100 h-100 bg-emerald-400/10 blur-[120px]"></div>
 
     {/* CONTENT */}
-    <div className="
-      relative z-10
-      grid lg:grid-cols-2
-      gap-12
-      items-center
-      p-8 sm:p-12 lg:p-16
-    ">
+    <div className="relative z-10 grid lg:grid-cols-2 gap-16 p-10 sm:p-14 lg:p-20">
 
-      {/* LEFT SIDE */}
-      <div>
+      {/* LEFT — STACKED FLOW */}
+      <div className="space-y-8">
 
-        {/* BADGE */}
-        <div className="
-          inline-flex items-center gap-3
-          bg-white/10
-          border border-white/10
-          backdrop-blur-xl
-          px-5 py-3
-          rounded-full
-        ">
-
-          <div className="
-            w-3 h-3
-            bg-green-400
-            rounded-full
-            animate-pulse
-          "></div>
-
-          <p className="
-            uppercase
-            tracking-[0.25em]
-            text-xs
-            text-green-200
-            font-semibold
-          ">
-            Daily Health Tip
+        {/* badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+          <p className="text-xs tracking-widest text-green-300 uppercase">
+            Daily Health Insight
           </p>
-
         </div>
 
-        {/* TITLE */}
-        <h2 className="
-          text-4xl sm:text-5xl
-          font-bold
-          text-white
-          leading-tight
-          mt-7
-        ">
-          Drink enough water
-          throughout the day.
+        {/* title */}
+        <h2 className="text-4xl sm:text-6xl font-bold text-white leading-tight">
+          Hydration is not optional,
+          <span className="text-green-300"> it’s survival.</span>
         </h2>
 
-        {/* DESCRIPTION */}
-        <p className="
-          text-green-100/90
-          text-lg
-          leading-relaxed
-          mt-6
-          max-w-2xl
-        ">
-          Proper hydration helps regulate body temperature,
-          improve digestion, support circulation and maintain
-          healthy brain function throughout the day.
+        {/* description */}
+        <p className="text-white/70 text-lg leading-relaxed max-w-xl">
+          Your body depends on water for energy, focus, temperature control and cellular function.
+          Even mild dehydration affects performance.
         </p>
 
-        {/* STATS */}
-        <div className="
-          flex flex-wrap gap-4
-          mt-10
-        ">
+        {/* floating stat cards */}
+        <div className="grid grid-cols-3 gap-4 pt-4">
 
-          <div className="
-            bg-white/10
-            border border-white/10
-            backdrop-blur-md
-            px-5 py-4
-            rounded-2xl
-          ">
-            <p className="text-2xl font-bold text-white">
-              60%
-            </p>
-
-            <p className="text-sm text-green-100">
-              Body Water
-            </p>
+          <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <p className="text-xl font-bold text-white">60%</p>
+            <p className="text-xs text-white/60">Body Water</p>
           </div>
 
-          <div className="
-            bg-white/10
-            border border-white/10
-            backdrop-blur-md
-            px-5 py-4
-            rounded-2xl
-          ">
-            <p className="text-2xl font-bold text-white">
-              8+
-            </p>
-
-            <p className="text-sm text-green-100">
-              Cups Daily
-            </p>
+          <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <p className="text-xl font-bold text-white">8+</p>
+            <p className="text-xs text-white/60">Cups Daily</p>
           </div>
 
-          <div className="
-            bg-white/10
-            border border-white/10
-            backdrop-blur-md
-            px-5 py-4
-            rounded-2xl
-          ">
-            <p className="text-2xl font-bold text-white">
-              24h
-            </p>
-
-            <p className="text-sm text-green-100">
-              Hydration Cycle
-            </p>
+          <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <p className="text-xl font-bold text-white">24h</p>
+            <p className="text-xs text-white/60">Cycle</p>
           </div>
 
         </div>
 
-        {/* BUTTON */}
-        <button className="
-          mt-10
-          bg-white
-          hover:bg-green-100
-          text-emerald-950
-          font-semibold
-          px-7 py-4
-          rounded-2xl
-          transition
-          shadow-xl
-        ">
+        {/* CTA */}
+        <button className="px-6 py-3 rounded-2xl bg-linear-to-r from-green-400 to-emerald-500 text-black font-semibold hover:scale-105 transition">
           Explore Wellness →
         </button>
 
       </div>
 
-      {/* RIGHT SIDE IMAGE */}
-      <div className="
-        relative
-        flex
-        justify-center
-      ">
+      {/* RIGHT — LAYERED VISUAL */}
+      <div className="relative">
 
-        {/* GLOW */}
-        <div className="
-          absolute
-          w-80 h-80
-          bg-green-400/20
-          rounded-full
-          blur-3xl
-        "></div>
-
-        {/* IMAGE CARD */}
-        <div className="
-          relative
-          overflow-hidden
-          rounded-4xl
-          border border-white/10
-          bg-white/10
-          backdrop-blur-xl
-          shadow-2xl
-          max-w-md
-        ">
-
+        {/* main image */}
+        <div className="relative rounded-4xl overflow-hidden shadow-2xl">
           <img
             src="/images/water.jpg"
-            alt="Hydration"
-            className="
-              w-full
-              h-120
-              object-cover
-            "
+            className="w-full h-130 object-cover scale-105 hover:scale-110 transition duration-1000"
           />
 
-          {/* OVERLAY */}
-          <div className="
-            absolute bottom-0 left-0 right-0
-            bg-linear-to-t
-            from-black/80
-            via-black/20
-            to-transparent
-            p-7
-          ">
+          {/* gradient overlay */}
+          <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/10 to-transparent"></div>
 
-            <p className="
-              uppercase
-              tracking-widest
-              text-green-300
-              text-xs
-              font-semibold
-            ">
+          {/* bottom text */}
+          <div className="absolute bottom-0 p-6">
+            <p className="text-green-300 text-xs uppercase tracking-widest">
               Wellness Focus
             </p>
-
-            <h3 className="
-              text-white
-              text-2xl
-              font-bold
-              mt-3
-            ">
-              Hydration & Healthy Living
+            <h3 className="text-white text-2xl font-bold mt-2">
+              Hydration & Human Performance
             </h3>
-
-            <p className="
-              text-gray-300
-              text-sm
-              mt-3
-              leading-relaxed
-            ">
-              Simple daily habits can improve
-              long-term health and wellbeing.
-            </p>
-
           </div>
+        </div>
 
+        {/* floating card 1 */}
+        <div className="absolute -top-6 -left-6 bg-white/10 backdrop-blur-xl border border-white/10 rounded-2xl p-4 shadow-xl">
+          <p className="text-xs text-green-300">Tip</p>
+          <p className="text-white text-sm font-semibold">
+            Drink before you feel thirsty
+          </p>
+        </div>
+
+        {/* floating card 2 */}
+        <div className="absolute -bottom-6 -right-6 bg-white/10 backdrop-blur-xl border border-white/10 rounded-2xl p-4 shadow-xl">
+          <p className="text-xs text-blue-300">Fact</p>
+          <p className="text-white text-sm font-semibold">
+            Brain is 75% water
+          </p>
         </div>
 
       </div>
 
     </div>
-
   </div>
-
 </section>
 
         {/* FOOTER */}

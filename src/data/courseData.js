@@ -9311,51 +9311,1398 @@ media: [
 },
 physiology: {
 title: "Physiology",
-image: "/images/nutrition.jpg",
+image: "/images/physiology.jpg",
 sections: [
-{
-id: "basic-nutrition",
-title: "Basic Nutrition",
-content: "Nutrition involves nutrients needed for health and growth...",
 
-media: [
-{ type: "image", src: "/images/food-pyramid.jpg" }
-]
-},
-{
-id: "balanced-diet",
-title: "Balanced Diet",
-content: "A balanced diet contains carbohydrates, proteins, fats, vitamins and minerals...",
+    // INTRODUCTION
+    {
+      id: "introduction-to-physiology",
+      title: "Introduction to Physiology",
+      content: `
+<div class="max-w-4xl mx-auto px-6 py-10 text-slate-700 leading-8">
 
-media: [
-{ type: "video", src: "https://www.youtube.com/embed/ppppp" }
-]
-}
-]
+<h1 class="text-4xl font-bold text-slate-900 border-b pb-4 mb-8">
+Introduction to Physiology
+</h1>
+
+<p class="mb-8">
+Physiology is the branch of science that studies how the human body functions.
+It explains the normal processes and mechanisms that occur within living organisms
+to maintain life and health.
+In nursing and medicine, physiology helps healthcare professionals understand
+how body systems work together and how diseases affect normal body function.
+</p>
+
+<p class="mb-8">
+The study of physiology is essential in nursing because nurses care for patients
+whose body functions may be altered by illness, injury, or treatment.
+Understanding physiology allows nurses to interpret signs and symptoms,
+monitor patient conditions, and provide safe and effective care.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mb-6">
+1. Definition of Physiology
+</h2>
+
+<p>
+Physiology is the scientific study of the functions of living organisms
+and their parts.
+It focuses on how cells, tissues, organs, and body systems perform their activities
+to sustain life.
+</p>
+
+<p>
+Human physiology specifically studies the functioning of the human body,
+including processes such as breathing, circulation, digestion,
+movement, reproduction, and regulation of body temperature.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+2. Relationship Between Anatomy and Physiology
+</h2>
+
+<p>
+Anatomy and physiology are closely related sciences.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Anatomy studies the structure of the body</li>
+<li>Physiology studies the function of the body</li>
+<li>Structure and function are interdependent</li>
+<li>Normal structure supports normal function</li>
+</ul>
+
+<p class="mt-6">
+For example, the lungs have thin air sacs called alveoli.
+Their thin structure allows efficient exchange of oxygen and carbon dioxide.
+Thus, anatomical structure supports physiological function.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+3. Levels of Organization of the Human Body
+</h2>
+
+<p>
+The human body is organized into different levels,
+ranging from simple structures to complex systems.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Chemical Level
+</h3>
+
+<p>
+The chemical level includes atoms and molecules such as water,
+proteins, carbohydrates, fats, and electrolytes.
+These substances are necessary for body functions.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Cellular Level
+</h3>
+
+<p>
+Cells are the basic structural and functional units of life.
+Examples include nerve cells, muscle cells, and blood cells.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Tissue Level
+</h3>
+
+<p>
+Tissues are groups of similar cells working together to perform a specific function.
+The four basic tissues are:
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Epithelial tissue</li>
+<li>Connective tissue</li>
+<li>Muscle tissue</li>
+<li>Nervous tissue</li>
+</ul>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Organ Level
+</h3>
+
+<p>
+Organs are structures made of different tissues working together.
+Examples include the heart, lungs, kidneys, and liver.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+System Level
+</h3>
+
+<p>
+Body systems consist of organs working together to perform major body functions.
+Examples include the cardiovascular system and respiratory system.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Organism Level
+</h3>
+
+<p>
+The organism level refers to the complete human body,
+where all systems function together to maintain life.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+4. Characteristics of Living Organisms
+</h2>
+
+<p>
+Living organisms possess certain characteristics necessary for survival.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Movement</li>
+<li>Respiration</li>
+<li>Growth</li>
+<li>Excretion</li>
+<li>Nutrition</li>
+<li>Sensitivity and responsiveness</li>
+<li>Reproduction</li>
+<li>Metabolism</li>
+</ul>
+
+<p class="mt-6">
+These activities are controlled and coordinated by various body systems.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+5. Homeostasis
+</h2>
+
+<p>
+Homeostasis refers to the maintenance of a stable internal environment
+despite changes occurring inside or outside the body.
+It is one of the most important concepts in physiology.
+</p>
+
+<p>
+The body continuously regulates variables such as:
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Body temperature</li>
+<li>Blood pressure</li>
+<li>Blood glucose level</li>
+<li>Fluid balance</li>
+<li>Oxygen concentration</li>
+<li>pH balance</li>
+</ul>
+
+<p class="mt-6">
+When homeostasis is disrupted,
+disease or dysfunction may occur.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+6. Components of Homeostatic Control
+</h2>
+
+<p>
+Homeostatic mechanisms involve three major components.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Receptor
+</h3>
+
+<p>
+The receptor detects changes in the internal or external environment.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Control Center
+</h3>
+
+<p>
+The control center receives information from the receptor
+and determines the appropriate response.
+The brain often acts as the control center.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Effector
+</h3>
+
+<p>
+The effector carries out the response to restore balance.
+Examples include muscles and glands.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+7. Feedback Mechanisms
+</h2>
+
+<p>
+The body uses feedback mechanisms to regulate physiological activities.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Negative Feedback
+</h3>
+
+<p>
+Negative feedback reverses a change to maintain stability.
+It is the most common feedback mechanism in the body.
+</p>
+
+<p>
+Examples include:
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Regulation of blood glucose</li>
+<li>Control of body temperature</li>
+<li>Regulation of blood pressure</li>
+</ul>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Positive Feedback
+</h3>
+
+<p>
+Positive feedback enhances or amplifies a change.
+It continues until a specific event is completed.
+</p>
+
+<p>
+Examples include:
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Uterine contractions during labor</li>
+<li>Blood clotting process</li>
+</ul>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+8. Basic Physiological Needs of the Human Body
+</h2>
+
+<p>
+The body requires certain conditions and substances to survive.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Oxygen</li>
+<li>Water</li>
+<li>Nutrients</li>
+<li>Normal body temperature</li>
+<li>Adequate atmospheric pressure</li>
+</ul>
+
+<p class="mt-6">
+A deficiency in any of these requirements can impair body function.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+9. Major Body Systems and Their Functions
+</h2>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Nervous System
+</h3>
+
+<p>
+Controls and coordinates body activities through nerve impulses.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Cardiovascular System
+</h3>
+
+<p>
+Transports blood, oxygen, nutrients, and hormones throughout the body.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Respiratory System
+</h3>
+
+<p>
+Facilitates breathing and gas exchange.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Digestive System
+</h3>
+
+<p>
+Breaks down food and absorbs nutrients.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Urinary System
+</h3>
+
+<p>
+Removes waste products and regulates fluid balance.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Endocrine System
+</h3>
+
+<p>
+Produces hormones that regulate body activities.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Musculoskeletal System
+</h3>
+
+<p>
+Provides support, movement, and protection.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Reproductive System
+</h3>
+
+<p>
+Responsible for reproduction and sexual functions.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+10. Importance of Physiology in Nursing
+</h2>
+
+<p>
+Knowledge of physiology is essential for nursing practice.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Helps nurses understand disease processes</li>
+<li>Improves patient assessment skills</li>
+<li>Supports accurate monitoring of vital signs</li>
+<li>Guides administration of medications</li>
+<li>Assists in identifying abnormal body functions</li>
+<li>Enhances critical thinking and clinical judgment</li>
+<li>Promotes safe and effective patient care</li>
+</ul>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+11. Applied Physiology
+</h2>
+
+<p>
+Applied physiology explains how physiological principles
+are used in healthcare and clinical practice.
+</p>
+
+<p>
+Examples include:
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Monitoring blood pressure</li>
+<li>Assessing respiratory rate</li>
+<li>Understanding electrolyte imbalance</li>
+<li>Managing diabetes mellitus</li>
+<li>Providing oxygen therapy</li>
+</ul>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+12. Common Terms in Physiology
+</h2>
+
+<ul class="list-disc pl-6 space-y-2">
+<li><strong>Metabolism:</strong> Chemical reactions occurring in the body</li>
+<li><strong>Stimulus:</strong> A change that triggers a response</li>
+<li><strong>Response:</strong> Reaction of the body to a stimulus</li>
+<li><strong>Cell:</strong> Basic unit of life</li>
+<li><strong>Tissue:</strong> Group of similar cells performing a function</li>
+<li><strong>Organ:</strong> Structure made of tissues performing specific functions</li>
+<li><strong>System:</strong> Group of organs working together</li>
+</ul>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+13. Summary
+</h2>
+
+<p>
+Physiology is the study of how the human body functions.
+It explains the mechanisms that maintain life and health.
+Understanding physiology is essential in nursing because it provides
+the scientific foundation for patient care, disease management,
+clinical assessment, and treatment.
+The body maintains stability through homeostasis,
+while different organs and systems work together
+to ensure proper functioning of the human organism.
+</p>
+
+</div>
+`,
+    },
+
+    {
+      id: "homeostasis",
+      title: "Homeostasis",
+      content: ""
+    },
+
+    {
+      id: "cell-physiology",
+      title: "Cell Physiology",
+      content: ""
+    },
+
+    {
+      id: "membrane-transport",
+      title: "Membrane Transport",
+      content: ""
+    },
+
+    {
+      id: "body-fluids-electrolytes",
+      title: "Body Fluids and Electrolytes",
+      content: ""
+    },
+
+    {
+      id: "acid-base-balance",
+      title: "Acid-Base Balance",
+      content: ""
+    },
+
+    // NERVOUS SYSTEM
+    {
+      id: "nervous-system",
+      title: "Nervous System Physiology",
+      content: ""
+    },
+
+    {
+      id: "nerve-impulse-transmission",
+      title: "Nerve Impulse Transmission",
+      content: ""
+    },
+
+    {
+      id: "autonomic-nervous-system",
+      title: "Autonomic Nervous System",
+      content: ""
+    },
+
+    {
+      id: "special-senses",
+      title: "Special Senses",
+      content: ""
+    },
+
+    // MUSCULAR SYSTEM
+    {
+      id: "muscle-physiology",
+      title: "Muscle Physiology",
+      content: ""
+    },
+
+    {
+      id: "skeletal-muscle-contraction",
+      title: "Skeletal Muscle Contraction",
+      content: ""
+    },
+
+    // BLOOD
+    {
+      id: "blood-physiology",
+      title: "Blood Physiology",
+      content: ""
+    },
+
+    {
+      id: "hemostasis",
+      title: "Hemostasis and Blood Clotting",
+      content: ""
+    },
+
+    {
+      id: "blood-groups",
+      title: "Blood Groups and Transfusion",
+      content: ""
+    },
+
+    // CARDIOVASCULAR SYSTEM
+    {
+      id: "cardiovascular-system",
+      title: "Cardiovascular Physiology",
+      content: ""
+    },
+
+    {
+      id: "cardiac-cycle",
+      title: "Cardiac Cycle",
+      content: ""
+    },
+
+    {
+      id: "blood-pressure-regulation",
+      title: "Regulation of Blood Pressure",
+      content: ""
+    },
+
+    {
+      id: "circulation",
+      title: "Systemic and Pulmonary Circulation",
+      content: ""
+    },
+
+    // RESPIRATORY SYSTEM
+    {
+      id: "respiratory-system",
+      title: "Respiratory Physiology",
+      content: ""
+    },
+
+    {
+      id: "mechanism-of-breathing",
+      title: "Mechanism of Breathing",
+      content: ""
+    },
+
+    {
+      id: "gas-exchange",
+      title: "Gas Exchange and Transport",
+      content: ""
+    },
+
+    {
+      id: "respiratory-regulation",
+      title: "Regulation of Respiration",
+      content: ""
+    },
+
+    // DIGESTIVE SYSTEM
+    {
+      id: "digestive-system",
+      title: "Digestive System Physiology",
+      content: ""
+    },
+
+    {
+      id: "digestion-absorption",
+      title: "Digestion and Absorption",
+      content: ""
+    },
+
+    // ENDOCRINE SYSTEM
+    {
+      id: "endocrine-system",
+      title: "Endocrine Physiology",
+      content: ""
+    },
+
+    {
+      id: "pituitary-gland",
+      title: "Pituitary Gland Hormones",
+      content: ""
+    },
+
+    {
+      id: "thyroid-gland",
+      title: "Thyroid Gland Physiology",
+      content: ""
+    },
+
+    {
+      id: "pancreatic-hormones",
+      title: "Insulin and Glucagon",
+      content: ""
+    },
+
+    {
+      id: "adrenal-gland",
+      title: "Adrenal Gland Physiology",
+      content: ""
+    },
+
+    // URINARY SYSTEM
+    {
+      id: "renal-physiology",
+      title: "Renal Physiology",
+      content: ""
+    },
+
+    {
+      id: "urine-formation",
+      title: "Formation of Urine",
+      content: ""
+    },
+
+    {
+      id: "fluid-balance",
+      title: "Water Balance and Regulation",
+      content: ""
+    },
+
+    // REPRODUCTIVE SYSTEM
+    {
+      id: "male-reproductive-system",
+      title: "Male Reproductive Physiology",
+      content: ""
+    },
+
+    {
+      id: "female-reproductive-system",
+      title: "Female Reproductive Physiology",
+      content: ""
+    },
+
+    {
+      id: "menstrual-cycle",
+      title: "Menstrual Cycle",
+      content: ""
+    },
+
+    {
+      id: "pregnancy-lactation",
+      title: "Pregnancy and Lactation",
+      content: ""
+    },
+
+    // IMMUNE SYSTEM
+    {
+      id: "immune-system",
+      title: "Immune System Physiology",
+      content: ""
+    },
+
+    {
+      id: "immune-response",
+      title: "Immune Response",
+      content: ""
+    },
+
+    // TEMPERATURE
+    {
+      id: "temperature-regulation",
+      title: "Body Temperature Regulation",
+      content: ""
+    },
+
+    // EXERCISE
+    {
+      id: "exercise-physiology",
+      title: "Exercise Physiology",
+      content: ""
+    }
+
+  ]
 },
 histology: {
 title: "Histology",
-image: "/images/nutrition.jpg",
-sections: [
-{
-id: "basic-nutrition",
-title: "Basic Nutrition",
-content: "Nutrition involves nutrients needed for health and growth...",
+image: "/images/images.jfif",
+ sections: [
 
-media: [
-{ type: "image", src: "/images/food-pyramid.jpg" }
-]
-},
-{
-id: "balanced-diet",
-title: "Balanced Diet",
-content: "A balanced diet contains carbohydrates, proteins, fats, vitamins and minerals...",
+    // INTRODUCTION
+    {
+      id: "introduction-to-histology",
+      title: "Introduction to Histology",
+     content: `
+<div class="max-w-4xl mx-auto px-6 py-10 text-slate-700 leading-8">
 
-media: [
-{ type: "video", src: "https://www.youtube.com/embed/ppppp" }
-]
-}
-]
+<h1 class="text-4xl font-bold text-slate-900 border-b pb-4 mb-8">
+Introduction to Histology
+</h1>
+
+<p class="mb-8">
+Histology is the branch of biology and medical science that studies the microscopic structure
+of cells, tissues, and organs. It helps in understanding how the body is organized at the cellular level
+and how different tissues work together to perform specific functions.
+</p>
+
+<p class="mb-8">
+The study of histology is essential in nursing and medicine because many diseases begin with
+microscopic changes in tissues. Histology provides the foundation for understanding normal tissue structure,
+disease processes, diagnosis, and treatment.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mb-6">
+1. Definition of Histology
+</h2>
+
+<p>
+Histology is defined as the scientific study of the microscopic anatomy of cells and tissues.
+It involves the examination of thin tissue sections under a microscope to identify their structure,
+organization, and function.
+</p>
+
+<p>
+Histology is sometimes referred to as microscopic anatomy because it focuses on structures
+that cannot be seen with the naked eye.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+2. Importance of Histology
+</h2>
+
+<p>
+Histology plays an important role in healthcare and medical sciences.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Helps understand the microscopic structure of tissues and organs</li>
+<li>Provides a basis for understanding physiology and pathology</li>
+<li>Assists in diagnosing diseases through tissue examination</li>
+<li>Supports medical research and laboratory investigations</li>
+<li>Helps healthcare professionals understand tissue damage and healing</li>
+<li>Essential in cancer diagnosis and biopsy interpretation</li>
+</ul>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+3. Relationship Between Histology and Anatomy
+</h2>
+
+<p>
+Histology and anatomy are closely related branches of science.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Anatomy studies structures visible to the naked eye</li>
+<li>Histology studies microscopic structures</li>
+<li>Both help explain body organization and function</li>
+<li>Histology provides deeper understanding of tissue composition</li>
+</ul>
+
+<p class="mt-6">
+For example, anatomy studies the heart as an organ,
+while histology studies the cardiac muscle cells and connective tissues within the heart.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+4. Basic Levels of Organization
+</h2>
+
+<p>
+The body is organized into different structural levels.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Cells
+</h3>
+
+<p>
+Cells are the basic structural and functional units of life.
+They carry out essential activities necessary for survival.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Tissues
+</h3>
+
+<p>
+Tissues are groups of similar cells working together to perform specific functions.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Organs
+</h3>
+
+<p>
+Organs are structures made up of different tissues functioning together.
+Examples include the heart, liver, and kidneys.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Systems
+</h3>
+
+<p>
+Organ systems consist of multiple organs working together
+to maintain body functions.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+5. Types of Tissues in the Human Body
+</h2>
+
+<p>
+The human body contains four basic tissue types.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li><strong>Epithelial Tissue</strong> – covers body surfaces and lines cavities</li>
+<li><strong>Connective Tissue</strong> – supports and binds structures</li>
+<li><strong>Muscle Tissue</strong> – responsible for movement</li>
+<li><strong>Nervous Tissue</strong> – conducts nerve impulses</li>
+</ul>
+
+<p class="mt-6">
+Each tissue type has specialized cells and functions.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+6. Microscopy in Histology
+</h2>
+
+<p>
+Microscopes are important tools used in histology
+to observe structures too small to be seen by the naked eye.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Light Microscope
+</h3>
+
+<p>
+Uses visible light to magnify tissue sections.
+It is the most commonly used microscope in histology laboratories.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Electron Microscope
+</h3>
+
+<p>
+Uses electron beams to provide very high magnification
+and detailed views of cell structures.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+7. Histological Preparation of Tissues
+</h2>
+
+<p>
+Before tissues can be examined under a microscope,
+they must be properly prepared.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Fixation
+</h3>
+
+<p>
+Preserves tissue structure and prevents decay.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Embedding
+</h3>
+
+<p>
+Tissues are embedded in paraffin wax for support during cutting.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Sectioning
+</h3>
+
+<p>
+Thin slices of tissue are cut using a microtome.
+</p>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Staining
+</h3>
+
+<p>
+Special dyes are used to make tissue structures visible under the microscope.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+8. Common Histological Stains
+</h2>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Hematoxylin and Eosin (H&E)
+</h3>
+
+<p>
+The most common stain used in histology.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Hematoxylin stains nuclei blue or purple</li>
+<li>Eosin stains cytoplasm pink</li>
+</ul>
+
+
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Special Stains
+</h3>
+
+<p>
+Special stains are used to identify specific tissue components,
+microorganisms, or abnormal substances.
+</p>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+9. Clinical Importance of Histology
+</h2>
+
+<p>
+Histology is important in clinical diagnosis and patient care.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Helps detect infections and inflammation</li>
+<li>Used in cancer diagnosis</li>
+<li>Assists in identifying tissue abnormalities</li>
+<li>Supports laboratory investigations</li>
+<li>Guides treatment decisions</li>
+<li>Useful in biopsy interpretation</li>
+</ul>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+10. Histology and Nursing Practice
+</h2>
+
+<p>
+Knowledge of histology helps nurses understand disease processes
+at the cellular and tissue levels.
+</p>
+
+<ul class="list-disc pl-6 space-y-2">
+<li>Improves understanding of wound healing</li>
+<li>Helps explain tissue damage and repair</li>
+<li>Supports understanding of cancer and tumors</li>
+<li>Enhances interpretation of laboratory results</li>
+<li>Strengthens clinical knowledge and patient care</li>
+</ul>
+
+
+
+
+<h2 class="text-2xl font-semibold border-b pb-2 mt-10 mb-6">
+11. Summary
+</h2>
+
+<p>
+Histology is the study of microscopic structures of cells and tissues.
+It helps healthcare professionals understand how tissues are organized
+and how diseases affect the body at the cellular level.
+The use of microscopes, tissue preparation techniques,
+and staining methods allows scientists and healthcare workers
+to examine tissues for diagnosis, research, and treatment purposes.
+</p>
+
+</div>
+`
+    },
+
+    {
+      id: "importance-of-histology",
+      title: "Importance of Histology",
+      content: ""
+    },
+
+    {
+      id: "microscopy",
+      title: "Microscopy",
+      content: ""
+    },
+
+    {
+      id: "tissue-processing",
+      title: "Tissue Processing and Staining",
+      content: ""
+    },
+
+    {
+      id: "cell-structure",
+      title: "Cell Structure",
+      content: ""
+    },
+
+    {
+      id: "cell-organelles",
+      title: "Cell Organelles",
+      content: ""
+    },
+
+    {
+      id: "cell-division",
+      title: "Cell Division",
+      content: ""
+    },
+
+
+
+    // BASIC TISSUES
+    {
+      id: "classification-of-tissues",
+      title: "Classification of Tissues",
+      content: ""
+    },
+
+
+
+    // EPITHELIAL TISSUE
+    {
+      id: "epithelial-tissue",
+      title: "Epithelial Tissue",
+      content: ""
+    },
+
+    {
+      id: "classification-of-epithelium",
+      title: "Classification of Epithelium",
+      content: ""
+    },
+
+    {
+      id: "simple-epithelium",
+      title: "Simple Epithelium",
+      content: ""
+    },
+
+    {
+      id: "stratified-epithelium",
+      title: "Stratified Epithelium",
+      content: ""
+    },
+
+    {
+      id: "glandular-epithelium",
+      title: "Glandular Epithelium",
+      content: ""
+    },
+
+    {
+      id: "functions-of-epithelium",
+      title: "Functions of Epithelial Tissue",
+      content: ""
+    },
+
+
+
+    // CONNECTIVE TISSUE
+    {
+      id: "connective-tissue",
+      title: "Connective Tissue",
+      content: ""
+    },
+
+    {
+      id: "connective-tissue-cells",
+      title: "Cells of Connective Tissue",
+      content: ""
+    },
+
+    {
+      id: "connective-tissue-fibers",
+      title: "Fibers of Connective Tissue",
+      content: ""
+    },
+
+    {
+      id: "loose-connective-tissue",
+      title: "Loose Connective Tissue",
+      content: ""
+    },
+
+    {
+      id: "dense-connective-tissue",
+      title: "Dense Connective Tissue",
+      content: ""
+    },
+
+    {
+      id: "adipose-tissue",
+      title: "Adipose Tissue",
+      content: ""
+    },
+
+    {
+      id: "cartilage",
+      title: "Cartilage",
+      content: ""
+    },
+
+    {
+      id: "bone-tissue",
+      title: "Bone Tissue",
+      content: ""
+    },
+
+    {
+      id: "blood-tissue",
+      title: "Blood Tissue",
+      content: ""
+    },
+
+
+
+    // MUSCLE TISSUE
+    {
+      id: "muscle-tissue",
+      title: "Muscle Tissue",
+      content: ""
+    },
+
+    {
+      id: "skeletal-muscle",
+      title: "Skeletal Muscle",
+      content: ""
+    },
+
+    {
+      id: "smooth-muscle",
+      title: "Smooth Muscle",
+      content: ""
+    },
+
+    {
+      id: "cardiac-muscle",
+      title: "Cardiac Muscle",
+      content: ""
+    },
+
+    {
+      id: "comparison-of-muscles",
+      title: "Comparison of Muscle Types",
+      content: ""
+    },
+
+
+
+    // NERVOUS TISSUE
+    {
+      id: "nervous-tissue",
+      title: "Nervous Tissue",
+      content: ""
+    },
+
+    {
+      id: "neurons",
+      title: "Neurons",
+      content: ""
+    },
+
+    {
+      id: "neuroglia",
+      title: "Neuroglia Cells",
+      content: ""
+    },
+
+    {
+      id: "synapse",
+      title: "Synapse and Nerve Transmission",
+      content: ""
+    },
+
+
+
+    // MEMBRANES
+    {
+      id: "body-membranes",
+      title: "Body Membranes",
+      content: ""
+    },
+
+    {
+      id: "mucous-membrane",
+      title: "Mucous Membrane",
+      content: ""
+    },
+
+    {
+      id: "serous-membrane",
+      title: "Serous Membrane",
+      content: ""
+    },
+
+    {
+      id: "synovial-membrane",
+      title: "Synovial Membrane",
+      content: ""
+    },
+
+
+
+    // HISTOLOGY OF BODY SYSTEMS
+    {
+      id: "skin-histology",
+      title: "Histology of the Skin",
+      content: ""
+    },
+
+    {
+      id: "respiratory-histology",
+      title: "Histology of the Respiratory System",
+      content: ""
+    },
+
+    {
+      id: "digestive-histology",
+      title: "Histology of the Digestive System",
+      content: ""
+    },
+
+    {
+      id: "cardiovascular-histology",
+      title: "Histology of the Cardiovascular System",
+      content: ""
+    },
+
+    {
+      id: "urinary-histology",
+      title: "Histology of the Urinary System",
+      content: ""
+    },
+
+    {
+      id: "endocrine-histology",
+      title: "Histology of the Endocrine System",
+      content: ""
+    },
+
+    {
+      id: "reproductive-histology",
+      title: "Histology of the Reproductive System",
+      content: ""
+    },
+
+
+
+    // LABORATORY & CLINICAL
+    {
+      id: "histological-techniques",
+      title: "Histological Techniques",
+      content: ""
+    },
+
+    {
+      id: "common-stains",
+      title: "Common Histological Stains",
+      content: ""
+    },
+
+    {
+      id: "clinical-importance",
+      title: "Clinical Importance of Histology",
+      content: ""
+    },
+
+
+
+    // SUMMARY
+    {
+      id: "summary-of-histology",
+      title: "Summary of Histology",
+      content: ""
+    }
+
+  ]
 },
 "internal-medicine": {
 title: "Internal Medicine",
@@ -9664,7 +11011,7 @@ Although nursing has existed since ancient times, psychiatric nursing developed 
 </p>
 
 <p>
-The first psychiatric nursing school was established at McLean Hospital in 1882, Massachusetts.
+One of the first psychiatric nursing school was established at McLean Hospital in 1882, Massachusetts.
 </p>
 
 <p>
@@ -9703,7 +11050,8 @@ In 1963, Community Mental Health Centers were introduced to provide outpatient s
 <h3>PROFESSIONAL STANDARDS AND MODERN ERA</h3>
 
 <p>
-In 1967, the American Nurses Association published the Standards of Practice for Psychiatric Nursing.
+In 1967, the first statement was made on the practice of for psychitric nursing.
+In 1973, the American Nurses Association published the Standards of Practice for Psychiatric Nursing.
 </p>
 
 <p>
