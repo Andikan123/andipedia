@@ -9288,26 +9288,280 @@ media: [
 nutrition: {
 title: "Nutrition",
 image: "/images/nutrition.jpg",
-sections: [
-{
-id: "basic-nutrition",
-title: "Basic Nutrition",
-content: "Nutrition involves nutrients needed for health and growth...",
+sections : [
+  {
+    id: "introduction-to-nutrition",
+    title: "Introduction to Nutrition",
+    content: `
+<div class="max-w-4xl mx-auto px-6 py-10 text-slate-700 leading-8">
 
-media: [
-{ type: "image", src: "/images/food-pyramid.jpg" }
-]
-},
-{
-id: "balanced-diet",
-title: "Balanced Diet",
-content: "A balanced diet contains carbohydrates, proteins, fats, vitamins and minerals...",
+<h1 class="text-4xl font-bold text-slate-900 border-b pb-4 mb-8">
+Introduction to Nutrition
+</h1>
 
-media: [
-{ type: "video", src: "https://www.youtube.com/embed/ppppp" }
-]
-}
-]
+<p class="mb-6">
+Nutrition is the science that studies food, nutrients, and how the body uses them for growth, energy, repair, and maintenance of health. Good nutrition is essential for proper body functioning and overall well-being.
+</p>
+
+<p class="mb-6">
+The human body requires different nutrients in appropriate amounts to remain healthy. These nutrients provide energy, help build and repair tissues, regulate body processes, and protect the body from diseases.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Definition of Nutrition
+</h2>
+
+<p class="mb-6">
+Nutrition refers to the process by which living organisms obtain and utilize food substances necessary for growth, metabolism, and maintenance of life.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Importance of Nutrition
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Provides energy for daily activities</li>
+<li>Supports growth and development</li>
+<li>Repairs worn-out body tissues</li>
+<li>Strengthens the immune system</li>
+<li>Helps maintain healthy body functions</li>
+<li>Prevents nutritional deficiency diseases</li>
+<li>Improves overall health and well-being</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Major Nutrients
+</h2>
+
+<p class="mb-4">
+The body requires six major classes of nutrients:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Carbohydrates</li>
+<li>Proteins</li>
+<li>Fats and oils</li>
+<li>Vitamins</li>
+<li>Minerals</li>
+<li>Water</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Types of Nutrition
+</h2>
+
+<p class="mb-4">
+There are two major types of nutrition:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>
+<strong>Autotrophic Nutrition:</strong>
+Organisms produce their own food, such as plants through photosynthesis.
+</li>
+
+<li>
+<strong>Heterotrophic Nutrition:</strong>
+Organisms depend on other organisms for food, such as humans and animals.
+</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Balanced Diet
+</h2>
+
+<p class="mb-6">
+A balanced diet contains all essential nutrients in the correct proportions needed for healthy living. It includes carbohydrates, proteins, fats, vitamins, minerals, fiber, and water.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Malnutrition
+</h2>
+
+<p class="mb-6">
+Malnutrition occurs when the body receives too little, too much, or an imbalance of nutrients. It can lead to poor growth, weakness, diseases, and other health complications.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Conclusion
+</h2>
+
+<p>
+Nutrition plays a vital role in maintaining health, preventing diseases, and promoting growth and development. Understanding the principles of nutrition helps individuals make healthy food choices and improve their quality of life.
+</p>
+
+</div>
+  `,
+    media: [
+      { type: "image", src: "/images/introduction-nutrition.jpg" }
+    ]
+  },
+
+  {
+    id: "importance-of-nutrition",
+    title: "Importance of Nutrition",
+    content:
+      "Proper nutrition supports growth, strengthens immunity, maintains body functions, and helps prevent diseases.",
+
+    media: [
+      { type: "image", src: "/images/healthy-food.jpg" }
+    ]
+  },
+
+  {
+    id: "balanced-diet",
+    title: "Balanced Diet",
+    content:
+      "A balanced diet contains the right proportion of carbohydrates, proteins, fats, vitamins, minerals, fiber, and water needed by the body.",
+
+    media: [
+      { type: "video", src: "https://www.youtube.com/embed/ppppp" }
+    ]
+  },
+
+  {
+    id: "carbohydrates",
+    title: "Carbohydrates",
+    content:
+      "Carbohydrates are the main source of energy for the body and are found in foods such as rice, bread, potatoes, and fruits.",
+
+    media: [
+      { type: "image", src: "/images/carbohydrates.jpg" }
+    ]
+  },
+
+  {
+    id: "proteins",
+    title: "Proteins",
+    content:
+      "Proteins are essential for growth, tissue repair, and enzyme production. Common sources include meat, eggs, fish, beans, and milk.",
+
+    media: [
+      { type: "image", src: "/images/proteins.jpg" }
+    ]
+  },
+
+  {
+    id: "fats-and-oils",
+    title: "Fats and Oils",
+    content:
+      "Fats provide concentrated energy, protect organs, and help absorb fat-soluble vitamins such as vitamins A, D, E, and K.",
+
+    media: [
+      { type: "image", src: "/images/fats.jpg" }
+    ]
+  },
+
+  {
+    id: "vitamins",
+    title: "Vitamins",
+    content:
+      "Vitamins are organic compounds needed in small amounts for proper body functioning, immunity, and metabolism.",
+
+    media: [
+      { type: "image", src: "/images/vitamins.jpg" }
+    ]
+  },
+
+  {
+    id: "minerals",
+    title: "Minerals",
+    content:
+      "Minerals such as calcium, iron, and potassium help maintain healthy bones, blood formation, nerve function, and fluid balance.",
+
+    media: [
+      { type: "image", src: "/images/minerals.jpg" }
+    ]
+  },
+
+  {
+    id: "water-and-hydration",
+    title: "Water and Hydration",
+    content:
+      "Water is essential for digestion, temperature regulation, nutrient transport, and waste removal in the body.",
+
+    media: [
+      { type: "image", src: "/images/water.jpg" }
+    ]
+  },
+
+  {
+    id: "digestion-and-absorption",
+    title: "Digestion and Absorption",
+    content:
+      "Digestion breaks down food into nutrients that can be absorbed and used by the body for energy and growth.",
+
+    media: [
+      { type: "image", src: "/images/digestion.jpg" }
+    ]
+  },
+
+  {
+    id: "malnutrition",
+    title: "Malnutrition",
+    content:
+      "Malnutrition occurs when the body does not receive enough or receives too much nutrients, affecting health and development.",
+
+    media: [
+      { type: "image", src: "/images/malnutrition.jpg" }
+    ]
+  },
+
+  {
+    id: "obesity",
+    title: "Obesity",
+    content:
+      "Obesity is excessive accumulation of body fat that increases the risk of diseases such as diabetes and hypertension.",
+
+    media: [
+      { type: "image", src: "/images/obesity.jpg" }
+    ]
+  },
+
+  {
+    id: "nutrition-through-life",
+    title: "Nutrition Throughout the Life Cycle",
+    content:
+      "Nutritional requirements vary during infancy, childhood, adolescence, adulthood, pregnancy, and old age.",
+
+    media: [
+      { type: "image", src: "/images/life-cycle-nutrition.jpg" }
+    ]
+  },
+
+  {
+    id: "food-hygiene",
+    title: "Food Hygiene and Safety",
+    content:
+      "Food hygiene involves proper handling, preparation, and storage of food to prevent contamination and foodborne diseases.",
+
+    media: [
+      { type: "image", src: "/images/food-hygiene.jpg" }
+    ]
+  },
+
+  {
+    id: "therapeutic-diets",
+    title: "Therapeutic Diets",
+    content:
+      "Therapeutic diets are specially planned meals designed to manage diseases such as diabetes, hypertension, and kidney disorders.",
+
+    media: [
+      { type: "image", src: "/images/therapeutic-diet.jpg" }
+    ]
+  },
+
+  {
+    id: "public-health-nutrition",
+    title: "Public Health Nutrition",
+    content:
+      "Public health nutrition focuses on improving the nutritional health of communities through education and intervention programs.",
+
+    media: [
+      { type: "image", src: "/images/public-health-nutrition.jpg" }
+    ]
+  }
+],
 },
 physiology: {
 title: "Physiology",
@@ -9807,6 +10061,9 @@ to ensure proper functioning of the human organism.
 
 </div>
 `,
+media: [
+        { type: "video", src: "https://www.youtube.com/embed/FV7B7l7LWCQ" }
+      ]
     },
 
     {

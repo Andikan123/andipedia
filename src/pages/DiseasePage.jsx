@@ -51,11 +51,11 @@ export default function DiseasePage() {
         {/* CONTENT */}
         <div className="absolute bottom-0 left-10 text-white max-w-3xl" style={{ fontFamily: "'Great Vibes', cursive" }}>
 
-          <p className="uppercase tracking-[0.3em] text-sm text-blue-300">
+          <p className="uppercase tracking-[0.3em] text-sm text-blue-300" style={{ fontFamily: "'Great Vibes', cursive" }}>
             Disease Overview
           </p>
 
-          <h1 className="text-5xl font-bold mt-4">
+          <h1 className="text-5xl font-bold mt-4" style={{ fontFamily: "'Great Vibes', cursive" }}>
             {disease.name}
           </h1>
 
