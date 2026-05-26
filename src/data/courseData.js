@@ -6490,26 +6490,8 @@ A strong understanding of anatomy is essential for all healthcare professionals.
 `,
 
 media: [
-{ type: "video", src: "https://www.youtube.com/embed/ccccc" },
-{ type: "image", src: "/images/anatomy.jpg" },
-
-  { type: "image", src: "/images/human-body.jpg" },
-
-  { type: "image", src: "/images/anatomical-position.jpg" },
-
-  { type: "image", src: "/images/body-regions.jpg" },
-
-
-  { type: "image", src: "/images/body-cavites.jpg" },
-
-  { type: "image", src: "/images/levels-of-organization.jpg" },
-
-  { type: "image", src: "/images/major-body-systems.png" },
-
-  { type: "image", src: "/images/basic-tissues.jpg" },
-
-  { type: "image", src: "/images/organ-review.jfif" }
-]
+        { type: "video", src: "https://www.youtube.com/embed/loGP5yy7Q3w" }
+      ]
 },
 {
 id: "Levels of Body Organization",
