@@ -49,7 +49,7 @@ export default function DiseasePage() {
         <div className="absolute inset-0 bg-black/60"></div>
 
         {/* CONTENT */}
-        <div className="absolute bottom-0 left-10 text-white max-w-3xl" style={{ fontFamily: "'Great Vibes', cursive" }}>
+        <div className="absolute bottom-0 left-10 text-white max-w-3xl" >
 
           <p className="uppercase tracking-[0.3em] text-sm text-blue-300" style={{ fontFamily: "'Great Vibes', cursive" }}>
             Disease Overview
