@@ -18,7 +18,8 @@ const homeCourses = [
   { name: "Geriatrics", slug: "geriatrics", topics: 12 ,image:'/images/geriatrics.jpg'},
   { name: "Mental-Health", slug: "mentalHealth", topics: 12 ,image:'/images/psychiatry.jpg'},
   { name: "Research", slug: "research", topics: 12 ,image:'/images/research.jpg'},
-  { name: "Physiology", slug: "physiology", topics: 12 ,image:'/images/research.jpg'}
+  { name: "Physiology", slug: "physiology", topics: 12 ,image:'/images/research.jpg'},
+  { name: "Nursing Management", slug: "nursingmanagement", topics: 12 ,image:'/images/research.jpg'}
 ];
 
 export default homeCourses;

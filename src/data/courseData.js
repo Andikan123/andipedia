@@ -13148,6 +13148,1522 @@ sections:[
   }
 ]
 },
+biochemistry: {
+title: "Biochemistry",
+image: "/images/biochemistry.jfif",
+sections: [
+    {
+      id: "introduction-to-biochemistry",
+      title: "Introduction to Biochemistry",
+      content: `
+<div class="max-w-4xl mx-auto px-6 py-10 text-slate-700 leading-8">
+
+<h1 class="text-4xl font-bold text-slate-900 border-b pb-4 mb-8">
+Introduction to Biochemistry
+</h1>
+
+<p class="mb-6">
+Biochemistry is the branch of science that studies the chemical processes and substances that occur within living organisms. It combines principles of biology and chemistry to explain how cells and body systems function at the molecular level.
+</p>
+
+<p class="mb-6">
+Biochemistry helps in understanding metabolism, nutrition, genetics, enzyme actions, and disease processes. It forms the foundation of medicine, nursing, pharmacology, and modern healthcare.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Definition of Biochemistry
+</h2>
+
+<p class="mb-6">
+Biochemistry is the study of the chemical composition of living organisms and the chemical reactions that occur within them.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Importance of Biochemistry
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Helps explain body functions at the molecular level</li>
+<li>Provides understanding of metabolism and nutrition</li>
+<li>Supports diagnosis and treatment of diseases</li>
+<li>Forms the basis of pharmacology and medicine</li>
+<li>Helps explain enzyme and hormone functions</li>
+<li>Assists in medical laboratory investigations</li>
+<li>Supports advances in biotechnology and genetics</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Major Biomolecules
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Carbohydrates</li>
+<li>Proteins</li>
+<li>Lipids</li>
+<li>Nucleic acids</li>
+<li>Water</li>
+<li>Minerals</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Applications of Biochemistry
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Medicine</li>
+<li>Nursing</li>
+<li>Nutrition</li>
+<li>Pharmacology</li>
+<li>Genetics</li>
+<li>Biotechnology</li>
+<li>Medical Laboratory Science</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Conclusion
+</h2>
+
+<p>
+Biochemistry provides knowledge about the chemical basis of life and disease. It is essential in healthcare because it helps professionals understand body processes, disease mechanisms, and therapeutic interventions.
+</p>
+
+</div>
+      `,
+
+      media: [
+        { type: "image", src: "/images/introduction-biochemistry.jpg" }
+      ]
+    },
+
+    {
+      id: "carbohydrates",
+      title: "Carbohydrates",
+      content:
+        "Carbohydrates are organic compounds that serve as the major source of energy for the body. They include sugars, starches, and fibers.",
+
+      media: [
+        { type: "image", src: "/images/biochemistry-carbohydrates.jpg" }
+      ]
+    },
+
+    {
+      id: "proteins",
+      title: "Proteins",
+      content:
+        "Proteins are biomolecules made up of amino acids and are important for growth, tissue repair, enzymes, hormones, and immunity.",
+
+      media: [
+        { type: "image", src: "/images/biochemistry-proteins.jpg" }
+      ]
+    },
+
+    {
+      id: "lipids",
+      title: "Lipids",
+      content:
+        "Lipids are fats and fat-like substances that store energy, protect organs, and form important components of cell membranes.",
+
+      media: [
+        { type: "image", src: "/images/lipids.jpg" }
+      ]
+    },
+
+    {
+      id: "enzymes",
+      title: "Enzymes",
+      content:
+        "Enzymes are biological catalysts that speed up chemical reactions in the body without being used up during the reaction.",
+
+      media: [
+        { type: "image", src: "/images/enzymes.jpg" }
+      ]
+    },
+
+    {
+      id: "vitamins",
+      title: "Vitamins",
+      content:
+        "Vitamins are organic substances required in small amounts for normal metabolism, growth, and body functions.",
+
+      media: [
+        { type: "image", src: "/images/biochemistry-vitamins.jpg" }
+      ]
+    },
+
+    {
+      id: "minerals",
+      title: "Minerals",
+      content:
+        "Minerals are inorganic elements essential for body structure, fluid balance, nerve transmission, and enzyme activity.",
+
+      media: [
+        { type: "image", src: "/images/biochemistry-minerals.jpg" }
+      ]
+    },
+
+    {
+      id: "water",
+      title: "Water",
+      content:
+        "Water is the most abundant substance in the body and is necessary for transport, temperature regulation, digestion, and metabolism.",
+
+      media: [
+        { type: "image", src: "/images/biochemistry-water.jpg" }
+      ]
+    },
+
+    {
+      id: "metabolism",
+      title: "Metabolism",
+      content:
+        "Metabolism refers to all chemical reactions occurring in the body, including catabolism and anabolism.",
+
+      media: [
+        { type: "image", src: "/images/metabolism.jpg" }
+      ]
+    },
+
+    {
+      id: "anabolism-and-catabolism",
+      title: "Anabolism and Catabolism",
+      content:
+        "Anabolism involves building complex molecules, while catabolism involves breaking down molecules to release energy.",
+
+      media: [
+        { type: "image", src: "/images/anabolism-catabolism.jpg" }
+      ]
+    },
+
+    {
+      id: "dna-and-rna",
+      title: "DNA and RNA",
+      content:
+        "DNA and RNA are nucleic acids responsible for genetic information, protein synthesis, and inheritance.",
+
+      media: [
+        { type: "image", src: "/images/dna-rna.jpg" }
+      ]
+    },
+
+    {
+      id: "hormones",
+      title: "Hormones",
+      content:
+        "Hormones are chemical messengers produced by endocrine glands that regulate body activities and metabolism.",
+
+      media: [
+        { type: "image", src: "/images/hormones.jpg" }
+      ]
+    },
+
+    {
+      id: "acid-base-balance",
+      title: "Acid-Base Balance",
+      content:
+        "Acid-base balance maintains the normal pH of body fluids necessary for proper cellular activities.",
+
+      media: [
+        { type: "image", src: "/images/acid-base.jpg" }
+      ]
+    },
+
+    {
+      id: "electrolytes",
+      title: "Electrolytes",
+      content:
+        "Electrolytes such as sodium, potassium, and chloride help maintain fluid balance, nerve conduction, and muscle function.",
+
+      media: [
+        { type: "image", src: "/images/electrolytes.jpg" }
+      ]
+    },
+
+    {
+      id: "clinical-biochemistry",
+      title: "Clinical Biochemistry",
+      content:
+        "Clinical biochemistry involves laboratory analysis of blood and body fluids to diagnose and monitor diseases.",
+
+      media: [
+        { type: "image", src: "/images/clinical-biochemistry.jpg" }
+      ]
+    },
+
+    {
+      id: "biochemistry-and-disease",
+      title: "Biochemistry and Disease",
+      content:
+        "Biochemical abnormalities contribute to diseases such as diabetes mellitus, anemia, kidney disease, and metabolic disorders.",
+
+      media: [
+        { type: "image", src: "/images/biochemistry-disease.jpg" }
+      ]
+    }
+  ]
+},
+nursingmanagement: {
+title: "Nursing Management",
+image: "/images/management.jpg",
+sections: [
+    {
+      id: "introduction-to-nursing-management",
+      title: "Introduction to Nursing Management",
+      content: `
+<div class="max-w-4xl mx-auto px-6 py-10 text-slate-700 leading-8">
+
+<h1 class="text-4xl font-bold text-slate-900 border-b pb-4 mb-8">
+Introduction to Nursing Service Management
+</h1>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Objectives
+</h2>
+
+<p class="mb-4">
+At the end of this chapter, the student should be able to:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Define administration, management, and nursing service administration</li>
+<li>Describe managerial levels, roles, and skills</li>
+<li>Explain the importance of good management in health service organizations</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Introduction
+</h2>
+
+<p class="mb-6">
+Management is as old as mankind and has existed since humans organized themselves into communities. Managers influence all phases of modern organizations and help organizations achieve their goals effectively.
+</p>
+
+<p class="mb-6">
+The role of managers is to guide organizations toward goal accomplishment by combining and utilizing organizational resources efficiently.
+</p>
+
+<p class="mb-6">
+Management helps organizations achieve their purposes by assigning activities that contribute to organizational success.
+</p>
+
+<p class="mb-6">
+Managers encourage activities that support organizational goals and discourage activities that hinder goal achievement.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Definition of Management
+</h2>
+
+<p class="mb-6">
+Management is the art of getting things done through people. It is the process of planning, organizing, leading, and controlling organizational resources to achieve stated goals.
+</p>
+
+<p class="mb-6">
+Management is also the process of directing, coordinating, and influencing organizational activities to achieve desired outcomes and improve performance.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Leadership vs Management
+</h2>
+
+<div class="overflow-x-auto mb-8">
+<table class="table-auto w-full border border-slate-300">
+<thead class="bg-slate-100">
+<tr>
+<th class="border p-3 text-left">Leadership</th>
+<th class="border p-3 text-left">Management</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="border p-3">Based on influence and shared meaning</td>
+<td class="border p-3">Based on authority</td>
+</tr>
+
+<tr>
+<td class="border p-3">Informal role</td>
+<td class="border p-3">Formally designated role</td>
+</tr>
+
+<tr>
+<td class="border p-3">Requires initiative and independent thinking</td>
+<td class="border p-3">Responsible for budgets, hiring, and supervision</td>
+</tr>
+
+<tr>
+<td class="border p-3">Part of every nurse’s responsibility</td>
+<td class="border p-3">Assigned organizational position</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Nursing Service Administration
+</h2>
+
+<p class="mb-6">
+Nursing service administration is a coordinated activity that provides all facilities necessary for effective nursing care delivery to clients.
+</p>
+
+<p class="mb-6">
+It involves planning, organizing, leading, and controlling human, material, financial, and informational resources to achieve nursing objectives.
+</p>
+
+<p class="mb-6">
+Nursing administration is both an art and a science because it requires technical knowledge and leadership qualities for effective application.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Objectives of Nursing Service Administration
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Provide continuous patient care</li>
+<li>Promote community health</li>
+<li>Improve communication and human relations</li>
+<li>Support teaching and research</li>
+<li>Enhance professional development</li>
+<li>Ensure quality nursing care</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Types of Managers
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>
+<strong>Top-Level Managers:</strong>
+Board of directors, presidents, vice presidents
+</li>
+
+<li>
+<strong>Middle-Level Managers:</strong>
+Directors of nursing, department heads, supervisors
+</li>
+
+<li>
+<strong>First-Line Managers:</strong>
+Head nurses and unit supervisors
+</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Attributes of Managers
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Formally appointed to positions of authority</li>
+<li>Direct and support staff performance</li>
+<li>Responsible for resource utilization</li>
+<li>Accountable for work results</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Managerial Skills
+</h2>
+
+<p class="mb-4">
+Managers require three major skills:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>
+<strong>Conceptual Skills:</strong>
+Planning, problem solving, and understanding organizational relationships
+</li>
+
+<li>
+<strong>Human Relation Skills:</strong>
+Leadership, communication, and motivation
+</li>
+
+<li>
+<strong>Technical Skills:</strong>
+Specialized job-related knowledge and practical abilities
+</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Managerial Roles
+</h2>
+
+<p class="mb-4">
+Mintzberg classified managerial roles into:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Interpersonal roles</li>
+<li>Informational roles</li>
+<li>Decisional roles</li>
+</ul>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Interpersonal Roles
+</h3>
+
+<ul class="list-disc pl-6 space-y-2 mb-8">
+<li>Figurehead</li>
+<li>Liaison</li>
+<li>Influencer</li>
+</ul>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Informational Roles
+</h3>
+
+<ul class="list-disc pl-6 space-y-2 mb-8">
+<li>Monitor</li>
+<li>Disseminator</li>
+<li>Spokesperson</li>
+</ul>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Decisional Roles
+</h3>
+
+<ul class="list-disc pl-6 space-y-2 mb-8">
+<li>Entrepreneur</li>
+<li>Disturbance handler</li>
+<li>Resource allocator</li>
+<li>Negotiator</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Health Care and Health Service Organizations
+</h2>
+
+<p class="mb-6">
+Health care refers to societal efforts aimed at promoting health, preventing diseases, restoring health, and rehabilitation.
+</p>
+
+<p class="mb-6">
+Health services involve the delivery of healthcare in hospitals, clinics, nursing homes, and community settings.
+</p>
+
+<p class="mb-6">
+Health service organizations are open systems composed of inputs, throughput, and outputs.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Benefits of Good Management
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Highlights priority areas</li>
+<li>Adapts services to changing situations</li>
+<li>Utilizes resources effectively</li>
+<li>Improves service quality</li>
+<li>Maintains staff morale</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Learning Activities
+</h2>
+
+<ol class="list-decimal pl-6 space-y-3 mb-8">
+<li>Discuss management and nursing service administration</li>
+<li>List the three levels of management</li>
+<li>Describe common attributes of managers</li>
+<li>Explain managerial skills</li>
+<li>Describe managerial roles</li>
+<li>Define health care and health service organizations</li>
+<li>Explain the health service organizational model</li>
+<li>Discuss benefits of good management</li>
+</ol>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Conclusion
+</h2>
+
+<p>
+Nursing service management is essential in healthcare organizations because it supports quality nursing care, effective leadership, proper resource utilization, and achievement of healthcare goals.
+</p>
+
+</div>
+  `,
+
+      media: [
+        { type: "image", src: "/images/introduction-nursing-management.jpg" }
+      ]
+    },
+
+    {
+      id: "Philosophy of Nursing Service Management",
+      title: "Philosophy of Nursing Service Management",
+      content: `
+<div class="max-w-4xl mx-auto px-6 py-10 text-slate-700 leading-8">
+
+<h1 class="text-4xl font-bold text-slate-900 border-b pb-4 mb-8">
+Philosophy of Nursing Service Management
+</h1>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Objectives
+</h2>
+
+<p class="mb-4">
+At the end of this chapter, the student should be able to:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Define mission, philosophy, and goals</li>
+<li>Explain the relationship between mission, philosophy, and goals</li>
+<li>Discuss the importance of mission, philosophy, and goals in nursing service administration</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Mission
+</h2>
+
+<p class="mb-6">
+A mission statement is a broad general statement that describes the purpose of an organization within the community.
+</p>
+
+<p class="mb-6">
+The mission of a healthcare institution may focus on patient care, education, research, rehabilitation, or community health services depending on the nature of the organization.
+</p>
+
+<p class="mb-6">
+Mission statements guide organizational priorities, resource allocation, staffing, and service delivery.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Importance of Mission Statements
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Provides organizational direction</li>
+<li>Guides decision making</li>
+<li>Helps determine organizational priorities</li>
+<li>Supports planning and goal achievement</li>
+<li>Promotes unity among staff members</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Organizational Philosophy
+</h2>
+
+<p class="mb-6">
+Organizational philosophy refers to the beliefs, values, and principles that guide the operations and activities of an organization.
+</p>
+
+<p class="mb-6">
+It reflects how the organization views itself, its employees, patients, and the community it serves.
+</p>
+
+<p class="mb-6">
+Philosophy statements are rooted in the cultural beliefs and values of the organization and guide policies, procedures, and objectives.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Philosophy of Nursing Service Administration
+</h2>
+
+<p class="mb-6">
+The philosophy of nursing service administration guides nursing practice, nursing management, patient care, communication, and professional relationships within the nursing department.
+</p>
+
+<p class="mb-6">
+Nurses should understand the philosophy of their organization to ensure compatibility between personal and organizational beliefs.
+</p>
+
+<p class="mb-6">
+A philosophy statement serves as a valuable management tool because it directs actions, promotes accountability, and strengthens professional standards.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Characteristics of a Good Philosophy Statement
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Compatible with organizational goals</li>
+<li>Understandable and clear</li>
+<li>Attainable and realistic</li>
+<li>Acceptable to staff members</li>
+<li>Measurable and accountable</li>
+<li>Consistent with nursing standards</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Goals
+</h2>
+
+<p class="mb-6">
+Goals are broad statements that describe the intended outcomes or future achievements of an organization or department.
+</p>
+
+<p class="mb-6">
+Goals help organizations identify where they are going and evaluate whether objectives have been achieved successfully.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Levels of Goals
+</h2>
+
+<p class="mb-4">
+Healthcare organizations have different levels of goals:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Institutional Goals</li>
+<li>Nursing Department Goals</li>
+<li>Nursing Unit Goals</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Institutional Goals
+</h2>
+
+<p class="mb-6">
+Institutional goals are developed based on the healthcare needs of the community.
+</p>
+
+<p class="mb-6">
+Organizations that focus on future planning and preparation are called proactive institutions, while organizations that react only during crises are known as reactive institutions.
+</p>
+
+<p class="mb-6">
+Proactive institutions invest time, resources, and planning to prevent problems and improve healthcare delivery.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Nursing Department Goals
+</h2>
+
+<p class="mb-6">
+Nursing department goals support and complement the goals of the healthcare institution.
+</p>
+
+<p class="mb-6">
+These goals focus on improving nursing care, professional development, patient safety, and healthcare quality.
+</p>
+
+<p class="mb-6">
+The ultimate goal of the nursing department is the delivery of quality patient care.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Nursing Unit Goals
+</h2>
+
+<p class="mb-6">
+Nursing unit goals are developed from institutional and nursing department goals.
+</p>
+
+<p class="mb-6">
+Each nurse should participate in developing unit goals related to quality care, nursing practice, and patient outcomes.
+</p>
+
+<p class="mb-6">
+Successful unit goals require participation, commitment, and cooperation from all staff members.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Organizational Climate
+</h2>
+
+<p class="mb-6">
+Organizational climate refers to the feelings, attitudes, and values experienced within an organization.
+</p>
+
+<p class="mb-6">
+It includes trust, belonging, morale, loyalty, communication, teamwork, and staff satisfaction.
+</p>
+
+<p class="mb-6">
+A positive organizational climate improves productivity, staff motivation, and quality of healthcare services.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Importance of Organizational Climate
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Improves staff morale</li>
+<li>Enhances teamwork and communication</li>
+<li>Promotes job satisfaction</li>
+<li>Supports quality patient care</li>
+<li>Encourages professional growth</li>
+<li>Strengthens organizational commitment</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Learning Activities
+</h2>
+
+<ol class="list-decimal pl-6 space-y-3 mb-8">
+<li>Define mission and organizational philosophy</li>
+<li>Explain the importance of philosophy in nursing administration</li>
+<li>Describe the relationship between organizational philosophy and nursing philosophy</li>
+<li>Discuss institutional, departmental, and unit goals</li>
+<li>Explain the concept of organizational climate</li>
+<li>Discuss the importance of proactive institutions</li>
+</ol>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Conclusion
+</h2>
+
+<p>
+Mission, philosophy, goals, and organizational climate are essential components of nursing service management. They guide nursing practice, strengthen organizational effectiveness, improve patient care, and support professional nursing standards.
+</p>
+
+</div>
+  `,
+      media: [
+        { type: "image", src: "/images/planning.jpg" }
+      ]
+    },
+
+    {
+      id: "Functions of Management",
+      title: "Functions of Management",
+      content: `
+<div class="max-w-4xl mx-auto px-6 py-10 text-slate-700 leading-8">
+
+<h1 class="text-4xl font-bold text-slate-900 border-b pb-4 mb-8">
+Functions of Management
+</h1>
+
+<p class="mb-6">
+Management functions are organized activities performed by managers to achieve organizational goals effectively and efficiently. In nursing service administration, these functions help nurse managers coordinate patient care, staff activities, resources, and healthcare services.
+</p>
+
+<p class="mb-6">
+The major functions of management include planning, organizing, staffing, directing, coordinating, and controlling. These functions guide managers in decision-making and ensure quality healthcare delivery.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Objectives
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Define common terms used in the management process</li>
+<li>List the functions of a nurse manager</li>
+<li>Explain concepts related to management functions</li>
+<li>Describe the effect of delegation on managerial responsibility</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Management Functions of a Nurse Manager
+</h2>
+
+<p class="mb-4">
+The major management functions include:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Planning</li>
+<li>Organizing</li>
+<li>Staffing</li>
+<li>Directing</li>
+<li>Coordinating</li>
+<li>Controlling</li>
+<li>Decision Making</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Planning
+</h2>
+
+<p class="mb-6">
+Planning is the first and most important function of management. It involves determining objectives and deciding how to achieve them. Planning answers the questions:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>What should be done?</li>
+<li>When should it be done?</li>
+<li>How should it be done?</li>
+<li>Who should do it?</li>
+</ul>
+
+<p class="mb-6">
+Planning helps organizations anticipate future challenges, reduce errors, improve efficiency, and coordinate activities.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Purpose of Planning
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Provides direction to the organization</li>
+<li>Improves efficiency</li>
+<li>Reduces duplication of work</li>
+<li>Concentrates resources effectively</li>
+<li>Improves communication and coordination</li>
+<li>Reduces guesswork and uncertainty</li>
+</ul>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Types of Planning
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li><strong>Strategic Planning:</strong> Long-term planning performed by top managers.</li>
+<li><strong>Tactical Planning:</strong> Short-term planning carried out by middle managers.</li>
+<li><strong>Operational Planning:</strong> Daily operational planning performed by first-line managers.</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Organizing
+</h2>
+
+<p class="mb-6">
+Organizing involves arranging resources and activities so that organizational objectives can be achieved efficiently. It determines how tasks are grouped and assigned.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Steps in Organizing
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Establish objectives</li>
+<li>Identify activities</li>
+<li>Group activities appropriately</li>
+<li>Assign responsibilities</li>
+<li>Delegate authority</li>
+<li>Coordinate relationships and communication</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Establishing Objectives
+</h2>
+
+<p class="mb-6">
+Objectives are clear statements describing what the organization intends to achieve. Well-written objectives help guide actions and measure performance.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Characteristics of Good Objectives
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Specific</li>
+<li>Measurable</li>
+<li>Realistic</li>
+<li>Time-bound</li>
+<li>Motivational</li>
+<li>Clearly communicated</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Delegation
+</h2>
+
+<p class="mb-6">
+Delegation is the process of assigning responsibility and authority to another person to perform specific tasks. Nurse managers use delegation to improve efficiency and reduce workload.
+</p>
+
+<p class="mb-6">
+Even after delegation, the manager remains ultimately responsible for the delegated task.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Importance of Delegation
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Improves efficiency</li>
+<li>Develops staff skills</li>
+<li>Reduces manager workload</li>
+<li>Encourages teamwork</li>
+<li>Promotes staff confidence</li>
+</ul>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Barriers to Delegation
+</h3>
+
+<p class="mb-4">
+Barriers may arise from the manager or the employee.
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Lack of trust</li>
+<li>Fear of mistakes</li>
+<li>Insecurity</li>
+<li>Lack of competence</li>
+<li>Work overload</li>
+<li>Poor communication</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Staffing
+</h2>
+
+<p class="mb-6">
+Staffing involves recruiting, selecting, training, and assigning personnel to provide quality patient care. Nurse managers ensure that adequate staff are available based on patient needs.
+</p>
+
+<p class="mb-6">
+Effective staffing improves patient outcomes, staff satisfaction, and organizational performance.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Directing
+</h2>
+
+<p class="mb-6">
+Directing is the management function that motivates employees and guides them toward organizational objectives.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Components of Directing
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Giving clear directions</li>
+<li>Supervising staff</li>
+<li>Leading employees</li>
+<li>Motivating workers</li>
+<li>Effective communication</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Coordinating
+</h2>
+
+<p class="mb-6">
+Coordinating involves synchronizing activities and resources so that all members work together effectively toward organizational goals.
+</p>
+
+<p class="mb-6">
+Good coordination improves teamwork, communication, and efficiency within healthcare organizations.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Controlling
+</h2>
+
+<p class="mb-6">
+Controlling is the process of comparing actual performance with planned standards and taking corrective action when necessary.
+</p>
+
+<h3 class="text-xl font-semibold mt-6 mb-3">
+Steps in Controlling
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Establish standards</li>
+<li>Measure performance</li>
+<li>Compare results with standards</li>
+<li>Provide feedback</li>
+<li>Take corrective action</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Decision Making
+</h2>
+
+<p class="mb-6">
+Decision making involves identifying problems, evaluating alternatives, and selecting the best solution to achieve objectives.
+</p>
+
+<p class="mb-6">
+Effective decision-making is essential in nursing management for patient safety, staff management, and resource utilization.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Importance of Management Functions in Nursing
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Improves quality patient care</li>
+<li>Enhances teamwork and communication</li>
+<li>Promotes efficient use of resources</li>
+<li>Supports achievement of organizational goals</li>
+<li>Improves staff performance and morale</li>
+<li>Ensures safe healthcare delivery</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Conclusion
+</h2>
+
+<p>
+Functions of management are essential for effective nursing service administration. Through planning, organizing, staffing, directing, coordinating, and controlling, nurse managers ensure efficient healthcare delivery, proper staff management, and quality patient care.
+</p>
+
+</div>
+`,
+      media: [
+        { type: "image", src: "/images/organizing.jpg" }
+      ]
+    },
+
+    {
+      id: "managing resources",
+      title: "Managing Resources",
+       content: `
+<div class="max-w-4xl mx-auto px-6 py-10 text-slate-700 leading-8">
+
+<h1 class="text-4xl font-bold text-slate-900 border-b pb-4 mb-8">
+Managing Resources
+</h1>
+
+<p class="text-lg text-slate-600 mb-8">
+Managing resources in nursing service administration involves the effective use of human resources, finances, materials, equipment, and time to achieve organizational goals and provide quality patient care.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Objectives
+</h2>
+
+<p class="mb-4">
+At the end of this chapter, the student should be able to:
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Explain the mechanisms of acquiring and retaining human resources</li>
+<li>Describe the process of budgeting</li>
+<li>Discuss the points to be considered in controlling and maintaining equipment</li>
+<li>Explain how managers maximize their time effectively</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Content
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Human Resource Management</li>
+<li>Retaining Employees</li>
+<li>Methods and Techniques of Training</li>
+<li>Performance Appraisal</li>
+<li>Budgeting</li>
+<li>Material Management</li>
+<li>Managing Equipment</li>
+<li>Managing Time</li>
+<li>Preparing Duty Roster</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Human Resource Management
+</h2>
+
+<p class="mb-6">
+Human resource management is the process of acquiring and retaining the organization’s human resources. It ensures that health institutions have qualified personnel to provide efficient and quality healthcare services.
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Acquisition includes planning, recruitment, selection, and orientation</li>
+<li>Retention includes training, appraisal, compensation, discipline, safety, and employee welfare</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Acquisition of Human Resources
+</h2>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Human Resource Planning
+</h3>
+
+<p class="mb-6">
+Human resource planning determines the future staffing needs of an organization. Staffing requirements change because of organizational growth, employee turnover, retirement, resignation, and expansion of services.
+</p>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Steps in Human Resource Planning
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Profiling personnel needs</li>
+<li>Estimating the number and type of staff required</li>
+<li>Inventorying current employees</li>
+<li>Forecasting future staffing changes</li>
+<li>Planning to ensure adequate qualified personnel</li>
+</ul>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Sources of Human Resources
+</h3>
+
+<p class="mb-4 font-semibold">
+Internal Sources
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-6">
+<li>Promotion and transfer from within the organization</li>
+<li>Cost-effective and improves staff morale</li>
+<li>May favor seniority over qualification</li>
+</ul>
+
+<p class="mb-4 font-semibold">
+External Sources
+</p>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Recruitment from outside the organization</li>
+<li>Includes advertisements, universities, and employment agencies</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Recruitment
+</h2>
+
+<p class="mb-6">
+Recruitment is the process of attracting qualified individuals to apply for available jobs within an organization.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Selection
+</h2>
+
+<p class="mb-6">
+Selection is the process of choosing the most suitable candidate based on qualifications, skills, training, and experience.
+</p>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Sources of Information for Selection
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Application forms</li>
+<li>Pre-employment interviews</li>
+<li>Testing and assessments</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Retaining Employees
+</h2>
+
+<p class="mb-6">
+Employee retention includes activities that help maintain a stable and productive workforce such as training, appraisal, compensation, and professional development.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Personnel Training
+</h2>
+
+<p class="mb-6">
+Personnel training is a formal process used to improve employees’ knowledge, skills, attitudes, and efficiency to achieve organizational goals.
+</p>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Assessing Training Needs
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Organizational analysis</li>
+<li>Operational analysis</li>
+<li>Personnel analysis</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Performance Appraisal
+</h2>
+
+<p class="mb-6">
+Performance appraisal is the systematic evaluation of an employee’s work performance to determine effectiveness and identify areas for improvement.
+</p>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Purposes of Performance Appraisal
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Support promotions and salary decisions</li>
+<li>Assist employee development</li>
+<li>Identify training needs</li>
+<li>Evaluate recruitment effectiveness</li>
+<li>Improve work standards</li>
+</ul>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Tools of Performance Appraisal
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Rating scales</li>
+<li>Checklists</li>
+<li>Management by objectives (MBO)</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Budgeting
+</h2>
+
+<p class="mb-6">
+Budgeting is a financial plan used for allocating resources and controlling organizational expenditure.
+</p>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Prerequisites for Budgeting
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Sound organizational structure</li>
+<li>Job descriptions</li>
+<li>Clear goals and objectives</li>
+<li>Budgeting policies and procedures</li>
+</ul>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Major Types of Budgets
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Operating or recurrent budget</li>
+<li>Plant or capital budget</li>
+<li>Cash budget</li>
+<li>Personnel budget</li>
+<li>Flexible budget</li>
+<li>Strategic planning budget</li>
+<li>Zero-based budget</li>
+<li>Supplementary budget</li>
+<li>Moving budget</li>
+</ul>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Advantages of Budgeting
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Promotes accountability</li>
+<li>Improves planning and control</li>
+<li>Reduces waste</li>
+<li>Assists coordination of activities</li>
+<li>Supports efficient use of resources</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Material Management
+</h2>
+
+<p class="mb-6">
+Material management involves purchasing, storing, distributing, and controlling materials to ensure the right materials are available at the right place and time.
+</p>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Managing Equipment
+</h2>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Ordering equipment</li>
+<li>Storing and labeling equipment</li>
+<li>Issuing equipment properly</li>
+<li>Maintaining and repairing equipment</li>
+<li>Monitoring equipment use</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Managing Time
+</h2>
+
+<p class="mb-6">
+Time is a non-renewable resource. Effective managers maximize their time through proper planning and prioritization.
+</p>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Ways to Maximize Managerial Time
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Set goals and priorities</li>
+<li>Plan strategies to achieve goals</li>
+<li>Create schedules</li>
+<li>Improve reading skills</li>
+<li>Improve memory and organization</li>
+</ul>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Common Time Plans
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Timetable</li>
+<li>Schedule</li>
+<li>Roster</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Preparing Duty Roster
+</h2>
+
+<p class="mb-6">
+A duty roster is a time plan used to distribute work fairly among staff members.
+</p>
+
+<h3 class="text-xl font-semibold text-slate-800 mt-8 mb-3">
+Purposes of Duty Roster
+</h3>
+
+<ul class="list-disc pl-6 space-y-3 mb-8">
+<li>Distribute night, weekend, and holiday duties fairly</li>
+<li>Share difficult and uninteresting work equally</li>
+<li>Allocate extra duties among staff members</li>
+</ul>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Learning Activities
+</h2>
+
+<ol class="list-decimal pl-6 space-y-3 mb-8">
+<li>Explain the mechanisms of acquiring and retaining human resources in nursing.</li>
+<li>Discuss the budgeting process in nursing departments.</li>
+<li>Describe methods of managing nursing equipment effectively.</li>
+<li>Explain the principles of effective time management.</li>
+</ol>
+
+<h2 class="text-2xl font-semibold text-slate-800 mt-10 mb-4">
+Conclusion
+</h2>
+
+<p>
+Managing resources effectively is essential in nursing service administration. Proper management of human resources, finances, materials, equipment, and time improves organizational efficiency, staff productivity, and quality patient care.
+</p>
+
+</div>
+  `,
+      media: [
+        { type: "image", src: "/images/staffing.jpg" }
+      ]
+    },
+
+    {
+      id: "directing",
+      title: "Directing",
+      content:
+        "Directing involves guiding, motivating, leading, and supervising nursing staff to achieve healthcare goals.",
+
+      media: [
+        { type: "image", src: "/images/directing.jpg" }
+      ]
+    },
+
+    {
+      id: "leadership",
+      title: "Leadership",
+      content:
+        "Leadership in nursing management involves influencing and inspiring healthcare teams to provide quality patient care.",
+
+      media: [
+        { type: "image", src: "/images/leadership.jpg" }
+      ]
+    },
+
+    {
+      id: "communication",
+      title: "Communication",
+      content:
+        "Effective communication promotes teamwork, patient safety, proper documentation, and coordination among healthcare professionals.",
+
+      media: [
+        { type: "image", src: "/images/communication.jpg" }
+      ]
+    },
+
+    {
+      id: "delegation",
+      title: "Delegation",
+      content:
+        "Delegation is the process of assigning tasks and responsibilities to appropriate healthcare personnel while maintaining accountability.",
+
+      media: [
+        { type: "image", src: "/images/delegation.jpg" }
+      ]
+    },
+
+    {
+      id: "supervision",
+      title: "Supervision",
+      content:
+        "Supervision ensures that nursing activities are properly performed according to professional standards and organizational policies.",
+
+      media: [
+        { type: "image", src: "/images/supervision.jpg" }
+      ]
+    },
+
+    {
+      id: "decision-making",
+      title: "Decision Making",
+      content:
+        "Decision making involves selecting the best course of action to solve healthcare problems and improve patient outcomes.",
+
+      media: [
+        { type: "image", src: "/images/decision-making.jpg" }
+      ]
+    },
+
+    {
+      id: "conflict-management",
+      title: "Conflict Management",
+      content:
+        "Conflict management involves identifying, addressing, and resolving disagreements within healthcare teams effectively.",
+
+      media: [
+        { type: "image", src: "/images/conflict-management.jpg" }
+      ]
+    },
+
+    {
+      id: "time-management",
+      title: "Time Management",
+      content:
+        "Time management helps nurses prioritize tasks, improve productivity, and provide efficient patient care.",
+
+      media: [
+        { type: "image", src: "/images/time-management.jpg" }
+      ]
+    },
+
+    {
+      id: "quality-assurance",
+      title: "Quality Assurance",
+      content:
+        "Quality assurance focuses on maintaining high standards of nursing care through evaluation and continuous improvement.",
+
+      media: [
+        { type: "image", src: "/images/quality-assurance.jpg" }
+      ]
+    },
+
+    {
+      id: "patient-safety",
+      title: "Patient Safety",
+      content:
+        "Patient safety involves preventing medical errors, reducing risks, and ensuring safe healthcare practices.",
+
+      media: [
+        { type: "image", src: "/images/patient-safety.jpg" }
+      ]
+    },
+
+    {
+      id: "budgeting-and-resource-management",
+      title: "Budgeting and Resource Management",
+      content:
+        "Budgeting and resource management involve proper allocation and utilization of healthcare resources to support nursing services.",
+
+      media: [
+        { type: "image", src: "/images/resource-management.jpg" }
+      ]
+    },
+
+    {
+      id: "ethics-in-nursing-management",
+      title: "Ethics in Nursing Management",
+      content:
+        "Ethics in nursing management involve fairness, accountability, confidentiality, professionalism, and respect for patient rights.",
+
+      media: [
+        { type: "image", src: "/images/nursing-ethics.jpg" }
+      ]
+    },
+
+    {
+      id: "evaluation",
+      title: "Evaluation",
+      content:
+        "Evaluation measures the effectiveness of nursing care, staff performance, and healthcare outcomes to improve services.",
+
+      media: [
+        { type: "image", src: "/images/evaluation.jpg" }
+      ]
+    }
+  ]
+},
 
 };
 

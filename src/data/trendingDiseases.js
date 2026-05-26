@@ -306,7 +306,8 @@ const trendingDiseases = [
             symptoms: ["Weight loss", "Fatigue"],
             prevention: ["Avoid carcinogens"],
             treatment: "Chemotherapy, radiation, surgery.",
-          },{
+          },
+          {
   id: 16,
   name: "Cardiomyopathy",
   slug: "cardiomyopathy",
@@ -346,6 +347,63 @@ const trendingDiseases = [
     "Regular medical checkups"
   ],
   treatment: "Depends on cause: antibiotics for infection, anti-inflammatory drugs, or further evaluation for malignancy."
+},
+{
+  id: 17,
+  name: "Atelectasis",
+  slug: "atelectasis",
+  image: "/images/atelectasis.jpg",
+  description:
+    "Atelectasis is the collapse of part or all of a lung, caused by the alveoli failing to inflate properly, which can reduce oxygen delivery to the body. Atelectasis occurs when the tiny air sacs in the lungs, called alveoli, do not fill with air as they should, leading to partial or complete lung collapse. This can happen in a small area of the lung or affect an entire lobe, and it may impair oxygen exchange, potentially causing shortness of breath or low blood oxygen levels. ",
+  category: "Respiratory Disorder",
+  tags: ["Lung collapse", "Respiratory", "Breathing difficulty"],
+  updated: "Recently",
+  severity: "Moderate to Severe",
+  color: "orange",
+  symptoms: [
+    "Shortness of breath",
+    "Rapid breathing",
+    "Chest pain",
+    "Cough",
+    "Low oxygen levels"
+  ],
+  prevention: [
+    "Deep breathing exercises after surgery",
+    "Early mobilization",
+    "Smoking cessation",
+    "Proper airway clearance"
+  ],
+  treatment:
+    "Treatment may include breathing exercises, chest physiotherapy, bronchodilators, oxygen therapy, removal of airway obstruction, and treatment of the underlying cause."
+},
+{
+  id: 18,
+  name: "Hyponatremia",
+  slug: "hyponatremia",
+  image: "/images/hyponatremia.jpg",
+  description:
+    "Hyponatremia is an electrolyte imbalance characterized by abnormally low sodium levels in the blood. Sodium is essential for maintaining fluid balance, nerve function, and muscle activity. Hyponatremia may occur due to excessive fluid intake, kidney disease, heart failure, severe vomiting or diarrhea, hormonal disorders, or certain medications.Hyponatremia is a condition characterized by abnormally low sodium levels in the blood, classified under ICD-10 code E87.1.Hyponatremia occurs when the sodium concentration in the blood falls below 135 milliequivalents per liter (mEq/L), leading to an imbalance of water and electrolytes in the body. This can cause water to move into tissues, potentially affecting organ function, particularly in the brain. ICD-10 code E87.1 is used to document hypo-osmolality and hyponatremia for medical and billing purposes.",
+  category: "Electrolyte Disorder",
+  tags: ["Low sodium", "Electrolyte imbalance", "Fluid imbalance"],
+  updated: "Recently",
+  severity: "Mild to Severe",
+  color: "blue",
+  symptoms: [
+    "Headache",
+    "Nausea and vomiting",
+    "Muscle cramps",
+    "Confusion",
+    "Fatigue",
+    "Seizures in severe cases"
+  ],
+  prevention: [
+    "Maintain proper fluid balance",
+    "Monitor sodium levels in at-risk patients",
+    "Avoid excessive water intake",
+    "Manage underlying medical conditions"
+  ],
+  treatment:
+    "Treatment depends on the severity and cause and may include fluid restriction, sodium replacement, intravenous saline, medication adjustments, and treatment of underlying conditions."
 }
         ],
       },
