@@ -1,93 +1,93 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { HiMenu, HiX } from "react-icons/hi";
+import SearchBar from "./SearchBar";
 
 export default function Navbar() {
-return (
-<header className="w-full bg-white border-b border-gray-300">
+  const [menuOpen, setMenuOpen] = useState(false);
 
-<div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-4">
+  return (
+    <header className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-300">
+      {/* TOP BAR */}
+      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center gap-3">
 
-{/* LEFT — BRAND */}
-<Link
-to="/"
-className="flex items-center gap-3 shrink-0"
->
-<img
-src="/images/stethoscope.jfif"
-alt="MedWiki"
-className="w-10 h-10 object-contain"
-/>
+        {/* LOGO */}
+        <Link
+          to="/"
+          className="flex items-center gap-2 shrink-0"
+        >
+          <img
+            src="/images/stethoscope.jfif"
+            alt="Nurseridge"
+            className="w-9 h-9 rounded-full"
+          />
 
-<div className="leading-tight hidden sm:block">
-<h1 className="font-serif text-xl">
-Andipedia
-</h1>
+         <div className="hidden sm:flex flex-col leading-tight">
+  <h1 className="text-lg font-bold text-slate-900">
+    Nurse<span className="text-blue-600">ridge</span>
+  </h1>
 
-<p className="text-xs text-gray-600">
-The Free Medical Encyclopedia
-</p>
+  <span className="text-[10px] text-slate-500 tracking-widest">
+    MEDICAL LEARNING
+  </span>
 </div>
-</Link>
+        </Link>
 
+        {/* SEARCH */}
+        <div className="flex-1 min-w-0">
+          <SearchBar/>
+        </div>
 
+        {/* DESKTOP MENU */}
+        <div className="hidden md:flex items-center gap-2">
+  <button className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-700 transition rounded-full hover:bg-slate-100">
+    Create Account
+  </button>
 
-{/* CENTER — SEARCH */}
-<div className="flex-1 max-w-2xl">
-<form className="flex">
+  <button className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-700 transition rounded-full hover:bg-slate-100">
+    Login
+  </button>
 
-<input
-type="text"
-placeholder="Search MedWiki"
-className="
-w-full
-border
-border-gray-400
-px-4
-py-2
-text-sm
-outline-none
-focus:border-blue-600
-"
-/>
+  <div className="w-px h-6 bg-slate-200 mx-1" />
 
-<button
-type="submit"
-className="
-border
-border-l-0
-border-gray-400
-px-5
-text-sm
-bg-gray-50
-hover:bg-gray-100
-"
->
-Search
+ <button className="px-5 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-md shadow-sm transition">
+  Start Free Trial
 </button>
-
-</form>
 </div>
 
+        {/* MOBILE HAMBURGER */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-3xl shrink-0"
+        >
+          {menuOpen ? <HiX /> : <HiMenu />}
+        </button>
+      </div>
 
+      {/* MOBILE MENU */}
+{/* MOBILE MENU */}
+{menuOpen && (
+  <div className="md:hidden border-t bg-white shadow-sm">
+    <div className="flex flex-col py-2">
 
-{/* RIGHT — ACTIONS */}
-<div className="flex items-center gap-4 text-sm shrink-0">
+      <button className="flex items-center px-5 py-3 text-slate-700 text-sm font-medium hover:bg-slate-50">
+        Create Account
+      </button>
 
-<button className="text-blue-700 hover:underline hidden md:block">
-Donate
-</button>
+      <button className="flex items-center px-5 py-3 text-slate-700 text-sm font-medium hover:bg-slate-50">
+        Login
+      </button>
 
-<button className="text-blue-700 hover:underline">
-Create account
-</button>
+      <div className="my-2 border-t border-slate-100" />
 
-<button className="text-blue-700 hover:underline">
-Log in
-</button>
+      <button className="mx-3 mb-3 py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 active:scale-[0.99] transition">
+        Free Trial
+      </button>
 
-</div>
+    </div>
+  </div>
 
-</div>
-
-</header>
-);
+)}
+    </header>
+  );
 }

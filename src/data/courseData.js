@@ -6491,7 +6491,110 @@ A strong understanding of anatomy is essential for all healthcare professionals.
 
 media: [
         { type: "video", src: "https://www.youtube.com/embed/loGP5yy7Q3w" }
-      ]
+      ],
+      quiz: [
+  {
+    question: "What does anatomy study?",
+    options: [
+      "Body structure",
+      "Body functions only",
+      "Diseases only",
+      "Drugs and treatment"
+    ],
+    answer: 0,
+    rationale: "Anatomy is the study of body structure, not function or disease."
+  },
+  {
+    question: "Which branch of anatomy uses the microscope?",
+    options: [
+      "Gross anatomy",
+      "Surface anatomy",
+      "Microscopic anatomy",
+      "Regional anatomy"
+    ],
+    answer: 2
+  },
+  {
+    question: "What is the anatomical position used for?",
+    options: [
+      "To treat patients",
+      "To standardize body descriptions",
+      "To measure blood pressure",
+      "To perform surgery"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which of these is NOT a branch of anatomy?",
+    options: [
+      "Gross anatomy",
+      "Microscopic anatomy",
+      "Developmental anatomy",
+      "Chemical therapy"
+    ],
+    answer: 3
+  },
+  {
+    question: "In anatomical position, palms face:",
+    options: [
+      "Backward",
+      "Forward",
+      "Downward",
+      "Inward"
+    ],
+    answer: 1
+  },
+  {
+    question: "Superior means:",
+    options: [
+      "Toward the feet",
+      "Toward the back",
+      "Toward the head",
+      "Toward the side"
+    ],
+    answer: 2
+  },
+  {
+    question: "Distal refers to:",
+    options: [
+      "Closer to origin",
+      "Farther from origin",
+      "Toward midline",
+      "Toward head"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which branch studies organs visible to the naked eye?",
+    options: [
+      "Microscopic anatomy",
+      "Gross anatomy",
+      "Cellular anatomy",
+      "Histology"
+    ],
+    answer: 1
+  },
+  {
+    question: "Why is anatomy important in healthcare?",
+    options: [
+      "For entertainment",
+      "For drug marketing",
+      "For diagnosis and treatment",
+      "For hospital billing"
+    ],
+    answer: 2
+  },
+  {
+    question: "Medial means:",
+    options: [
+      "Away from midline",
+      "Toward midline",
+      "Toward feet",
+      "Toward back"
+    ],
+    answer: 1
+  }
+]
 },
 {
 id: "Levels of Body Organization",
