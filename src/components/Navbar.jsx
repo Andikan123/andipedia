@@ -18,7 +18,7 @@ export default function Navbar() {
         >
           
 
-         <div className="hidden sm:flex flex-col leading-tight">
+         <div className=" sm:flex flex-col leading-tight">
  <img
   src="/images/Nurse.png"
   alt="Nurseridge Logo"
