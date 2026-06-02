@@ -16,20 +16,16 @@ export default function Navbar() {
           to="/"
           className="flex items-center gap-2 shrink-0"
         >
-          <img
-            src="/images/stethoscope.jfif"
-            alt="Nurseridge"
-            className="w-9 h-9 rounded-full"
-          />
+          
 
          <div className="hidden sm:flex flex-col leading-tight">
-  <h1 className="text-lg font-bold text-slate-900">
-    Nurse<span className="text-blue-600">ridge</span>
-  </h1>
+ <img
+  src="/images/Nurse.png"
+  alt="Nurseridge Logo"
+  className="h-16 w-28"
+/>
 
-  <span className="text-[10px] text-slate-500 tracking-widest">
-    MEDICAL LEARNING
-  </span>
+
 </div>
         </Link>
 

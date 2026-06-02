@@ -40,7 +40,7 @@ export default function SearchBar() {
         <div className="flex">
           <input
             type="text"
-            placeholder="Search Andipedia..."
+            placeholder="Search NurseRidge..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="
