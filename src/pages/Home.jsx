@@ -171,26 +171,26 @@ export default function Home() {
       {/* MAIN CONTENT */}
       <div className="relative z-10 flex flex-col items-center">
         {/* HEADER */}
-        <section
-  className="relative w-full min-h-[90vh] bg-cover bg-center overflow-hidden"
+       <section
+  className="relative w-full min-h-[90vh] bg-cover bg-[center_top] sm:bg-center overflow-hidden"
   style={{
     backgroundImage: "url('/images/blacknursehero.png')",
   }}
 >
-  {/* DARK OVERLAY (important for mobile readability) */}
+  {/* Overlay */}
   <div className="absolute inset-0 bg-black/60" />
 
-  {/* TEXT CONTENT */}
+  {/* Content */}
   <div className="relative z-10 flex items-center min-h-[90vh]">
     <div className="max-w-7xl w-full mx-auto px-6 sm:px-10 lg:px-16">
 
       <div className="text-white max-w-2xl">
 
-        <p className="uppercase tracking-[0.25em] sm:tracking-[0.35em] text-xs sm:text-sm text-blue-400">
+        <p className="uppercase tracking-[0.3em] text-xs sm:text-sm text-blue-400">
           Nurseridge Platform • NCLEX Preparation
         </p>
 
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mt-4 sm:mt-5 leading-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-4 leading-tight">
           Master Nursing
           <br />
           <span className="text-blue-500">
@@ -198,10 +198,9 @@ export default function Home() {
           </span>
         </h1>
 
-        <p className="text-gray-300 mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed">
+        <p className="text-gray-300 mt-5 text-base sm:text-lg md:text-xl leading-relaxed">
           Structured clinical education, NCLEX-style practice questions,
-          and simplified medical learning designed for future nurses who
-          want to succeed globally.
+          and simplified medical learning designed for future nurses who want to succeed globally.
         </p>
 
       </div>
