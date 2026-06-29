@@ -12,116 +12,115 @@ export default function Home() {
   const radius = isMobile ? 135 : 260;
   const navigate = useNavigate();
 
- const trendingDiseases = [
-  {
-    id: 1,
-    name: "Malaria",
-    slug: "malaria",
-    image: "/images/malaria.jpg",
+  const trendingDiseases = [
+    {
+      id: 1,
+      name: "Malaria",
+      slug: "malaria",
+      image: "/images/malaria.jpg",
 
-    description:
-      "A mosquito-borne disease causing fever, chills and fatigue, especially common in tropical regions.",
+      description:
+        "A mosquito-borne disease causing fever, chills and fatigue, especially common in tropical regions.",
 
-    category: "Infectious Disease",
+      category: "Infectious Disease",
 
-    tags: ["Symptoms", "Prevention", "Treatment"],
+      tags: ["Symptoms", "Prevention", "Treatment"],
 
-    updated: "Updated Today",
-    severity: "High",
-    color: "red",
-  },
+      updated: "Updated Today",
+      severity: "High",
+      color: "red",
+    },
 
-  {
-    id: 2,
-    name: "Tuberculosis",
-    slug: "tuberculosis",
-    image: "/images/tuberculosis.jpg",
+    {
+      id: 2,
+      name: "Tuberculosis",
+      slug: "tuberculosis",
+      image: "/images/tuberculosis.jpg",
 
-    description:
-      "A serious bacterial infection mainly affecting the lungs and spread through the air.",
+      description:
+        "A serious bacterial infection mainly affecting the lungs and spread through the air.",
 
-    category: "Respiratory Disease",
+      category: "Respiratory Disease",
 
-    tags: ["Diagnosis", "Prevention", "Medication"],
+      tags: ["Diagnosis", "Prevention", "Medication"],
 
-    updated: "2 hours ago",
-    severity: "Critical",
-    color: "orange",
-  },
+      updated: "2 hours ago",
+      severity: "Critical",
+      color: "orange",
+    },
 
-  {
-    id: 3,
-    name: "Hypertension",
-    slug: "hypertension",
-    image: "/images/hypertension.jpg",
+    {
+      id: 3,
+      name: "Hypertension",
+      slug: "hypertension",
+      image: "/images/hypertension.jpg",
 
-    description:
-      "A chronic condition where blood pressure remains consistently elevated over time.",
+      description:
+        "A chronic condition where blood pressure remains consistently elevated over time.",
 
-    category: "Cardiovascular",
+      category: "Cardiovascular",
 
-    tags: ["Lifestyle", "Monitoring", "Treatment"],
+      tags: ["Lifestyle", "Monitoring", "Treatment"],
 
-    updated: "Updated Today",
-    severity: "Moderate",
-    color: "blue",
-  },
+      updated: "Updated Today",
+      severity: "Moderate",
+      color: "blue",
+    },
 
-  {
-    id: 4,
-    name: "Diabetes",
-    slug: "diabetes",
-    image: "/images/diabetes.jpg",
+    {
+      id: 4,
+      name: "Diabetes",
+      slug: "diabetes",
+      image: "/images/diabetes.jpg",
 
-    description:
-      "A metabolic disease that affects how the body regulates blood sugar levels.",
+      description:
+        "A metabolic disease that affects how the body regulates blood sugar levels.",
 
-    category: "Endocrine Disorder",
+      category: "Endocrine Disorder",
 
-    tags: ["Insulin", "Diet", "Monitoring"],
+      tags: ["Insulin", "Diet", "Monitoring"],
 
-    updated: "5 hours ago",
-    severity: "High",
-    color: "purple",
-  },
+      updated: "5 hours ago",
+      severity: "High",
+      color: "purple",
+    },
 
-  {
-    id: 5,
-    name: "Meningitis",
-    slug: "meningitis",
-    image: "/images/meningitis.jpg",
+    {
+      id: 5,
+      name: "Meningitis",
+      slug: "meningitis",
+      image: "/images/meningitis.jpg",
 
-    description:
-      "Inflammation of the membranes surrounding the brain and spinal cord.",
+      description:
+        "Inflammation of the membranes surrounding the brain and spinal cord.",
 
-    category: "Neurological",
+      category: "Neurological",
 
-    tags: ["Emergency", "Vaccination", "Treatment"],
+      tags: ["Emergency", "Vaccination", "Treatment"],
 
-    updated: "1 day ago",
-    severity: "Critical",
-    color: "pink",
-  },
+      updated: "1 day ago",
+      severity: "Critical",
+      color: "pink",
+    },
 
-  {
-    id: 6,
-    name: "Asthma",
-    slug: "asthma",
-    image: "/images/asthma.jpg",
+    {
+      id: 6,
+      name: "Asthma",
+      slug: "asthma",
+      image: "/images/asthma.jpg",
 
-    description:
-      "A chronic respiratory condition causing airway inflammation and breathing difficulty.",
+      description:
+        "A chronic respiratory condition causing airway inflammation and breathing difficulty.",
 
-    category: "Chronic Disease",
+      category: "Chronic Disease",
 
-    tags: ["Inhalers", "Triggers", "Management"],
+      tags: ["Inhalers", "Triggers", "Management"],
 
-    updated: "Updated Today",
-    severity: "Moderate",
-    color: "green",
-  },
-];
-
+      updated: "Updated Today",
+      severity: "Moderate",
+      color: "green",
+    },
+  ];
 
   const healthNews = [
     {
@@ -138,34 +137,30 @@ export default function Home() {
     },
   ];
   const allDiseases = trendingDiseases;
-const [currentSlide, setCurrentSlide] = useState(0);
-const [fade, setFade] = useState(true);
-useEffect(() => {
-  const interval = setInterval(() => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [fade, setFade] = useState(true);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
 
-    setFade(false);
+      setTimeout(() => {
+        setCurrentSlide((prev) =>
+          prev === allDiseases.length - 1 ? 0 : prev + 1,
+        );
 
-    setTimeout(() => {
-      setCurrentSlide((prev) =>
-        prev === allDiseases.length - 1 ? 0 : prev + 1
-      );
+        setFade(true);
+      }, 500);
+    }, 8000);
 
-      setFade(true);
-
-    }, 500);
-
-  }, 8000);
-
-  return () => clearInterval(interval);
-
-}, [allDiseases.length]);
-const disease = allDiseases[currentSlide];
+    return () => clearInterval(interval);
+  }, [allDiseases.length]);
+  const disease = allDiseases[currentSlide];
 
   return (
     <div className="relative min-h-screen overflow-x-hidden pt-16">
       {/* BACKGROUND GLOW */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08),transparent_35%)]"></div>
-<Navbar/>
+      <Navbar />
       {/* GRID TEXTURE */}
       <div
         className="absolute inset-0 opacity-[0.03]
@@ -176,68 +171,95 @@ const disease = allDiseases[currentSlide];
       {/* MAIN CONTENT */}
       <div className="relative z-10 flex flex-col items-center">
         {/* HEADER */}
-        <section className="text-center mt-10 px-4">
-          <h1 className="text-5xl font-serif font-bold tracking-tight">
-           Nurseridge
-          </h1>
+        <section
+  className="relative w-full min-h-[90vh] bg-cover bg-center overflow-hidden"
+  style={{
+    backgroundImage: "url('/images/blacknursehero.png')",
+  }}
+>
+  {/* DARK OVERLAY (important for mobile readability) */}
+  <div className="absolute inset-0 bg-black/60" />
 
-          <p className="text-gray-600 mt-3 text-lg">
-            Learn Nursing. Practice Nursing.
-          </p>
+  {/* TEXT CONTENT */}
+  <div className="relative z-10 flex items-center min-h-[90vh]">
+    <div className="max-w-7xl w-full mx-auto px-6 sm:px-10 lg:px-16">
 
-          
-        </section>
+      <div className="text-white max-w-2xl">
 
-        
+        <p className="uppercase tracking-[0.25em] sm:tracking-[0.35em] text-xs sm:text-sm text-blue-400">
+          Nurseridge Platform • NCLEX Preparation
+        </p>
+
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mt-4 sm:mt-5 leading-tight">
+          Master Nursing
+          <br />
+          <span className="text-blue-500">
+            Pass NCLEX with Confidence
+          </span>
+        </h1>
+
+        <p className="text-gray-300 mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed">
+          Structured clinical education, NCLEX-style practice questions,
+          and simplified medical learning designed for future nurses who
+          want to succeed globally.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
         {/* HERO SECTION */}
         {/* MEDICAL FACULTIES SECTION */}
-<section className="relative w-full max-w-7xl mt-20 px-4">
-
-  {/* HEADER */}
-  <div className="text-center mb-16">
-
-    <p className="
+        <section className="relative w-full max-w-7xl mt-20 px-4">
+          {/* HEADER */}
+          <div className="text-center mb-16">
+            <p
+              className="
       uppercase
       tracking-[0.35em]
       text-sm
       text-blue-600
       font-semibold
-    ">
-      Explore Faculties
-    </p>
+    "
+            >
+              Explore Faculties
+            </p>
 
-    <h2 className="
+            <h2
+              className="
       text-4xl sm:text-6xl
       font-bold
       mt-5
       leading-tight
-    ">
-      Learn Across
-      <span className="text-blue-600">
-        {" "}Healthcare Fields
-      </span>
-    </h2>
+    "
+            >
+              Learn Across
+              <span className="text-blue-600"> Healthcare Fields</span>
+            </h2>
 
-    <p className="
+            <p
+              className="
       text-gray-600
       text-lg
       leading-relaxed
       mt-5
       max-w-3xl
       mx-auto
-    ">
-      Explore structured learning communities for
-      Nursing, Medicine and Dentistry with organized
-      topics, clinical subjects and educational resources.
-    </p>
+    "
+            >
+              Explore structured learning communities for Nursing, Medicine and
+              Dentistry with organized topics, clinical subjects and educational
+              resources.
+            </p>
+          </div>
 
-  </div>
-
-  {/* MAIN GRID */}
-  <div className="grid lg:grid-cols-3 gap-8">
-
-    {/* NURSING */}
-    <div className="
+          {/* MAIN GRID */}
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* NURSING */}
+            <div
+              className="
       group
       relative
       overflow-hidden
@@ -251,10 +273,11 @@ const disease = allDiseases[currentSlide];
       shadow-2xl
       hover:-translate-y-2
       transition-all duration-500
-    ">
-
-      {/* GLOW */}
-      <div className="
+    "
+            >
+              {/* GLOW */}
+              <div
+                className="
         absolute
         -top-20
         -right-20
@@ -262,11 +285,12 @@ const disease = allDiseases[currentSlide];
         bg-blue-400/20
         rounded-full
         blur-3xl
-      "></div>
+      "
+              ></div>
 
-      <div className="relative z-10">
-
-        <div className="
+              <div className="relative z-10">
+                <div
+                  className="
           w-18 h-18
           rounded-3xl
           bg-white/10
@@ -274,52 +298,53 @@ const disease = allDiseases[currentSlide];
           backdrop-blur-xl
           flex items-center justify-center
           text-4xl
-        ">
-          🩺
-        </div>
+        "
+                >
+                  🩺
+                </div>
 
-        <p className="
+                <p
+                  className="
           mt-8
           uppercase
           tracking-[0.25em]
           text-sm
           text-blue-300
           font-semibold
-        ">
-          Nursing
-        </p>
+        "
+                >
+                  Nursing
+                </p>
 
-        <h3 className="
+                <h3
+                  className="
           text-4xl
           font-bold
           mt-4
           leading-tight
-        ">
-          Nursing Sections
-        </h3>
+        "
+                >
+                  Nursing Sections
+                </h3>
 
-        <p className="
+                <p
+                  className="
           text-blue-100/80
           mt-5
           leading-relaxed
-        ">
-          Explore nursing education grouped into
-          sections, clinical learning areas and
-          practical healthcare disciplines.
-        </p>
+        "
+                >
+                  Explore nursing education grouped into sections, clinical
+                  learning areas and practical healthcare disciplines.
+                </p>
 
-        {/* SECTIONS */}
-        <div className="grid grid-cols-2 gap-3 mt-8">
-
-          {[
-            "Section 1",
-            "Section 2",
-            "Section 3",
-            "Section 4",
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="
+                {/* SECTIONS */}
+                <div className="grid grid-cols-2 gap-3 mt-8">
+                  {["Section 1", "Section 2", "Section 3", "Section 4"].map(
+                    (item, index) => (
+                      <div
+                        key={index}
+                        className="
                 bg-white/10
                 border border-white/10
                 backdrop-blur-md
@@ -331,16 +356,20 @@ const disease = allDiseases[currentSlide];
                 transition
                 cursor-pointer
               "
-              onClick={() => navigate(`/nursing/${item.toLowerCase().replace(/\s/g, "-")}`)}
-            >
-              {item}
-            </div>
-          ))}
+                        onClick={() =>
+                          navigate(
+                            `/nursing/${item.toLowerCase().replace(/\s/g, "-")}`,
+                          )
+                        }
+                      >
+                        {item}
+                      </div>
+                    ),
+                  )}
+                </div>
 
-        </div>
-
-        <button
-          className="
+                <button
+                  className="
             mt-10
             w-full
             bg-white
@@ -351,23 +380,16 @@ const disease = allDiseases[currentSlide];
             rounded-2xl
             transition
           "
-          onClick={() => navigate("/nursing")}
-        >
-          Explore Nursing →
-        </button>
+                  onClick={() => navigate("/nursing")}
+                >
+                  Explore Nursing →
+                </button>
+              </div>
+            </div>
 
-      </div>
-
-    </div>
-
-   
-
-    {/* DENTISTRY */}
-    
-
-  </div>
-
-</section>
+            {/* DENTISTRY */}
+          </div>
+        </section>
 
         {/* STATS */}
         <section className="w-full max-w-6xl px-4 mt-20">
@@ -405,16 +427,14 @@ const disease = allDiseases[currentSlide];
         </section>
 
         {/* TRENDING DISEASES */}
-      {/* DISEASE GRID */}
-<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-
-  {/* FIRST 6 DISEASES */}
-  {trendingDiseases.slice(0, 6).map((disease) => (
-
-    <div
-      key={disease.id}
-      onClick={() => navigate(`/disease/${disease.slug}`)}
-      className="
+        {/* DISEASE GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          {/* FIRST 6 DISEASES */}
+          {trendingDiseases.slice(0, 6).map((disease) => (
+            <div
+              key={disease.id}
+              onClick={() => navigate(`/disease/${disease.slug}`)}
+              className="
         group
         relative
         overflow-hidden
@@ -427,37 +447,35 @@ const disease = allDiseases[currentSlide];
         hover:-translate-y-2
         cursor-pointer
       "
-    >
-
-      {/* IMAGE */}
-      <div className="relative overflow-hidden h-64">
-
-        <img
-          src={disease.image}
-          alt={disease.name}
-          className="
+            >
+              {/* IMAGE */}
+              <div className="relative overflow-hidden h-64">
+                <img
+                  src={disease.image}
+                  alt={disease.name}
+                  className="
             w-full
             h-full
             object-cover
             transition duration-700
             group-hover:scale-110
           "
-        />
+                />
 
-        {/* OVERLAY */}
-        <div
-          className="
+                {/* OVERLAY */}
+                <div
+                  className="
             absolute inset-0
             bg-linear-to-t
             from-black/80
             via-black/20
             to-transparent
           "
-        ></div>
+                ></div>
 
-        {/* BADGE */}
-        <div
-          className="
+                {/* BADGE */}
+                <div
+                  className="
             absolute top-5 left-5
             bg-red-500/90
             backdrop-blur-md
@@ -468,38 +486,33 @@ const disease = allDiseases[currentSlide];
             rounded-full
             shadow-lg
           "
-        >
-          🔥 Trending
-        </div>
+                >
+                  🔥 Trending
+                </div>
 
-        {/* TITLE */}
-        <div className="absolute bottom-5 left-5 right-5">
-
-          <h3
-            className="
+                {/* TITLE */}
+                <div className="absolute bottom-5 left-5 right-5">
+                  <h3
+                    className="
               text-white
               text-3xl
               font-bold
               leading-tight
             "
-          >
-            {disease.name}
-          </h3>
+                  >
+                    {disease.name}
+                  </h3>
+                </div>
+              </div>
 
-        </div>
-
-      </div>
-
-      {/* CONTENT */}
-      <div className="p-7">
-
-        {/* TAGS */}
-        <div className="flex gap-2 flex-wrap mb-5">
-
-          {disease.tags.map((tag, index) => (
-            <div
-              key={index}
-              className="
+              {/* CONTENT */}
+              <div className="p-7">
+                {/* TAGS */}
+                <div className="flex gap-2 flex-wrap mb-5">
+                  {disease.tags.map((tag, index) => (
+                    <div
+                      key={index}
+                      className="
                 bg-blue-50
                 text-blue-700
                 text-xs
@@ -507,80 +520,70 @@ const disease = allDiseases[currentSlide];
                 px-3 py-2
                 rounded-full
               "
-            >
-              {tag}
-            </div>
-          ))}
+                    >
+                      {tag}
+                    </div>
+                  ))}
+                </div>
 
-        </div>
-
-        {/* DESCRIPTION */}
-        <p
-          className="
+                {/* DESCRIPTION */}
+                <p
+                  className="
             text-gray-600
             leading-relaxed
             text-[15px]
           "
-        >
-          {disease.description}
-        </p>
+                >
+                  {disease.description}
+                </p>
 
-        {/* FOOTER */}
-        <div
-          className="
+                {/* FOOTER */}
+                <div
+                  className="
             flex items-center justify-between
             mt-8
             pt-6
             border-t border-gray-100
           "
-        >
-
-          <div className="flex items-center gap-2">
-
-            <div
-              className="
+                >
+                  <div className="flex items-center gap-2">
+                    <div
+                      className="
                 w-2 h-2
                 bg-green-500
                 rounded-full
                 animate-pulse
               "
-            ></div>
+                    ></div>
 
-            <p className="text-sm text-gray-500">
-              {disease.updated}
-            </p>
+                    <p className="text-sm text-gray-500">{disease.updated}</p>
+                  </div>
 
-          </div>
-
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              navigate(`/disease/${disease.slug}`);
-            }}
-            className="
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      navigate(`/disease/${disease.slug}`);
+                    }}
+                    className="
               flex items-center gap-2
               text-slate-900
               font-semibold
               group-hover:gap-4
               transition-all
             "
-          >
-            Explore
-            <span>→</span>
-          </button>
+                  >
+                    Explore
+                    <span>→</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
 
-        </div>
-
-      </div>
-
-    </div>
-
-  ))}
-
-  {/* MORE CARD */}
-  <div
-    onClick={() => navigate("/diseases")}
-    className="
+          {/* MORE CARD */}
+          <div
+            onClick={() => navigate("/diseases")}
+            className="
       group
       cursor-pointer
       rounded-3xl
@@ -595,39 +598,45 @@ const disease = allDiseases[currentSlide];
       hover:bg-blue-50
       transition-all duration-500
     "
-  >
-
-    <div className="
+          >
+            <div
+              className="
       text-7xl
       font-bold
       text-gray-400
       group-hover:text-blue-600
       transition
-    ">
-      ...
-    </div>
+    "
+            >
+              ...
+            </div>
 
-    <h3 className="
+            <h3
+              className="
       mt-6
       text-2xl
       font-bold
       text-gray-800
-    ">
-      Explore All Diseases
-    </h3>
+    "
+            >
+              Explore All Diseases
+            </h3>
 
-    <p className="
+            <p
+              className="
       text-gray-500
       mt-3
       text-center
       max-w-xs
       leading-relaxed
-    ">
-      Browse the complete medical encyclopedia
-      including symptoms, prevention and treatment.
-    </p>
+    "
+            >
+              Browse the complete medical encyclopedia including symptoms,
+              prevention and treatment.
+            </p>
 
-    <button className="
+            <button
+              className="
       mt-8
       bg-slate-900
       text-white
@@ -635,77 +644,80 @@ const disease = allDiseases[currentSlide];
       rounded-2xl
       hover:bg-blue-600
       transition
-    ">
-      View All →
-    </button>
-
-  </div>
-
-</div>
+    "
+            >
+              View All →
+            </button>
+          </div>
+        </div>
         {/* FUN FACT */}
         {/* FUN MEDICAL FACT */}
 
-
         {/* DISEASE NEWS */}
         {/* DISEASE NEWS */}
-<section className="w-full max-w-7xl px-4 mt-32">
-
-  {/* HEADER */}
-  <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
-
-    <div>
-
-      <div className="
+        <section className="w-full max-w-7xl px-4 mt-32">
+          {/* HEADER */}
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
+            <div>
+              <div
+                className="
         inline-flex items-center gap-2
         bg-red-50
         border border-red-100
         px-4 py-2
         rounded-full
-      ">
-
-        <div className="
+      "
+              >
+                <div
+                  className="
           w-2 h-2
           bg-red-500
           rounded-full
           animate-pulse
-        "></div>
+        "
+                ></div>
 
-        <p className="
+                <p
+                  className="
           text-red-600
           uppercase
           tracking-[0.2em]
           text-xs
           font-semibold
-        ">
-          Live Medical Updates
-        </p>
+        "
+                >
+                  Live Medical Updates
+                </p>
+              </div>
 
-      </div>
-
-      <h2 className="
+              <h2
+                className="
         text-4xl sm:text-5xl
         font-bold
         mt-5
         leading-tight
-      ">
-        Disease News & Health Alerts
-      </h2>
+      "
+              >
+                Disease News & Health Alerts
+              </h2>
 
-      <p className="
+              <p
+                className="
         text-gray-600
         text-lg
         leading-relaxed
         mt-5
         max-w-3xl
-      ">
-        Stay informed with the latest disease outbreaks,
-        medical discoveries, public health updates,
-        prevention strategies and global healthcare news.
-      </p>
+      "
+              >
+                Stay informed with the latest disease outbreaks, medical
+                discoveries, public health updates, prevention strategies and
+                global healthcare news.
+              </p>
+            </div>
 
-    </div>
-
-    <button className="
+            <button
+              className="
       self-start lg:self-auto
       bg-slate-900
       hover:bg-slate-800
@@ -714,20 +726,18 @@ const disease = allDiseases[currentSlide];
       rounded-2xl
       shadow-lg
       transition
-    ">
-      View All News
-    </button>
+    "
+            >
+              View All News
+            </button>
+          </div>
 
-  </div>
-
-  {/* NEWS GRID */}
-  <div className="grid lg:grid-cols-2 gap-10">
-
-    {healthNews.map((news, index) => (
-
-      <article
-        key={index}
-        className="
+          {/* NEWS GRID */}
+          <div className="grid lg:grid-cols-2 gap-10">
+            {healthNews.map((news, index) => (
+              <article
+                key={index}
+                className="
           group
           relative
           overflow-hidden
@@ -739,34 +749,35 @@ const disease = allDiseases[currentSlide];
           transition-all duration-500
           hover:-translate-y-2
         "
-      >
-
-        {/* IMAGE */}
-        <div className="relative overflow-hidden h-85">
-
-          <img
-            src={news.image}
-            alt={news.title}
-            className="
+              >
+                {/* IMAGE */}
+                <div className="relative overflow-hidden h-85">
+                  <img
+                    src={news.image}
+                    alt={news.title}
+                    className="
               w-full
               h-full
               object-cover
               transition duration-700
               group-hover:scale-110
             "
-          />
+                  />
 
-          {/* OVERLAY */}
-          <div className="
+                  {/* OVERLAY */}
+                  <div
+                    className="
             absolute inset-0
             bg-linear-to-t
             from-black/90
             via-black/20
             to-transparent
-          "></div>
+          "
+                  ></div>
 
-          {/* TOP BADGES */}
-          <div className="
+                  {/* TOP BADGES */}
+                  <div
+                    className="
             absolute
             top-5
             left-5
@@ -774,9 +785,10 @@ const disease = allDiseases[currentSlide];
             flex
             justify-between
             items-start
-          ">
-
-            <div className="
+          "
+                  >
+                    <div
+                      className="
               bg-red-500/90
               backdrop-blur-md
               text-white
@@ -785,175 +797,177 @@ const disease = allDiseases[currentSlide];
               text-xs
               font-semibold
               shadow-lg
-            ">
-              🚨 Health Alert
-            </div>
+            "
+                    >
+                      🚨 Health Alert
+                    </div>
 
-            <div className="
+                    <div
+                      className="
               bg-black/40
               backdrop-blur-md
               text-white
               px-4 py-2
               rounded-full
               text-xs
-            ">
-              Updated Today
-            </div>
+            "
+                    >
+                      Updated Today
+                    </div>
+                  </div>
 
-          </div>
-
-          {/* BOTTOM CONTENT */}
-          <div className="
+                  {/* BOTTOM CONTENT */}
+                  <div
+                    className="
             absolute bottom-0 left-0 right-0
             p-7
-          ">
-
-            <h3 className="
+          "
+                  >
+                    <h3
+                      className="
               text-white
               text-3xl
               font-bold
               leading-tight
               max-w-xl
-            ">
-              {news.title}
-            </h3>
+            "
+                    >
+                      {news.title}
+                    </h3>
+                  </div>
+                </div>
 
-          </div>
-
-        </div>
-
-        {/* CONTENT */}
-        <div className="p-7">
-
-          {/* TAGS */}
-          <div className="flex flex-wrap gap-3 mb-5">
-
-            <div className="
+                {/* CONTENT */}
+                <div className="p-7">
+                  {/* TAGS */}
+                  <div className="flex flex-wrap gap-3 mb-5">
+                    <div
+                      className="
               bg-blue-50
               text-blue-700
               px-4 py-2
               rounded-full
               text-xs
               font-medium
-            ">
-              Public Health
-            </div>
+            "
+                    >
+                      Public Health
+                    </div>
 
-            <div className="
+                    <div
+                      className="
               bg-green-50
               text-green-700
               px-4 py-2
               rounded-full
               text-xs
               font-medium
-            ">
-              Prevention
-            </div>
+            "
+                    >
+                      Prevention
+                    </div>
 
-            <div className="
+                    <div
+                      className="
               bg-purple-50
               text-purple-700
               px-4 py-2
               rounded-full
               text-xs
               font-medium
-            ">
-              Research
-            </div>
+            "
+                    >
+                      Research
+                    </div>
+                  </div>
 
-          </div>
-
-          {/* DESCRIPTION */}
-          <p className="
+                  {/* DESCRIPTION */}
+                  <p
+                    className="
             text-gray-600
             leading-relaxed
             text-[15px]
-          ">
-            {news.description}
-          </p>
+          "
+                  >
+                    {news.description}
+                  </p>
 
-          {/* FOOTER */}
-          <div className="
+                  {/* FOOTER */}
+                  <div
+                    className="
             flex items-center justify-between
             mt-8
             pt-6
             border-t border-gray-100
-          ">
-
-            <div className="flex items-center gap-3">
-
-              <div className="
+          "
+                  >
+                    <div className="flex items-center gap-3">
+                      <div
+                        className="
                 w-10 h-10
                 rounded-full
                 bg-slate-100
                 flex items-center justify-center
                 text-lg
-              ">
-                🩺
-              </div>
+              "
+                      >
+                        🩺
+                      </div>
 
-              <div>
-
-                <p className="
+                      <div>
+                        <p
+                          className="
                   text-sm
                   font-semibold
                   text-slate-900
-                ">
-                  Medical Desk
-                </p>
+                "
+                        >
+                          Medical Desk
+                        </p>
 
-                <p className="
+                        <p
+                          className="
                   text-xs
                   text-gray-500
-                ">
-                  Verified Health Update
-                </p>
+                "
+                        >
+                          Verified Health Update
+                        </p>
+                      </div>
+                    </div>
 
-              </div>
-
-            </div>
-
-            <button className="
+                    <button
+                      className="
               flex items-center gap-2
               font-semibold
               text-slate-900
               group-hover:gap-4
               transition-all
-            ">
-              Read Story
-              <span>→</span>
-            </button>
-
+            "
+                    >
+                      Read Story
+                      <span>→</span>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
-
-        </div>
-
-      </article>
-
-    ))}
-
-  </div>
-
-</section>
+        </section>
 
         {/* DAILY HEALTH TIP */}
         {/* DAILY HEALTH TIP */}
-
 
         {/* FOOTER */}
         <footer className="w-full mt-24 border-t border-gray-200 py-10 text-center px-4">
-          <h2 className="text-2xl font-serif font-bold">
-            Andipedia
-          </h2>
+          <h2 className="text-2xl font-serif font-bold">Andipedia</h2>
 
           <p className="text-gray-600 mt-2">
             Free medical knowledge for everyone.
           </p>
 
           <div className="flex justify-center gap-6 mt-6 text-sm text-gray-500">
-            <button className="hover:text-blue-600 transition">
-              Diseases
-            </button>
+            <button className="hover:text-blue-600 transition">Diseases</button>
 
             <button className="hover:text-blue-600 transition">
               First Aid
@@ -963,14 +977,10 @@ const disease = allDiseases[currentSlide];
               Public Health
             </button>
 
-            <button className="hover:text-blue-600 transition">
-              Research
-            </button>
+            <button className="hover:text-blue-600 transition">Research</button>
           </div>
         </footer>
       </div>
     </div>
   );
 }
-
-

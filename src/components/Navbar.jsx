@@ -51,9 +51,7 @@ export default function Navbar() {
     <div className="md:hidden border-t bg-white shadow-sm">
       <div className="flex flex-col py-2">
 
-        <button className="flex items-center px-5 py-3 text-slate-700 text-sm font-medium hover:bg-slate-50">
-          Create Account
-        </button>
+        
 
         <button className="flex items-center px-5 py-3 text-slate-700 text-sm font-medium hover:bg-slate-50">
           Login
