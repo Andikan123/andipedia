@@ -209,6 +209,183 @@ export default function Home() {
   </div>
 </section>
 
+<section className="w-full max-w-7xl px-4 py-24">
+  <div className="text-center mb-14">
+    <p className="uppercase tracking-[0.3em] text-sm text-blue-600 font-semibold">
+      NCLEX Challenge
+    </p>
+
+    <h2 className="text-4xl sm:text-5xl font-bold mt-4">
+      Can You Think Like a Nurse?
+    </h2>
+
+    <p className="text-gray-600 max-w-2xl mx-auto mt-5 text-lg">
+      Try this NCLEX-style question and see how clinical reasoning
+      makes the difference.
+    </p>
+  </div>
+
+  <div className="rounded-4xl bg-slate-900 text-white p-8 sm:p-12 shadow-2xl overflow-hidden relative" style={{
+  backgroundImage:
+    "url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=2000&q=80')",
+}}>
+
+   {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60" />
+
+    {/* Glow */}
+    <div className="absolute -top-16 -right-16 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
+
+    <div className="relative z-10">
+
+      <div className="inline-flex items-center gap-2 bg-blue-500/20 px-4 py-2 rounded-full text-blue-300 text-sm">
+        🩺 Prioritization Question
+      </div>
+
+      <h3 className="text-2xl sm:text-3xl font-bold mt-8 leading-relaxed">
+        A nurse receives report on four patients. Which patient should the nurse assess first?
+      </h3>
+
+      <div className="grid md:grid-cols-2 gap-4 mt-10">
+
+        <div className="border border-white/10 rounded-2xl p-5 hover:bg-white/5 transition">
+          A. A postoperative patient reporting pain of 7/10.
+        </div>
+
+        <div className="border border-white/10 rounded-2xl p-5 hover:bg-white/5 transition">
+          B. A diabetic patient with a blood glucose of 70 mg/dL.
+        </div>
+
+        <div className="border border-white/10 rounded-2xl p-5 hover:bg-white/5 transition">
+          C. A patient with chest pain and shortness of breath.
+        </div>
+
+        <div className="border border-white/10 rounded-2xl p-5 hover:bg-white/5 transition">
+          D. A patient requesting assistance to the bathroom.
+        </div>
+
+      </div>
+
+      <div className="mt-10 p-6 rounded-2xl bg-blue-500/10 border border-blue-500/20">
+        <p className="uppercase text-xs tracking-[0.2em] text-blue-300 mb-2">
+          Correct Answer
+        </p>
+
+        <h4 className="text-2xl font-bold text-blue-400">
+          C. Patient with chest pain and shortness of breath
+        </h4>
+
+        <p className="text-gray-300 mt-4 leading-relaxed">
+          NCLEX prioritization questions focus on identifying the most unstable
+          patient first. Chest pain accompanied by shortness of breath may indicate
+          a life-threatening cardiovascular or respiratory emergency requiring
+          immediate assessment.
+        </p>
+      </div>
+
+      <button
+        className="mt-8 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-2xl font-semibold transition"
+      >
+        Practice More Questions →
+      </button>
+
+    </div>
+  </div>
+</section>
+<section className="w-full max-w-7xl px-4 py-24">
+
+  {/* HEADER */}
+  <div className="text-center mb-14">
+
+    <p className="uppercase tracking-[0.35em] text-sm text-blue-600 font-semibold">
+      AI Clinical Scenario Lab
+    </p>
+
+    <h2 className="text-4xl sm:text-5xl font-bold mt-4">
+      Real-World Nursing Decision Training
+    </h2>
+
+    <p className="text-gray-600 max-w-2xl mx-auto mt-5 text-lg">
+      Watch the clinical scenario, then choose the most appropriate nursing intervention —
+      just like in NCLEX exam simulations.
+    </p>
+
+  </div>
+
+  {/* VIDEO CARD */}
+  <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-900">
+
+    {/* video placeholder (replace later with AI video) */}
+    <video
+      className="w-full h-[400px] object-cover"
+      autoplay
+      controls
+      poster="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=2000&q=80"
+    >
+      <source src="images/snakebite.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    {/* overlay label */}
+    <div className="absolute top-5 left-5 bg-black/60 text-white px-4 py-2 rounded-full text-sm backdrop-blur-md">
+      🐍 Emergency: Snake Bite Case
+    </div>
+
+  </div>
+
+  {/* QUESTION SECTION */}
+  <div className="mt-12 bg-white rounded-3xl shadow-xl p-8 sm:p-10">
+
+    <p className="uppercase tracking-[0.25em] text-sm text-blue-600 font-semibold">
+      NCLEX Question
+    </p>
+
+    <h3 className="text-2xl sm:text-3xl font-bold mt-4 leading-relaxed">
+      A farmer presents to the emergency unit after a snake bite to the lower leg.
+      What is the most immediate nursing intervention?
+    </h3>
+
+    {/* OPTIONS */}
+    <div className="grid md:grid-cols-2 gap-4 mt-8">
+
+      <div className="border rounded-2xl p-5 hover:bg-gray-50 cursor-pointer transition">
+        A. Apply a tight tourniquet above the bite site
+      </div>
+
+      <div className="border rounded-2xl p-5 hover:bg-gray-50 cursor-pointer transition">
+        B. Encourage the patient to walk to reduce swelling
+      </div>
+
+      <div className="border rounded-2xl p-5 hover:bg-gray-50 cursor-pointer transition">
+        C. Immobilize the limb and keep it at heart level or slightly below
+      </div>
+
+      <div className="border rounded-2xl p-5 hover:bg-gray-50 cursor-pointer transition">
+        D. Incise the wound to remove venom
+      </div>
+
+    </div>
+
+    {/* EXPLANATION */}
+    <div className="mt-8 p-6 rounded-2xl bg-blue-50 border border-blue-100">
+      <p className="uppercase text-xs tracking-[0.2em] text-blue-600 mb-2">
+        Correct Answer
+      </p>
+
+      <h4 className="text-xl font-bold text-blue-700">
+        C. Immobilize the limb and keep it at heart level or slightly below
+      </h4>
+
+      <p className="text-gray-700 mt-3 leading-relaxed">
+        NCLEX emergency management prioritizes preventing venom spread.
+        Immobilization reduces lymphatic flow and limits systemic toxicity.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
         {/* HERO SECTION */}
         <section className="relative w-full max-w-7xl mt-20 px-4">
 
@@ -236,72 +413,93 @@ export default function Home() {
   <div className="grid lg:grid-cols-3 gap-8">
 
     {/* CARD 1 - NCLEX MASTERY */}
-    <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 p-8 text-white shadow-2xl hover:-translate-y-2 transition-all duration-500">
+   <div
+  className="group relative overflow-hidden rounded-3xl shadow-2xl hover:-translate-y-2 transition-all duration-500 text-white"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=2000&q=80')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
 
-      <div className="absolute -top-20 -right-20 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl"></div>
+  {/* DARK OVERLAY */}
+  <div className="absolute inset-0 bg-slate-900/75" />
 
-      <div className="relative z-10">
+  {/* glow effect */}
+  <div className="absolute -top-20 -right-20 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl"></div>
 
-        <div className="w-18 h-18 rounded-3xl bg-white/10 border border-white/10 backdrop-blur-xl flex items-center justify-center text-4xl">
-          📘
-        </div>
+  {/* CONTENT */}
+  <div className="relative z-10 p-8">
 
-        <p className="mt-8 uppercase tracking-[0.25em] text-sm text-blue-300 font-semibold">
-          NCLEX Preparation
-        </p>
-
-        <h3 className="text-4xl font-bold mt-4 leading-tight">
-          NCLEX Mastery Path
-        </h3>
-
-        <p className="text-blue-100/80 mt-5 leading-relaxed">
-          Step-by-step preparation with NCLEX-style questions,
-          clinical reasoning, and exam-focused learning.
-        </p>
-
-        <button
-          className="mt-10 w-full bg-white hover:bg-blue-100 text-slate-900 font-semibold py-4 rounded-2xl transition"
-          onClick={() => navigate("/nclex")}
-        >
-          Start NCLEX Prep →
-        </button>
-
-      </div>
+    <div className="w-18 h-18 rounded-3xl bg-white/10 border border-white/10 backdrop-blur-xl flex items-center justify-center text-4xl">
+      📘
     </div>
+
+    <p className="mt-8 uppercase tracking-[0.25em] text-sm text-blue-300 font-semibold">
+      NCLEX Preparation
+    </p>
+
+    <h3 className="text-4xl font-bold mt-4 leading-tight">
+      NCLEX Mastery Path
+    </h3>
+
+    <p className="text-blue-100/80 mt-5 leading-relaxed">
+      Step-by-step preparation with NCLEX-style questions,
+      clinical reasoning, and exam-focused learning.
+    </p>
+
+    <button
+      className="mt-10 w-full bg-white hover:bg-blue-100 text-slate-900 font-semibold py-4 rounded-2xl transition"
+      onClick={() => navigate("/nclex")}
+    >
+      Start NCLEX Prep →
+    </button>
+
+  </div>
+</div>
 
     {/* CARD 2 - CLINICAL EXCELLENCE */}
-    <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 p-8 text-white shadow-2xl hover:-translate-y-2 transition-all duration-500">
+   <div
+  className="group relative overflow-hidden rounded-3xl shadow-2xl hover:-translate-y-2 transition-all duration-500 text-white"
+ 
+>
 
-      <div className="absolute -top-20 -right-20 w-72 h-72 bg-slate-400/10 rounded-full blur-3xl"></div>
+  {/* DARK OVERLAY */}
+  <div className="absolute inset-0 bg-slate-900/75"  />
 
-      <div className="relative z-10">
+  {/* glow effect */}
+  <div className="absolute -top-20 -right-20 w-72 h-72 bg-slate-400/10 rounded-full blur-3xl"></div>
 
-        <div className="w-18 h-18 rounded-3xl bg-white/10 border border-white/10 backdrop-blur-xl flex items-center justify-center text-4xl">
-          🩺
-        </div>
+  {/* CONTENT */}
+  <div className="relative z-10 p-8">
 
-        <p className="mt-8 uppercase tracking-[0.25em] text-sm text-blue-300 font-semibold">
-          Clinical Skills
-        </p>
-
-        <h3 className="text-4xl font-bold mt-4 leading-tight">
-          Clinical Excellence
-        </h3>
-
-        <p className="text-blue-100/80 mt-5 leading-relaxed">
-          Learn real-world nursing practice, procedures,
-          and bedside decision-making skills.
-        </p>
-
-        <button
-          className="mt-10 w-full bg-white hover:bg-blue-100 text-slate-900 font-semibold py-4 rounded-2xl transition"
-          onClick={() => navigate("/clinical")}
-        >
-          Explore Clinicals →
-        </button>
-
-      </div>
+    <div className="w-18 h-18 rounded-3xl bg-white/10 border border-white/10 backdrop-blur-xl flex items-center justify-center text-4xl">
+      🩺
     </div>
+
+    <p className="mt-8 uppercase tracking-[0.25em] text-sm text-blue-300 font-semibold">
+      Clinical Skills
+    </p>
+
+    <h3 className="text-4xl font-bold mt-4 leading-tight">
+      Clinical Excellence
+    </h3>
+
+    <p className="text-blue-100/80 mt-5 leading-relaxed">
+      Learn real-world nursing practice, procedures,
+      and bedside decision-making skills.
+    </p>
+
+    <button
+      className="mt-10 w-full bg-white hover:bg-blue-100 text-slate-900 font-semibold py-4 rounded-2xl transition"
+      onClick={() => navigate("/clinical")}
+    >
+      Explore Clinicals →
+    </button>
+
+  </div>
+</div>
 
     {/* CARD 3 - GLOBAL PATHWAY */}
     <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-900 via-slate-900 to-indigo-950 p-8 text-white shadow-2xl hover:-translate-y-2 transition-all duration-500">
@@ -531,7 +729,7 @@ export default function Home() {
 
         {/* FOOTER */}
         <footer className="w-full mt-24 border-t border-gray-200 py-10 text-center px-4">
-          <h2 className="text-2xl font-serif font-bold">Andipedia</h2>
+          <h2 className="text-2xl font-serif font-bold">Nurseridge</h2>
 
           <p className="text-gray-600 mt-2">
             Free medical knowledge for everyone.
