@@ -4,6 +4,8 @@ import snakebite from "../data/Snakebite";
 import laborPriority from "../data/LaborPriority";
 import chickenpox from "../data/Chickenpox";
 import ecg from "../data/ECG";
+import alzheimersCare from "../data/Alzhiemers";
+import crutchAmbulation from "../data/CrutchAmbulation";
 
 export default function Home() {
   return (
@@ -84,6 +86,8 @@ export default function Home() {
         <Scenario scenario={laborPriority} />
         <Scenario scenario={chickenpox} />
         <Scenario scenario={ecg} />
+        <Scenario scenario={alzheimersCare} />
+        <Scenario scenario={crutchAmbulation} />
 
       </section>
 
